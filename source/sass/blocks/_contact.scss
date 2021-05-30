@@ -1,0 +1,28 @@
+.contact {
+
+  &__title {}
+
+  &__wrapper {
+    padding: 120px 80px 120px 80px;
+    background: url("../img/bg/map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1 fr;
+    padding-left: 0;
+    list-style: none;
+    gap: 30px;
+  }
+
+  &__item {
+    height: 320px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 20px;
+  }
+}

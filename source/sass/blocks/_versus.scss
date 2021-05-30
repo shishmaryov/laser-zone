@@ -1,0 +1,30 @@
+.versus {
+
+  &__subtitle {
+    margin-top: 150px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 75px;
+    padding-left: 0;
+    list-style: none;
+    gap: 30px;
+  }
+
+  &__item {
+    max-width: 380px;
+    max-height: 136px;
+    padding: 25px 50px;
+    border: 2px solid #49b462;
+    border-radius: 20px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 300;
+    font-size: 16px;
+  }
+}

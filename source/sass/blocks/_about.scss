@@ -1,0 +1,49 @@
+.about {
+
+  &__description {
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-weight: 400;
+    font-size: 18px;
+
+  }
+
+  &__list {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 60px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 42px;
+      height: 42px;
+    }
+
+    &--painless {
+      &::before {
+        content: url("../img/icons/painless.png");
+      }
+    }
+
+    &--security {
+      &::before {
+        content: url("../img/icons/security.png");
+      }
+    }
+
+    &--available {
+      &::before {
+        content: url("../img/icons/available.png");
+      }
+    }
+  }
+
+  &__button {}
+}

@@ -1,0 +1,37 @@
+.useful {
+
+  &__title {}
+
+  &__subtitle {}
+
+  &__description {
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__item {
+    width: calc(100% / 3);
+    max-width: 380px;
+    height: 217px;
+    margin-right: 30px;
+    padding: 25px 50px;
+    border: 2px solid #49b462;
+    border-radius: 20px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,44 @@
+.info {
+
+  &__title {
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 35px;
+    padding-top: 100px;
+    font-weight: 700;
+    font-size: 20px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: calc(50% - 30px);
+      width: 60px;
+      height: 60px;
+    }
+
+    &--location {
+      &::before {
+        content: url("../img/icons/location.png");
+      }
+    }
+
+    &--phone {
+      &::before {
+        content: url("../img/icons/phone.png");
+        left: calc(50% - 25px);
+        width: 50px;
+      }
+    }
+
+    &--media {
+      &::before {
+        content: url("../img/icons/social-media.png");
+      }
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}
