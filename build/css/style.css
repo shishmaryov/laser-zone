@@ -684,9 +684,6 @@ button.swiper-pagination-bullet {
   -webkit-transition: .2s transform,.2s top;
   transition: .2s transform,.2s top; }
 
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 4px; }
-
 .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1135,6 +1132,58 @@ img {
   font-weight: 300;
   font-size: 16px; }
 
+.price__table {
+  width: 100%;
+  text-align: center;
+  border-radius: 20px; }
+
+.price .table__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #183119;
+  position: relative; }
+
+.price .table__arrow {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.price .table__header {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center; }
+
+.price .table__head {
+  padding: 12px 0; }
+  .price .table__head--1 {
+    border-radius: 20px 0px 0px 0px; }
+  .price .table__head--2 {
+    border-radius: 20px 20px 0px 0px; }
+  .price .table__head--3 {
+    border-radius: 0px 20px 0px 0px; }
+
+.price .table__content {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px; }
+
+.price .table__part--brown {
+  background-color: #fcf2d7; }
+  .price .table__part--brown-light {
+    background-color: #fdfaf3; }
+
+.price .table__part--b-l {
+  border-radius: 0px 0px 0px 20px; }
+
+.price .table__part--b-c {
+  border-radius: 0px 0px 20px 20px; }
+
+.price .table__part--b-r {
+  border-radius: 0px 0px 20px 0px; }
+
+.price .table__left {
+  text-align: left; }
+
 .reviews__slider {
   z-index: 15;
   padding: 50px 30px; }
@@ -1217,8 +1266,23 @@ img {
     color: #de994e; }
 
 .reviews .swiper-pagination {
-  top: 10px;
-  left: 10px; }
+  bottom: 0px;
+  left: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3px; }
+  .reviews .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #e5e5e5;
+    margin: 0px 8px; }
+    .reviews .swiper-pagination-bullet-active {
+      width: 16px;
+      height: 16px;
+      background-color: #3bd45f;
+      margin-bottom: -5px;
+      margin: 0px 4px -5px 4px; }
 
 .contact__wrapper {
   padding: 120px 80px 120px 80px;

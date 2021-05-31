@@ -107,7 +107,24 @@
   }
 
   .swiper-pagination {
-    top: 10px;
-    left: 10px;
+    bottom: 0px;
+    left: 0px;
+    align-items: center;
+    padding-bottom: 3px;
+
+    &-bullet {
+      width: 8px;
+      height: 8px;
+      background-color: #e5e5e5;
+      margin: 0px 8px;
+
+      &-active {
+        width: 16px;
+        height: 16px;
+        background-color: #3bd45f;
+        margin-bottom: -5px;
+        margin: 0px 4px -5px 4px;
+      }
+    }
   }
 }
