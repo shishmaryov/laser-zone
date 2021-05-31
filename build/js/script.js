@@ -4,5 +4,14 @@ new Swiper('.reviews__slider', {
     clickable: true
   },
   slidesPerView: 3
+});
 
+
+var tableTitle1 = document.querySelector('.table__title--1');
+var tableBody1 = document.querySelector('.price__table--1');
+var tableArrow1 = document.querySelector('.table__arrow--1');
+
+tableTitle1.addEventListener('click', function() {
+  tableBody1.classList.toggle('price__table--active');
+  tableArrow1.classList.toggle('table__arrow--green');
 });

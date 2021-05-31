@@ -14,34 +14,36 @@
     <header class="header"></header>
     <section class="promo"></section>
     <section class="about">
-      <h2 class="section__title about__title">
-        О нас
-      </h2>
-      <h3 class="section__subtitle about__subtitle">
-        Laser Zone
-      </h3>
-      <p class="about__description">
-        Для максимального удаления волос в среднем необходим курс из 6-10 процедур с интервалом в месяц. Эффект
-        наступает уже после ПЕРВОЙ процедуры - исчезает около 30% волос, остальные замедляют свой рост и становятся
-        тонкими и мягкими.
-      </p>
-      <ul class="about__list">
-        <li class="about__item advantage about__item--painless">
-          <h4 class="advantage__title">Безболезненно</h4>
-          <p class="advantage__text">Благодаря эффективной системе охлаждения вы не почувствуете ничего, кроме легкого
-            покалывания.</p>
-        </li>
-        <li class="about__item advantage about__item--security">
-          <h4 class="advantage__title">Безопасно</h4>
-          <p class="advantage__text">Вспышка лазерного луча воздействует локально на фолликул волоса, не затрагивая
-            ткани, лимфоузлы и органы.</p>
-        </li>
-        <li class="about__item advantage about__item--available">
-          <h4 class="advantage__title">Доступно</h4>
-          <p class="advantage__text">Лазерная эпиляция сэкономит вам 80% денег, которые вы потратили бы на другие
-            способы удаления волос.</p>
-        </li>
-      </ul>
+      <div class="about__content">
+        <h2 class="section__title about__title">
+          О нас
+        </h2>
+        <h3 class="section__subtitle about__subtitle">
+          Laser Zone
+        </h3>
+        <p class="about__description">
+          Для максимального удаления волос в среднем необходим курс из 6-10 процедур с интервалом в месяц. Эффект
+          наступает уже после ПЕРВОЙ процедуры - исчезает около 30% волос, остальные замедляют свой рост и становятся
+          тонкими и мягкими.
+        </p>
+        <ul class="about__list">
+          <li class="about__item advantage about__item--painless">
+            <h4 class="advantage__title">Безболезненно</h4>
+            <p class="advantage__text">Благодаря эффективной системе охлаждения вы не почувствуете ничего, кроме легкого
+              покалывания.</p>
+          </li>
+          <li class="about__item advantage about__item--security">
+            <h4 class="advantage__title">Безопасно</h4>
+            <p class="advantage__text">Вспышка лазерного луча воздействует локально на фолликул волоса, не затрагивая
+              ткани, лимфоузлы и органы.</p>
+          </li>
+          <li class="about__item advantage about__item--available">
+            <h4 class="advantage__title">Доступно</h4>
+            <p class="advantage__text">Лазерная эпиляция сэкономит вам 80% денег, которые вы потратили бы на другие
+              способы удаления волос.</p>
+          </li>
+        </ul>
+      </div>
       <button type="button" class="button about__button">Записаться</button>
     </section>
     <section class="useful">
@@ -90,9 +92,10 @@
     <section class="price">
       <h2 class="section__title price__title">Стоимость услуг</h2>
       <div class="price__wrapper-table">
-        <h3 class="table__title">Выгодные комплексы <img src="img/icons/arrow-open.svg" alt="Открыть"
-            class="table__arrow"></h3>
-        <table class="price__table table">
+        <h3 class="table__title table__title--1">Выгодные комплексы
+          <?xml version="1.0" encoding="UTF-8"?>
+<svg class="table__arrow table__arrow--close table__arrow--1 table__arrow--green" id="SVGDoc1" width="16" height="10" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 16 10"><defs></defs><desc>Generated with Avocode.</desc><g><g><title>arrows</title><g><title>Прямоугольник </title><path d="M6.58571,8.58491v0l7.75978,-7.75981v0l1.41415,1.4142v0l-7.75978,7.75981v0z" fill="#e5e5e5" fill-opacity="1"></path></g><g><title>Прямоугольник</title><path d="M9.00774,8.6138v0l-7.62737,-7.6015v0l-1.39,1.38568v0l7.62726,7.60113v0z" fill="#e5e5e5" fill-opacity="1"></path></g></g></g></svg></h3>
+        <table class="price__table table price__table--active price__table--1">
           <tr class="table__header">
             <th class="table__head table__part--brown table__head--1">Комплекс (Зона)</th>
             <th class="table__head table__part--brown-light table__head--2">Одна процедура(разовая)</th>
@@ -123,66 +126,6 @@
             <td class="table__content table__part--brown-light table__part--b-c">4 900 р.</td>
             <td class="table__content table__part--brown table__part--b-r">3 950 р. / 23 700 р.</td>
           </tr>
-        </table>
-      </div>
-      <div class="price__wrapper-table">
-        <h3 class="table__title">Лицо и шея<img src="img/icons/arrow-open.svg" alt="Открыть" class="table__arrow"></h3>
-        <table>
-          <tr>
-            <th>текст заголовка</th>
-            <th>текст заголовка</th>
-          </tr>
-          <!--ряд с ячейками заголовков-->
-          <tr>
-            <td>данные</td>
-            <td>данные</td>
-          </tr>
-          <!--ряд с ячейками тела таблицы-->
-        </table>
-      </div>
-      <div class="price__wrapper-table">
-        <h3 class="table__title">Тело<img src="img/icons/arrow-open.svg" alt="Открыть" class="table__arrow"></h3>
-        <table>
-          <tr>
-            <th>текст заголовка</th>
-            <th>текст заголовка</th>
-          </tr>
-          <!--ряд с ячейками заголовков-->
-          <tr>
-            <td>данные</td>
-            <td>данные</td>
-          </tr>
-          <!--ряд с ячейками тела таблицы-->
-        </table>
-      </div>
-      <div class="price__wrapper-table">
-        <h3 class="table__title">Руки<img src="img/icons/arrow-open.svg" alt="Открыть" class="table__arrow"></h3>
-        <table>
-          <tr>
-            <th>текст заголовка</th>
-            <th>текст заголовка</th>
-          </tr>
-          <!--ряд с ячейками заголовков-->
-          <tr>
-            <td>данные</td>
-            <td>данные</td>
-          </tr>
-          <!--ряд с ячейками тела таблицы-->
-        </table>
-      </div>
-      <div class="price__wrapper-table">
-        <h3 class="table__title">Ноги<img src="img/icons/arrow-open.svg" alt="Открыть" class="table__arrow"></h3>
-        <table>
-          <tr>
-            <th>текст заголовка</th>
-            <th>текст заголовка</th>
-          </tr>
-          <!--ряд с ячейками заголовков-->
-          <tr>
-            <td>данные</td>
-            <td>данные</td>
-          </tr>
-          <!--ряд с ячейками тела таблицы-->
         </table>
       </div>
       <button type="button" class="button price__button">Записаться</button>
@@ -421,8 +364,8 @@
       </button>
     </footer>
   </div>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/swiper.min.js" defer></script>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>

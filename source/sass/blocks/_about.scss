@@ -1,4 +1,14 @@
 .about {
+  position: relative;
+  background-image: url("../img/content-images/woman.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: inherit;
+
+  &__content {
+    max-width: 585px;
+  }
+
 
   &__description {
     margin-top: 0;
@@ -9,6 +19,7 @@
   }
 
   &__list {
+    max-width: 415px;
     padding-left: 0;
     list-style: none;
   }

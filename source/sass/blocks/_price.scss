@@ -5,29 +5,43 @@
   &__wrapper-table {}
 
   &__table {
+    display: none;
     width: 100%;
     text-align: center;
     border-radius: 20px;
+
+    &--active {
+      display: block;
+    }
   }
 
   .table {
 
     &__title {
-      font-size: 24px;
-      font-weight: 700;
-      color: #183119;
       position: relative;
+      font-weight: 700;
+      font-size: 24px;
+      color: #183119;
+      cursor: pointer;
     }
 
     &__arrow {
       position: absolute;
       top: 0;
       right: 0;
+
+      &--green {
+
+        transform: rotate(180deg);
+        path {
+          fill: #49b462;
+        }
+      }
     }
 
     &__header {
-      font-size: 12px;
       font-weight: 700;
+      font-size: 12px;
       text-align: center;
     }
 
@@ -48,9 +62,9 @@
     }
 
     &__content {
-      font-size: 18px;
-      font-weight: 400;
       padding: 20px;
+      font-weight: 400;
+      font-size: 18px;
     }
 
     &__part {

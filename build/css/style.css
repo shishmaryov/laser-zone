@@ -1032,32 +1032,39 @@ img {
   color: #183119;
   text-transform: uppercase; }
 
-.about__description {
-  margin-top: 0;
-  margin-bottom: 70px;
-  font-weight: 400;
-  font-size: 18px; }
-
-.about__list {
-  padding-left: 0;
-  list-style: none; }
-
-.about__item {
+.about {
   position: relative;
-  margin-bottom: 50px;
-  padding-left: 60px; }
-  .about__item::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 42px;
-    height: 42px; }
-  .about__item--painless::before {
-    content: url("../img/icons/painless.png"); }
-  .about__item--security::before {
-    content: url("../img/icons/security.png"); }
-  .about__item--available::before {
-    content: url("../img/icons/available.png"); }
+  background-image: url("../img/content-images/woman.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: inherit; }
+  .about__content {
+    max-width: 585px; }
+  .about__description {
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-weight: 400;
+    font-size: 18px; }
+  .about__list {
+    max-width: 415px;
+    padding-left: 0;
+    list-style: none; }
+  .about__item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 60px; }
+    .about__item::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 42px;
+      height: 42px; }
+    .about__item--painless::before {
+      content: url("../img/icons/painless.png"); }
+    .about__item--security::before {
+      content: url("../img/icons/security.png"); }
+    .about__item--available::before {
+      content: url("../img/icons/available.png"); }
 
 .advantage__title {
   margin-top: 0;
@@ -1133,24 +1140,33 @@ img {
   font-size: 16px; }
 
 .price__table {
+  display: none;
   width: 100%;
   text-align: center;
   border-radius: 20px; }
+  .price__table--active {
+    display: block; }
 
 .price .table__title {
-  font-size: 24px;
+  position: relative;
   font-weight: 700;
+  font-size: 24px;
   color: #183119;
-  position: relative; }
+  cursor: pointer; }
 
 .price .table__arrow {
   position: absolute;
   top: 0;
   right: 0; }
+  .price .table__arrow--green {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+    .price .table__arrow--green path {
+      fill: #49b462; }
 
 .price .table__header {
-  font-size: 12px;
   font-weight: 700;
+  font-size: 12px;
   text-align: center; }
 
 .price .table__head {
@@ -1163,9 +1179,9 @@ img {
     border-radius: 0px 20px 0px 0px; }
 
 .price .table__content {
-  font-size: 18px;
+  padding: 20px;
   font-weight: 400;
-  padding: 20px; }
+  font-size: 18px; }
 
 .price .table__part--brown {
   background-color: #fcf2d7; }
