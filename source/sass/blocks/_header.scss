@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+
+  @media(min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+
+    @media(min-width: 1024px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__nav {
+    .nav__list {
+      margin-top: 0;
+      margin-bottom: 30px;
+
+      @media(min-width: 1024px) {
+        width: 340px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__adress {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #183119;
+
+    @media(min-width: 1024px) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: url("../img/icons/geo.png");
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 15px;
+      height: 19px;
+    }
+  }
+
+  &__phone {
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      content: url("../img/icons/call.png");
+      position: absolute;
+      top: 15px;
+      left: 0;
+      width: 19px;
+      height: 19px;
+
+    }
+  }
+
+  &__number {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #49b462;
+  }
+
+  &__clock {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 12px;
+  }
+}
