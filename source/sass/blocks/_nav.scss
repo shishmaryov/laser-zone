@@ -5,6 +5,15 @@
     justify-content: space-between;
     padding-left: 0;
     list-style: none;
+    flex-direction: column;
+    text-align: center;
+    line-height: 3;
+
+    @media(min-width: 1024px){
+      flex-direction: row;
+      text-align: left;
+      line-height: 1;
+    }
   }
 
   &__item {

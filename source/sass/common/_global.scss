@@ -12,13 +12,18 @@ img {
 }
 
 .button {
-  border: none;
-  background: #f8db3d;
-  color: #183119;
+  display: flex;
+  margin: 0 auto;
+  padding: 22px 74px;
   font-weight: 700;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
-  padding: 22px 74px;
+  color: #183119;
+  background: #f8db3d;
+  border: none;
   border-radius: 4px;
-  margin-left: calc(100% - 258px);
+
+  @media(min-width: 768px){
+    margin-left: calc(100% - 258px);
+  }
 }

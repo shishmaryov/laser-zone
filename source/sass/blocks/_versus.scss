@@ -6,20 +6,28 @@
 
   &__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 100%;
+    //grid-template-rows: ;
     margin-bottom: 75px;
     padding-left: 0;
     list-style: none;
     gap: 30px;
+
+    @media(min-width: 768px){
+      grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
   }
 
   &__item {
-    max-width: 380px;
-    max-height: 136px;
     padding: 25px 50px;
     border: 2px solid #49b462;
     border-radius: 20px;
+
+    @media(min-width: 768px){
+      max-width: 380px;
+      max-height: 136px;
+    }
   }
 
   &__text {
