@@ -12,11 +12,19 @@
   .slider {
 
     &__item {
-      max-width: 310px;
-      padding: 35px 35px 50px 35px;
+      width: auto;
       border-radius: 20px;
       box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+
+      @media(min-width: 1024px) {
+        width: 380px;
+      }
+
     }
+  }
+
+  .swiper-slide {
+    width: auto;
   }
 
   .slide {
@@ -25,25 +33,35 @@
       display: flex;
       align-items: center;
       margin-bottom: 25px;
+      padding-top: 35px;
+      padding-left: 35px;
     }
 
     &__mark {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
       align-items: center;
-      width: 230px;
       margin-bottom: 40px;
+      margin-left: 35px;
+
+      @media(min-width: 1024px) {
+        width: 230px;
+      }
     }
 
     &__text {
+      max-width: 275px;
       margin-top: 0;
       margin-bottom: 35px;
+      margin-left: 35px;
       font-weight: 400;
       font-size: 14px;
     }
 
     &__copyright {
       margin: 0;
+      margin-left: 35px;
+      padding-bottom: 50px;
       font-weight: 400;
       font-size: 14px;
     }
@@ -75,12 +93,14 @@
   .mark {
 
     &__ball {
-      margin: 0;
+      margin: 0 20px 0 0;
       font-weight: 700;
       font-size: 16px;
     }
 
-    &__stars {}
+    &__stars {
+      margin-right: 20px;
+    }
 
     &__star {
       width: 12px;
@@ -115,15 +135,15 @@
     &-bullet {
       width: 8px;
       height: 8px;
-      background-color: #e5e5e5;
       margin: 0px 8px;
+      background-color: #e5e5e5;
 
       &-active {
         width: 16px;
         height: 16px;
-        background-color: #3bd45f;
-        margin-bottom: -5px;
         margin: 0px 4px -5px 4px;
+        margin-bottom: -5px;
+        background-color: #3bd45f;
       }
     }
   }

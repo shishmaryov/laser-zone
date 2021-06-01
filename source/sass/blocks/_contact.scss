@@ -4,18 +4,26 @@
 
   &__wrapper {
     padding: 120px 80px 120px 80px;
-    background: url("../img/bg/map.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    @media(min-width: 1024px) {
+      background: url("../img/bg/map.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   &__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1 fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     padding-left: 0;
     list-style: none;
     gap: 30px;
+
+    @media(min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100%;
+    }
   }
 
   &__item {
