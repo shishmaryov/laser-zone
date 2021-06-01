@@ -33,6 +33,7 @@
       &--green {
 
         transform: rotate(180deg);
+
         path {
           fill: #49b462;
         }
@@ -41,22 +42,28 @@
 
     &__header {
       font-weight: 700;
-      font-size: 12px;
+      font-size: 8px;
       text-align: center;
+
+      @media(min-width: 768px) {
+        font-size: 12px;
+      }
     }
 
     &__head {
-      padding: 12px 0;
+      padding: 10px 0;
 
       &--1 {
+        width: 33%;
         border-radius: 20px 0px 0px 0px;
       }
 
       &--2 {
-        border-radius: 20px 20px 0px 0px;
+        width: 33%;
       }
 
       &--3 {
+        width: 33%;
         border-radius: 0px 20px 0px 0px;
       }
     }
@@ -64,7 +71,11 @@
     &__content {
       padding: 20px;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 8px;
+
+      @media(min-width: 768px) {
+        font-size: 18px;
+      }
     }
 
     &__part {
@@ -80,9 +91,7 @@
         border-radius: 0px 0px 0px 20px;
       }
 
-      &--b-c {
-        border-radius: 0px 0px 20px 20px;
-      }
+      &--b-c {}
 
       &--b-r {
         border-radius: 0px 0px 20px 0px;
@@ -92,5 +101,9 @@
     &__left {
       text-align: left;
     }
+  }
+
+  &__button {
+    margin-top: 150px;
   }
 }

@@ -1224,22 +1224,30 @@ img {
 
 .price .table__header {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 8px;
   text-align: center; }
+  @media (min-width: 768px) {
+    .price .table__header {
+      font-size: 12px; } }
 
 .price .table__head {
-  padding: 12px 0; }
+  padding: 10px 0; }
   .price .table__head--1 {
+    width: 33%;
     border-radius: 20px 0px 0px 0px; }
   .price .table__head--2 {
-    border-radius: 20px 20px 0px 0px; }
+    width: 33%; }
   .price .table__head--3 {
+    width: 33%;
     border-radius: 0px 20px 0px 0px; }
 
 .price .table__content {
   padding: 20px;
   font-weight: 400;
-  font-size: 18px; }
+  font-size: 8px; }
+  @media (min-width: 768px) {
+    .price .table__content {
+      font-size: 18px; } }
 
 .price .table__part--brown {
   background-color: #fcf2d7; }
@@ -1249,14 +1257,14 @@ img {
 .price .table__part--b-l {
   border-radius: 0px 0px 0px 20px; }
 
-.price .table__part--b-c {
-  border-radius: 0px 0px 20px 20px; }
-
 .price .table__part--b-r {
   border-radius: 0px 0px 20px 0px; }
 
 .price .table__left {
   text-align: left; }
+
+.price__button {
+  margin-top: 150px; }
 
 .reviews__slider {
   z-index: 15;
