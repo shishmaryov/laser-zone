@@ -1,10 +1,15 @@
 .index-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   background: #fffeff;
 
   &__bg {
-    @media(min-width: 1400px){
-    background: linear-gradient( #f6e9c5 40%, #fff 100%);
+
+    //background: linear-gradient(#f6e9c5 40%, #fff 100%);
+    @media(min-width: 1400px) {
+      background-image: linear-gradient(#f6e9c5 0%, #f6e9c5 40%, #fff 100%);
+    }
   }
-}
 }
