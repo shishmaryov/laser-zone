@@ -1,3 +1,10 @@
 .index-page {
   font-family: "Open Sans", sans-serif;
+  background: #fffeff;
+
+  &__bg {
+    @media(min-width: 1400px){
+    background: linear-gradient( #f6e9c5 40%, #fff 100%);
+  }
+}
 }

@@ -1,11 +1,11 @@
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 75px;
   margin-bottom: 75px;
-  flex-direction: column;
 
-  @media(min-width: 1024px){
+  @media(min-width: 1024px) {
     flex-direction: row;
   }
 
@@ -14,14 +14,14 @@
     height: 36px;
     margin-left: calc(50% - 78.5px);
 
-    @media(min-width: 1024px){
+    @media(min-width: 1024px) {
       margin: 0;
     }
   }
 
   &__nav {
-    @media(min-width: 1024px){
-      width: 340px;
+    @media(min-width: 1024px) {
+      width: 460px;
     }
   }
 

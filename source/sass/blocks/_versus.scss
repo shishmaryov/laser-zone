@@ -13,9 +13,9 @@
     list-style: none;
     gap: 30px;
 
-    @media(min-width: 768px){
+    @media(min-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
     }
   }
 
@@ -24,7 +24,7 @@
     border: 2px solid #49b462;
     border-radius: 20px;
 
-    @media(min-width: 768px){
+    @media(min-width: 768px) {
       max-width: 380px;
       max-height: 136px;
     }
