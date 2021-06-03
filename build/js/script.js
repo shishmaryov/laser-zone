@@ -8,19 +8,6 @@ new Swiper('.reviews__slider', {
   centerSlides: true
 });
 
-/*
-function someFunc() {
-  // Выполняем действие, если ширина меньше
-  var w = window.innerWidth;
-  if (w < 1024) {
-    new Swiper('.reviews__slider', {
-      slidesPerView: 1
-    });
-  }
-}
-someFunc();
-*/
-
 var tableTitle1 = document.querySelector('.table__title--1');
 var tableBody1 = document.querySelector('.price__table--1');
 var tableArrow1 = document.querySelector('.table__arrow--1');
@@ -64,4 +51,16 @@ var tableArrow5 = document.querySelector('.table__arrow--5');
 tableTitle5.addEventListener('click', function() {
   tableBody5.classList.toggle('price__table--active');
   tableArrow5.classList.toggle('table__arrow--green');
+});
+
+var headerMobile = document.querySelector('.header__mobile');
+var burger = document.querySelector('.header__burger');
+var headerClose = document.querySelector('.header__close');
+
+burger.addEventListener('click', function () {
+  headerMobile.classList.add('.header__mobile--active');
+});
+
+headerClose.addEventListener('click', function () {
+  headerMobile.classList.remove('.header__mobile--active');
 });

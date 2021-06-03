@@ -6,10 +6,8 @@
   background: #fffeff;
 
   &__bg {
-
-    //background: linear-gradient(#f6e9c5 40%, #fff 100%);
-    @media(min-width: 1400px) {
-      background-image: linear-gradient(#f6e9c5 0%, #f6e9c5 40%, #fff 100%);
+    @media(min-width: 1024px) {
+      background: linear-gradient(#f6e9c5 0%, #f6e9c5 40%, #fff 100%);
     }
   }
 }

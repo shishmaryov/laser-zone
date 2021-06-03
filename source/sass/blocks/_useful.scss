@@ -1,6 +1,10 @@
 .useful {
   position: relative;
 
+  @media(min-width: 1024px) {
+    margin-top: 150px;
+  }
+
   &__title {
     margin-top: -50px;
   }

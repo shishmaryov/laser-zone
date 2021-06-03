@@ -1,19 +1,22 @@
 .about {
   position: relative;
+  z-index: 2;
   max-width: 1675px;
 
-  @media(min-width: 1400px) {
+  @media(min-width: 1024px) {
+    padding-right: calc(50% - 835.5px);
+    padding-left: calc(50% - 835.5px);
     background: url("../img/bg/about__bg.svg");
     background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  @media(min-width: 1675px) {
-    margin-left: calc(50% - 837.5px);
+    background-size: cover;
   }
 
   .container {
     padding-bottom: 200px;
+
+    @media(min-width: 1024px) {
+      padding-top: 200px;
+    }
   }
 
   &::after {
@@ -35,14 +38,12 @@
 
     @media(min-width: 1400px) {
       right: 0;
-      bottom: 375px;
       width: 500px;
       height: 500px;
       opacity: 1;
     }
 
     @media(min-width: 1140px) {
-      top: 0;
       width: 950px;
       height: 950px;
       opacity: 1;
