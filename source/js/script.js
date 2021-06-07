@@ -89,3 +89,6 @@ modalClose.addEventListener('click', function () {
   modalOverlay.classList.add('modal__overlay');
   modalOverlay.classList.remove('modal__overlay--active');
 });
+
+
+new WOW().init();

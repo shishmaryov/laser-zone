@@ -29,11 +29,22 @@
     &--map {
       position: fixed;
       top: calc(50% - 312.5px);
-      left: calc(50% - 407px);
+      left: calc(50% - 192px);
       z-index: 21;
+      max-width: 100%;
       padding: 30px;
       background: #fff;
       border-radius: 10px;
+
+      @media(min-width: 768px) {
+        top: calc(50% - 312.5px);
+        left: calc(50% - 344.5px);
+      }
+
+      @media(min-width: 1024px) {
+        top: calc(50% - 312.5px);
+        left: calc(50% - 407px);
+      }
     }
   }
 
@@ -53,7 +64,17 @@
 
   &__frame {
     z-index: 21;
-    width: 750px;
+    width: 320px;
     height: 500px;
+
+    @media(min-width: 768px) {
+      width: 625px;
+      height: 500px;
+    }
+
+    @media(min-width: 1024px) {
+      width: 750px;
+      height: 500px;
+    }
   }
 }

@@ -84,9 +84,11 @@ mapButton.addEventListener('click', function () {
   modalOverlay.classList.add('modal__overlay--active');
 });
 
-
 modalClose.addEventListener('click', function () {
   map.classList.remove('modal__wrapper--active');
   modalOverlay.classList.add('modal__overlay');
   modalOverlay.classList.remove('modal__overlay--active');
 });
+
+
+new WOW().init();

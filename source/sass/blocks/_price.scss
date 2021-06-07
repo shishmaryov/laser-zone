@@ -16,6 +16,15 @@
     }
   }
 
+  &__unvisible {
+    font-size: 0;
+    color: transparent;
+
+    @media(min-width:768px) {
+      font-size: 18px;
+    }
+  }
+
   .table {
 
     &__title {
@@ -30,6 +39,7 @@
       position: absolute;
       top: 0;
       right: 0;
+      transition: 0.3s;
 
       &--green {
 
