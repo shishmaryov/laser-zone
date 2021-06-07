@@ -51,7 +51,9 @@
   }
 
   &__number {
-    top: 50px;
+    @media(min-width: 1024px) {
+      top: 350px;
+    }
   }
 
   &__content {

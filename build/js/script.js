@@ -64,11 +64,11 @@ var burger = document.querySelector('.header__burger');
 var headerClose = document.querySelector('.header__close');
 
 burger.addEventListener('click', function () {
-  headerMobile.classList.add('.header__mobile--active');
+  headerMobile.classList.add('header__mobile--active');
 });
 
 headerClose.addEventListener('click', function () {
-  headerMobile.classList.remove('.header__mobile--active');
+  headerMobile.classList.remove('header__mobile--active');
 });
 
 

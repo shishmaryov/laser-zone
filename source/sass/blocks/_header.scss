@@ -12,6 +12,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 3;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -31,8 +32,8 @@
         position: absolute;
         top: 30px;
         right: 30px;
-        border: none;
         background: transparent;
+        border: none;
       }
 
       &__nav {
@@ -155,7 +156,10 @@
   &__burger {
     position: relative;
     display: block;
+    width: 20px;
     height: 37px;
+    background: transparent;
+    border: none;
     border-radius: 50%;
 
     @media(min-width: 1024px) {
