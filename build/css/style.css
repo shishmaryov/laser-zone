@@ -1523,7 +1523,7 @@ img {
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-image: url("../img/content-images/woman.jpg");
+    background-image: url("../img/content-images/woman.webp");
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: contain;
@@ -1853,7 +1853,7 @@ img {
     padding: 120px 80px 120px 80px; }
     @media (min-width: 1024px) {
       .contact__wrapper {
-        background: url("../img/bg/map.jpg");
+        background: url("../img/bg/map.webp");
         background-repeat: no-repeat;
         background-size: cover; } }
   .contact__list {
