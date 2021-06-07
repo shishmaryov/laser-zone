@@ -46,7 +46,7 @@
           <a href="#" class="header__burger"><span></span></a>
         </div>
         <div class="header__mobile">
-          <span class="header__close"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+          <button type="button" class="header__close"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
               version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd">
                 <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
@@ -54,7 +54,7 @@
                 <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
                   x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
               </g>
-            </svg></span>
+            </svg></button>
           <nav class="nav header__nav">
             <ul class="nav__list">
               <li class="nav__item">Стоимость услуг</li>
@@ -769,11 +769,36 @@
           </li>
         </ul>
       </nav>
-      <button class="footer__button">
+      <button type="button" class="footer__button button--map">
         <img src="img/icons/geo.png" alt="Местоположение" class="footer__geo">
         Петрозаводск
       </button>
     </footer>
+    <section class="modal">
+      <div class="modal__overlay">
+        <div class="modal__wrapper--map">
+          <button type="button" class="modal__close">
+            <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23"
+            version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd">
+              <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+              <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+            </g>
+          </svg>
+        </button>
+          <div class="modal__map" style="position:relative;overflow:hidden;">
+            <a href="https://yandex.ru/maps/18/petrozavodsk/?utm_medium=mapframe&utm_source=maps" style="color:#fff;font-size:12px;position:absolute;top:0px;">Петрозаводск</a>
+            <a href="https://yandex.ru/maps/18/petrozavodsk/house/ulitsa_popova_15/Z00YdA5nSEMBQFhrfXt3eXthZg==/?ll=34.297166%2C61.768722&utm_medium=mapframe&utm_source=maps&z=16.57" style="color:#eee;font-size:12px;position:absolute;top:14px;">
+              Улица Попова, 15 — Яндекс.Карты
+            </a>
+              <iframe class="modal__frame" src="https://yandex.ru/map-widget/v1/-/CCUaRTW9cD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+              </iframe>
+            </div>
+        </div>
+      </div>
+    </section>
   </div>
   <script src="js/swiper.min.js" defer></script>
   <script src="js/script.js" defer></script>
