@@ -16,10 +16,14 @@
     }
   }
 
-  &__item {
+  &__item {}
+
+  &__link {
     font-weight: 700;
     font-size: 14px;
+    font-family: "Open Sans", sans-serif;
     color: #183119;
     text-transform: uppercase;
+    text-decoration: none;
   }
 }
