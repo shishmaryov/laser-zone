@@ -1,13 +1,19 @@
 .versus {
 
   &__subtitle {
-    margin-top: 150px;
+    margin-top: 110px;
+    margin-bottom: 70px;
+
+    @media(min-width: 768px) {
+      margin-top: 150px;
+    }
   }
 
   &__list {
     display: grid;
     grid-template-columns: 100%;
-    margin-bottom: 75px;
+    margin-top: 0;
+    margin-bottom: 30px;
     padding-left: 0;
     list-style: none;
     gap: 30px;
@@ -15,6 +21,7 @@
     @media(min-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+      margin-bottom: 75px;
     }
   }
 

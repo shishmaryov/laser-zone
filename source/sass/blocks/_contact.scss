@@ -1,12 +1,15 @@
 .contact {
   position: relative;
 
-  &__title {}
+  &__title {
+    margin-bottom: 70px;
+  }
 
   &__wrapper {
-    padding: 120px 80px 120px 80px;
+
 
     @media(min-width: 1024px) {
+      padding: 120px 80px 120px 80px;
       background: url("../img/bg/map.webp");
       background-repeat: no-repeat;
       background-size: cover;
@@ -17,6 +20,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    margin: 0;
     padding-left: 0;
     list-style: none;
     gap: 30px;

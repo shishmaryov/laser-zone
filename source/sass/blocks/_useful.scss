@@ -9,13 +9,21 @@
     margin-top: -50px;
   }
 
+  &__number {
+    color: #fff;
+  }
+
   &__subtitle {}
 
   &__description {
     margin-top: 0;
     margin-bottom: 70px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
+
+    @media(min-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   &__list {
@@ -34,7 +42,7 @@
 
   &__item {
     margin-right: 0;
-    padding: 25px 50px;
+    padding: 50px 25px;
     border: 2px solid #49b462;
     border-radius: 20px;
 
@@ -50,7 +58,10 @@
   }
 
   &__text {
+    margin: 0;
     font-weight: 300;
     font-size: 16px;
   }
+
+  &__button {}
 }

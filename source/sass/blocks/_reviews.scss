@@ -3,7 +3,10 @@
 
   &__title {}
 
-  &__subtitle {}
+  &__subtitle {
+    max-width: 260px;
+    margin-bottom: 20px;
+  }
 
   &__slider {
     z-index: 15;

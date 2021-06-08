@@ -35,10 +35,14 @@
         content: url("../img/icons/social-media.png");
       }
     }
+  }
 
-    &__text {
-      font-weight: 400;
-      font-size: 14px;
-    }
+  &__text {
+    max-width: 200px;
+    margin: 0;
+    margin-left: calc(50% - 100px);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
   }
 }
