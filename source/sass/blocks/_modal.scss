@@ -1,5 +1,6 @@
 .modal {
   z-index: 20;
+  &-map {
 
   &__overlay {
     display: none;
@@ -26,7 +27,7 @@
       display: block;
     }
 
-    &--map {
+
       position: fixed;
       top: calc(50% - 312.5px);
       left: calc(50% - 192px);
@@ -45,7 +46,7 @@
         top: calc(50% - 312.5px);
         left: calc(50% - 407px);
       }
-    }
+
   }
 
   &__close {
@@ -76,5 +77,6 @@
       width: 750px;
       height: 500px;
     }
+  }
   }
 }

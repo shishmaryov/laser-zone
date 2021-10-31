@@ -1,9 +1,6 @@
 .useful {
   position: relative;
-
-  @media(min-width: 1024px) {
     margin-top: 150px;
-  }
 
   &__title {
     margin-top: -50px;
@@ -11,6 +8,9 @@
 
   &__number {
     color: #fff;
+    @media(max-width:1024px) {
+      color: #e5e5e5;
+    }
   }
 
   &__subtitle {}

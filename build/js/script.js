@@ -72,23 +72,25 @@ headerClose.addEventListener('click', function () {
 });
 
 
+var mapClose = document.querySelector('.modal-map__close');
+var mapOverlay = document.querySelector('.modal-map__overlay');
+var map = document.querySelector('.modal-map__wrapper');
 
-var mapButton = document.querySelector('.button--map');
-var modalClose = document.querySelector('.modal__close');
-var modalOverlay = document.querySelector('.modal__overlay');
-var map = document.querySelector('.modal__wrapper--map');
 
-mapButton.addEventListener('click', function () {
-  map.classList.add('modal__wrapper--active');
-  modalOverlay.classList.remove('modal__overlay');
-  modalOverlay.classList.add('modal__overlay--active');
+var elementsArray = document.querySelectorAll('.button--map');
+
+elementsArray.forEach(function(elem) {
+    elem.addEventListener('click', function() {
+        map.classList.add('modal-map__wrapper--active');
+  mapOverlay.classList.remove('modal-map__overlay');
+  mapOverlay.classList.add('modal-map__overlay--active');
+    });
 });
 
-modalClose.addEventListener('click', function () {
-  map.classList.remove('modal__wrapper--active');
-  modalOverlay.classList.add('modal__overlay');
-  modalOverlay.classList.remove('modal__overlay--active');
+mapClose.addEventListener('click', function () {
+  map.classList.remove('modal-map__wrapper--active');
+  mapOverlay.classList.add('modal-map__overlay');
+  mapOverlay.classList.remove('modal-map__overlay--active');
 });
-
 
 new WOW().init();

@@ -29,6 +29,14 @@ img {
   border: none;
   border-radius: 4px;
 
+  &--map {
+    cursor: pointer;
+  }
+
+  &--phone {
+    cursor: pointer;
+  }
+
   @media(min-width: 768px) {
     margin-left: calc(100% - 258px);
   }
