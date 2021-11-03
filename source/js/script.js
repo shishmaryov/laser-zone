@@ -77,7 +77,7 @@ var mapOverlay = document.querySelector('.modal-map__overlay');
 var map = document.querySelector('.modal-map__wrapper');
 
 
-let elementsArray = document.querySelectorAll('.button--map');
+elementsArray = document.querySelectorAll('.button--map');
 
 elementsArray.forEach(function(elem) {
     elem.addEventListener('click', function() {

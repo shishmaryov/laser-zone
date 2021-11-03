@@ -1,4 +1,14 @@
 .numbers {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: url('../img/content-images/promo-woman-vertical.png');
+		width: 417px;
+    	height: 598px;
+		top: -598px;
+		right: 20%;
+	}
 
   &__list {
     display: flex;
