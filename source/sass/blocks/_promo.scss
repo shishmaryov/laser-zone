@@ -1,5 +1,20 @@
 .promo {
-	margin-bottom: 105px;
+
+	&__slider {
+		z-index: 0;
+	}
+
+	.swiper-container {
+
+}
+
+&__slide--1 {
+	padding-bottom: 105px;
+}
+
+&__stock {
+
+}
 
   &__title {
 	 font-size: 14px;
@@ -29,6 +44,7 @@
 
   &__buttons {
   	display: flex;
+  	position: relative;
   }
 
   &__button {
@@ -69,4 +85,10 @@
 		}
 	}
   }
+  &__img {
+  	position: absolute;
+  	top: 110px;
+  	right: 0;
+  }
+
 }
