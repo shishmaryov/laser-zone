@@ -1,170 +1,143 @@
-.about
-{
+.about {
+  position: relative;
+
+  max-width: 1675px;
+  margin-bottom: 140px;
+
+  @media(min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media(min-width: 1024px) {
+    padding-right: calc(50% - 835.5px);
+    padding-left: calc(50% - 835.5px);
+
+    background: url("../img/bg/about__bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    @media(min-width: 1024px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -150px;
+    bottom: -25px;
+    z-index: -1;
+
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    background-image: url("../img/content-images/woman.webp");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: contain;
+    opacity: 0.7;
+
+    @media(min-width: 768px) {
+      bottom: 0;
+    }
+
+    @media(min-width: 1024px) {
+      bottom: 150px;
+    }
+
+    @media(min-width: 1400px) {
+      right: 0;
+
+      width: 500px;
+      height: 500px;
+
+      opacity: 1;
+    }
+
+    @media(min-width: 1140px) {
+      width: 950px;
+      height: 950px;
+
+      opacity: 1;
+    }
+  }
+
+  &__number {
+    @media(min-width: 1024px) {
+      top: 350px;
+    }
+  }
+
+  &__content {
+    max-width: 585px;
+    margin-bottom: 200px;
+
+    @media(min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+
+  &__description {
+    z-index: 5;
+
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+
+  &__list {
+    max-width: 415px;
+    margin: 0;
+    padding-left: 0;
+
+    list-style: none;
+  }
+
+  &__item {
     position: relative;
 
-    max-width: 1675px;
-    margin-bottom: 140px;
+    margin-bottom: 50px;
+    padding-left: 60px;
 
-    @media(min-width: 768px)
-    {
-        margin-bottom: 0;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 42px;
+      height: 42px;
     }
 
-    @media(min-width: 1024px)
-    {
-        padding-right: calc(50% - 835.5px);
-        padding-left: calc(50% - 835.5px);
-
-        background: url('../img/bg/about__bg.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
+    &--painless {
+      &::before {
+        content: url("../img/icons/painless.png");
+      }
     }
 
-    .container
-    {
-        @media(min-width: 1024px)
-        {
-            padding-top: 200px;
-            padding-bottom: 200px;
-        }
+    &--security {
+      &::before {
+        content: url("../img/icons/security.png");
+      }
     }
 
-    &::after
-    {
-        position: absolute;
-        z-index: -1;
-        right: -150px;
-        bottom: -25px;
-
-        overflow: hidden;
-        overflow-x: hidden;
-        overflow-y: hidden;
-
-        width: 600px;
-        height: 600px;
-
-        content: '';
-
-        opacity: .7;
-        background-image: url('../img/content-images/woman.webp');
-        background-repeat: no-repeat;
-        background-position: 100% 50%;
-        background-size: contain;
-
-        @media(min-width: 768px)
-        {
-            bottom: 0;
-        }
-
-        @media(min-width: 1024px)
-        {
-            bottom: 150px;
-        }
-
-        @media(min-width: 1400px)
-        {
-            right: 0;
-
-            width: 500px;
-            height: 500px;
-
-            opacity: 1;
-        }
-
-        @media(min-width: 1140px)
-        {
-            width: 950px;
-            height: 950px;
-
-            opacity: 1;
-        }
+    &--available {
+      &::before {
+        content: url("../img/icons/available.png");
+      }
     }
+  }
 
-    &__number
-    {
-        @media(min-width: 1024px)
-        {
-            top: 350px;
-        }
+  &__button {
+    margin-top: 75px;
+
+    @media(min-width: 1400px) {
+      margin-top: -25px;
     }
-
-    &__content
-    {
-        max-width: 585px;
-        margin-bottom: 200px;
-
-        @media(min-width: 768px)
-        {
-            margin-bottom: 0;
-        }
-    }
-
-
-    &__description
-    {
-        z-index: 5;
-        margin-top: 0;
-        margin-bottom: 70px;
-    }
-
-    &__list
-    {
-        max-width: 415px;
-        margin: 0;
-        padding-left: 0;
-
-        list-style: none;
-    }
-
-    &__item
-    {
-        position: relative;
-
-        margin-bottom: 50px;
-        padding-left: 60px;
-
-        &::before
-        {
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            width: 42px;
-            height: 42px;
-        }
-
-        &--painless
-        {
-            &::before
-            {
-                content: url('../img/icons/painless.png');
-            }
-        }
-
-        &--security
-        {
-            &::before
-            {
-                content: url('../img/icons/security.png');
-            }
-        }
-
-        &--available
-        {
-            &::before
-            {
-                content: url('../img/icons/available.png');
-            }
-        }
-    }
-
-    &__button
-    {
-        margin-top: 75px;
-
-        @media(min-width: 1400px)
-        {
-            margin-top: -25px;
-        }
-    }
+  }
 }

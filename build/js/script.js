@@ -18,19 +18,23 @@ anchors.forEach(function (item) {
 	});
 });
 
-new Swiper ('.promo__slider', {
-	pagination: {
-		el: '.swiper-pagination1',
-		clickable: true
-	},
-	slidesPerView: 'auto',
+
+new Swiper('.promo__slider', {
+        pagination: {
+        	clickable: true,
+          el: '.swiper-pagination',
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + '0' + (index + 1) + "</span>";
+          },
+        },
+        slidesPerView: 'auto',
 	spaceBetween: 50,
 	centerSlides: true
-});
+      });
 
 
 
-new Swiper ('.reviews__slider', {
+new Swiper('.reviews__slider', {
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true

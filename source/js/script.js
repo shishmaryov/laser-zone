@@ -18,10 +18,14 @@ anchors.forEach(function (item) {
 	});
 });
 
-new Swiper ('.promo__slider', {
+
+new Swiper('.promo__slider', {
 	pagination: {
-		el: '.swiper-pagination1',
-		clickable: true
+		clickable: true,
+		el: '.swiper-pagination',
+		renderBullet: function (index, className) {
+			return '<span class="' + className + '">' + '0' + (index + 1) + "</span>";
+		},
 	},
 	slidesPerView: 'auto',
 	spaceBetween: 50,
@@ -30,7 +34,7 @@ new Swiper ('.promo__slider', {
 
 
 
-new Swiper ('.reviews__slider', {
+new Swiper('.reviews__slider', {
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true
@@ -90,12 +94,12 @@ var map = document.querySelector('.modal-map__wrapper');
 
 elementsArray = document.querySelectorAll('.button--map');
 
-elementsArray.forEach(function(elem) {
-		elem.addEventListener('click', function() {
-				map.classList.add('modal-map__wrapper--active');
-	mapOverlay.classList.remove('modal-map__overlay');
-	mapOverlay.classList.add('modal-map__overlay--active');
-		});
+elementsArray.forEach(function (elem) {
+	elem.addEventListener('click', function () {
+		map.classList.add('modal-map__wrapper--active');
+		mapOverlay.classList.remove('modal-map__overlay');
+		mapOverlay.classList.add('modal-map__overlay--active');
+	});
 });
 
 mapClose.addEventListener('click', function () {

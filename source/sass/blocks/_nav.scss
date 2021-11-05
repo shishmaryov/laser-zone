@@ -1,22 +1,23 @@
 .nav {
-
   &__list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 0;
+
     list-style: none;
     line-height: 3;
     text-align: center;
 
     @media(min-width: 1024px) {
       flex-direction: row;
+
       line-height: 1;
       text-align: left;
     }
   }
 
-  &__item {}
+
 
   &__link {
     font-weight: 700;

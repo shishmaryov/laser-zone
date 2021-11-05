@@ -1,94 +1,131 @@
 .promo {
+  &__slider {
+    z-index: 0;
+  }
 
-	&__slider {
-		z-index: 0;
-	}
+  .swiper {
+    &-pagination {
+      top: 15%;
+      left: 95%;
+      z-index: 10;
 
-	.swiper-container {
+      flex-direction: column;
 
-}
+      transition: 0.3s;
 
-&__slide--1 {
-	padding-bottom: 105px;
-}
+      &-bullet {
+        z-index: 10;
 
-&__stock {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
 
-}
+        font-weight: 900;
+        font-size: 14px;
+
+        background: none;
+
+        &-active {
+          font-size: 24px;
+          color: #49b462;
+        }
+      }
+    }
+  }
+
+  &__slide--1 {
+    padding-bottom: 105px;
+  }
+
+
 
   &__title {
-	 font-size: 14px;
-	 position: relative;
-	 width: 146px;
+    position: relative;
 
-	 &::after {
-		position: absolute;
-		top: 0;
-		content: '';
-		right: -20px;
-		width: 4px;
-		height: 18px;
-		background-color: #49b462;
-	 }
+    width: 146px;
+
+    font-size: 14px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -20px;
+
+      width: 4px;
+      height: 18px;
+
+      background-color: #49b462;
+    }
   }
 
   &__subtitle {
-	 font-size: 70px;
-	 max-width: 440px;
+    max-width: 440px;
+
+    font-size: 70px;
   }
 
   &__description {
-	margin-top: 0;
-	margin-bottom: 70px;
+    margin-top: 0;
+    margin-bottom: 70px;
   }
 
   &__buttons {
-  	display: flex;
-  	position: relative;
+    position: relative;
+
+    display: flex;
   }
 
   &__button {
-  	margin: 0;
-  	position: relative;
-  	padding-top: 14px;
-  	padding-bottom: 14px;
+    position: relative;
 
-	&--sign {
-		margin-right: 20px;
-		width: 255px;
-		padding-left: 52px;
-		padding-right: 95px;
+    margin: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
 
-		&::after {
-			content: url('../img/icons/bag-edit.png');
-			width: 23px;
-			height: 23px;
-			position: absolute;
-			right: 50px;
-			top: 14px;
-		}
-	}
-	&--whatsapp {
-		color: #377c4e;
-		background: none;
-		border: 2px solid #377c4e;
-		padding-left: 70px;
-		padding-right: 30px;
+    &--sign {
+      width: 255px;
+      margin-right: 20px;
+      padding-right: 95px;
+      padding-left: 52px;
 
-		&::before {
-			content: url('../img/icons/whatsapp.png');
-			width: 23px;
-			height: 23px;
-			position: absolute;
-			left: 30px;
-			top: 14px;
-		}
-	}
+      &::after {
+        content: url("../img/icons/bag-edit.png");
+        position: absolute;
+        top: 14px;
+        right: 50px;
+
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &--whatsapp {
+      padding-right: 30px;
+      padding-left: 70px;
+
+      color: #377c4e;
+
+      background: none;
+      border: 2px solid #377c4e;
+
+      &::before {
+        content: url("../img/icons/whatsapp.png");
+        position: absolute;
+        top: 14px;
+        left: 30px;
+
+        width: 23px;
+        height: 23px;
+      }
+    }
   }
+
   &__img {
-  	position: absolute;
-  	top: 110px;
-  	right: 0;
+    position: absolute;
+    top: 110px;
+    right: 0;
   }
-
 }
