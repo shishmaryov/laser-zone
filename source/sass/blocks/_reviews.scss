@@ -1,7 +1,9 @@
 .reviews {
 	position: relative;
 
-
+	.container {
+		position: relative;
+	}
 
 	&__subtitle {
 		max-width: 260px;
@@ -10,8 +12,11 @@
 
 	&__slider {
 		z-index: 0;
+		padding: 50px 5px;
 
-		padding: 50px 30px;
+		@media(min-width: 768px) {
+			padding: 50px 30px;
+		}
 	}
 
 	.slider {

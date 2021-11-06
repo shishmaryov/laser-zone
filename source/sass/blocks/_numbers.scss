@@ -1,4 +1,27 @@
 .numbers {
+
+	z-index: 1;
+
+	@media(min-width: 768px) {
+    width: 768px;
+  }
+
+  @media(min-width: 1024px) {
+    width: 1024px;
+    position: absolute;
+    left: calc(50% - 512px);
+  }
+
+  @media(min-width: 1140px) {
+    width: 1140px;
+    left: calc(50% - 570px);
+  }
+
+  @media(min-width: 1260px) {
+    width: 1260px;
+    left: calc(50% - 630px);
+  }
+
 	&__list {
 		display: flex;
 		flex-direction: column;

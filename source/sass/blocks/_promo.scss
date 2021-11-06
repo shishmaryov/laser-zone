@@ -1,131 +1,131 @@
 .promo {
-  &__slider {
-    z-index: 0;
-  }
+	&__slider {
+		z-index: 0;
+	}
 
-  .swiper {
-    &-pagination {
-      top: 15%;
-      left: 95%;
-      z-index: 10;
+	.swiper {
+		&-pagination {
+			top: 15%;
+			left: 95%;
+			z-index: 10;
 
-      flex-direction: column;
+			flex-direction: column;
 
-      transition: 0.3s;
+			transition: 0.3s;
 
-      &-bullet {
-        z-index: 10;
+			&-bullet {
+				z-index: 10;
 
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+				display: block;
+				width: 30px;
+				height: 30px;
+				margin-top: 15px;
+				margin-bottom: 15px;
 
-        font-weight: 900;
-        font-size: 14px;
+				font-weight: 900;
+				font-size: 14px;
 
-        background: none;
+				background: none;
 
-        &-active {
-          font-size: 24px;
-          color: #49b462;
-        }
-      }
-    }
-  }
+				&-active {
+					font-size: 24px;
+					color: #49b462;
+				}
+			}
+		}
+	}
 
-  &__slide--1 {
-    padding-bottom: 105px;
-  }
+	&__slide--1 {
+		padding-bottom: 105px;
+	}
 
 
 
-  &__title {
-    position: relative;
+	&__title {
+		position: relative;
 
-    width: 146px;
+		width: 146px;
 
-    font-size: 14px;
+		font-size: 14px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -20px;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: -20px;
 
-      width: 4px;
-      height: 18px;
+			width: 4px;
+			height: 18px;
 
-      background-color: #49b462;
-    }
-  }
+			background-color: #49b462;
+		}
+	}
 
-  &__subtitle {
-    max-width: 440px;
+	&__subtitle {
+		max-width: 440px;
 
-    font-size: 70px;
-  }
+		font-size: 70px;
+	}
 
-  &__description {
-    margin-top: 0;
-    margin-bottom: 70px;
-  }
+	&__description {
+		margin-top: 0;
+		margin-bottom: 70px;
+	}
 
-  &__buttons {
-    position: relative;
+	&__buttons {
+		position: relative;
 
-    display: flex;
-  }
+		display: flex;
+	}
 
-  &__button {
-    position: relative;
+	&__button {
+		position: relative;
 
-    margin: 0;
-    padding-top: 14px;
-    padding-bottom: 14px;
+		margin: 0;
+		padding-top: 14px;
+		padding-bottom: 14px;
 
-    &--sign {
-      width: 255px;
-      margin-right: 20px;
-      padding-right: 95px;
-      padding-left: 52px;
+		&--sign {
+			width: 255px;
+			margin-right: 20px;
+			padding-right: 95px;
+			padding-left: 52px;
 
-      &::after {
-        content: url("../img/icons/bag-edit.png");
-        position: absolute;
-        top: 14px;
-        right: 50px;
+			&::after {
+				content: url("../img/icons/bag-edit.png");
+				position: absolute;
+				top: 14px;
+				right: 50px;
 
-        width: 23px;
-        height: 23px;
-      }
-    }
+				width: 23px;
+				height: 23px;
+			}
+		}
 
-    &--whatsapp {
-      padding-right: 30px;
-      padding-left: 70px;
+		&--whatsapp {
+			padding-right: 30px;
+			padding-left: 70px;
 
-      color: #377c4e;
+			color: #377c4e;
 
-      background: none;
-      border: 2px solid #377c4e;
+			background: none;
+			border: 2px solid #377c4e;
 
-      &::before {
-        content: url("../img/icons/whatsapp.png");
-        position: absolute;
-        top: 14px;
-        left: 30px;
+			&::before {
+				content: url("../img/icons/whatsapp.png");
+				position: absolute;
+				top: 14px;
+				left: 30px;
 
-        width: 23px;
-        height: 23px;
-      }
-    }
-  }
+				width: 23px;
+				height: 23px;
+			}
+		}
+	}
 
-  &__img {
-    position: absolute;
-    top: 110px;
-    right: 0;
-  }
+	&__img {
+		position: absolute;
+		top: 110px;
+		right: 0;
+	}
 }
