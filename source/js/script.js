@@ -23,9 +23,6 @@ new Swiper('.promo__slider', {
 	pagination: {
 		clickable: true,
 		el: '.swiper-pagination',
-		renderBullet: function (index, className) {
-			return '<span class="' + className + '">' + '0' + (index + 1) + "</span>";
-		},
 	},
 	slidesPerView: 'auto',
 	spaceBetween: 50,

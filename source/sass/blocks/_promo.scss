@@ -1,35 +1,47 @@
 .promo {
+	margin-bottom: 65px;
+	@media(min-width: 1024px) {
+		margin-bottom: 0;
+	}
+
 	&__slider {
 		z-index: 0;
 	}
 
 	.swiper {
+		&-container {
+			padding-bottom: 45px;
+
+			@media(min-width: 1024px) {
+				padding-bottom: 0;
+			}
+		}
+
+		&-wrapper {
+
+		}
+
 		&-pagination {
-			top: 15%;
-			left: 95%;
+			bottom: 0px;
+			left: 0px;
 			z-index: 10;
-
-			flex-direction: column;
-
 			transition: 0.3s;
+
+			@media(min-width: 1024px) {
+				bottom: 35px;
+			}
 
 			&-bullet {
 				z-index: 10;
-
-				display: block;
+				border-radius: 0px;
+				margin: 0 10px;
 				width: 30px;
-				height: 30px;
-				margin-top: 15px;
-				margin-bottom: 15px;
-
-				font-weight: 900;
-				font-size: 14px;
-
-				background: none;
+				height: 2px;
+				background-color: #000;
 
 				&-active {
 					font-size: 24px;
-					color: #49b462;
+					background-color: #49b462;
 				}
 			}
 		}
@@ -62,32 +74,59 @@
 	}
 
 	&__subtitle {
-		max-width: 440px;
+		font-size: 40px;
+		text-align: center;
 
-		font-size: 70px;
+		@media(min-width: 1024px) {
+			font-size: 70px;
+			text-align: left;
+			max-width: 440px;
+		}
 	}
 
 	&__description {
 		margin-top: 0;
 		margin-bottom: 70px;
+		text-align: center;
+
+		@media(min-width: 1024px) {
+			text-align: left;
+		}
 	}
 
 	&__buttons {
-		position: relative;
+		text-align: center;
+		margin: 0 auto;
+		width: fit-content;
 
-		display: flex;
+		@media(min-width: 1024px) {
+			position: relative;
+			display: flex;
+			margin: 0;
+			width: auto;
+		}
+
 	}
 
 	&__button {
 		position: relative;
-
-		margin: 0;
 		padding-top: 14px;
 		padding-bottom: 14px;
 
+		@media(min-width: 1024px) {
+			margin: 0;
+		}
+
 		&--sign {
+			margin-left: 27px;
+
+			@media(min-width: 1024px) {
+				margin-right: 20px;
+				margin-left: 0;
+			}
+
 			width: 255px;
-			margin-right: 20px;
+
 			padding-right: 95px;
 			padding-left: 52px;
 
@@ -104,28 +143,43 @@
 
 		&--whatsapp {
 			padding-right: 30px;
-			padding-left: 70px;
-
+			padding-left: 30px;
+			margin-top: 30px;
 			color: #377c4e;
+			padding-right: 30px;
+			padding-left: 70px;
+			width:fit-content;
+			margin-left: 0;
 
-			background: none;
-			border: 2px solid #377c4e;
-
-			&::before {
+				&::before {
 				content: url("../img/icons/whatsapp.png");
 				position: absolute;
 				top: 14px;
 				left: 30px;
-
+				margin-top: 0;
 				width: 23px;
 				height: 23px;
+			}
+
+			background: none;
+			border: 2px solid #377c4e;
+
+			@media(min-width:1024px) {
+				margin-top: 0;
+
 			}
 		}
 	}
 
 	&__img {
-		position: absolute;
-		top: 110px;
-		right: 0;
+		display: none;
+
+		@media(min-width:1024px) {
+			display: block;
+			position: absolute;
+			top: 110px;
+			right: 0;
+		}
+
 	}
 }

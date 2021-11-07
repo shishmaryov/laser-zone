@@ -1530,119 +1530,167 @@ img {
   text-transform: uppercase;
   text-decoration: none; }
 
-.promo__slider {
-  z-index: 0; }
-
-.promo .swiper-pagination {
-  top: 15%;
-  left: 95%;
-  z-index: 10;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-  .promo .swiper-pagination-bullet {
+.promo {
+  margin-bottom: 65px; }
+  @media (min-width: 1024px) {
+    .promo {
+      margin-bottom: 0; } }
+  .promo__slider {
+    z-index: 0; }
+  .promo .swiper-container {
+    padding-bottom: 45px; }
+    @media (min-width: 1024px) {
+      .promo .swiper-container {
+        padding-bottom: 0; } }
+  .promo .swiper-pagination {
+    bottom: 0px;
+    left: 0px;
     z-index: 10;
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-weight: 900;
-    font-size: 14px;
-    background: none; }
-    .promo .swiper-pagination-bullet-active {
-      font-size: 24px;
-      color: #49b462; }
-
-.promo__slide--1 {
-  padding-bottom: 105px; }
-
-.promo__title {
-  position: relative;
-  width: 146px;
-  font-size: 14px; }
-  .promo__title::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -20px;
-    width: 4px;
-    height: 18px;
-    background-color: #49b462; }
-
-.promo__subtitle {
-  max-width: 440px;
-  font-size: 70px; }
-
-.promo__description {
-  margin-top: 0;
-  margin-bottom: 70px; }
-
-.promo__buttons {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.promo__button {
-  position: relative;
-  margin: 0;
-  padding-top: 14px;
-  padding-bottom: 14px; }
-  .promo__button--sign {
-    width: 255px;
-    margin-right: 20px;
-    padding-right: 95px;
-    padding-left: 52px; }
-    .promo__button--sign::after {
-      content: url("../img/icons/bag-edit.png");
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    @media (min-width: 1024px) {
+      .promo .swiper-pagination {
+        bottom: 35px; } }
+    .promo .swiper-pagination-bullet {
+      z-index: 10;
+      border-radius: 0px;
+      margin: 0 10px;
+      width: 30px;
+      height: 2px;
+      background-color: #000; }
+      .promo .swiper-pagination-bullet-active {
+        font-size: 24px;
+        background-color: #49b462; }
+  .promo__slide--1 {
+    padding-bottom: 105px; }
+  .promo__title {
+    position: relative;
+    width: 146px;
+    font-size: 14px; }
+    .promo__title::after {
+      content: "";
       position: absolute;
-      top: 14px;
-      right: 50px;
-      width: 23px;
-      height: 23px; }
-  .promo__button--whatsapp {
-    padding-right: 30px;
-    padding-left: 70px;
-    color: #377c4e;
-    background: none;
-    border: 2px solid #377c4e; }
-    .promo__button--whatsapp::before {
-      content: url("../img/icons/whatsapp.png");
-      position: absolute;
-      top: 14px;
-      left: 30px;
-      width: 23px;
-      height: 23px; }
-
-.promo__img {
-  position: absolute;
-  top: 110px;
-  right: 0; }
+      top: 0;
+      right: -20px;
+      width: 4px;
+      height: 18px;
+      background-color: #49b462; }
+  .promo__subtitle {
+    font-size: 40px;
+    text-align: center; }
+    @media (min-width: 1024px) {
+      .promo__subtitle {
+        font-size: 70px;
+        text-align: left;
+        max-width: 440px; } }
+  .promo__description {
+    margin-top: 0;
+    margin-bottom: 70px;
+    text-align: center; }
+    @media (min-width: 1024px) {
+      .promo__description {
+        text-align: left; } }
+  .promo__buttons {
+    text-align: center;
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+    @media (min-width: 1024px) {
+      .promo__buttons {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0;
+        width: auto; } }
+  .promo__button {
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 14px; }
+    @media (min-width: 1024px) {
+      .promo__button {
+        margin: 0; } }
+    .promo__button--sign {
+      margin-left: 27px;
+      width: 255px;
+      padding-right: 95px;
+      padding-left: 52px; }
+      @media (min-width: 1024px) {
+        .promo__button--sign {
+          margin-right: 20px;
+          margin-left: 0; } }
+      .promo__button--sign::after {
+        content: url("../img/icons/bag-edit.png");
+        position: absolute;
+        top: 14px;
+        right: 50px;
+        width: 23px;
+        height: 23px; }
+    .promo__button--whatsapp {
+      padding-right: 30px;
+      padding-left: 30px;
+      margin-top: 30px;
+      color: #377c4e;
+      padding-right: 30px;
+      padding-left: 70px;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin-left: 0;
+      background: none;
+      border: 2px solid #377c4e; }
+      .promo__button--whatsapp::before {
+        content: url("../img/icons/whatsapp.png");
+        position: absolute;
+        top: 14px;
+        left: 30px;
+        margin-top: 0;
+        width: 23px;
+        height: 23px; }
+      @media (min-width: 1024px) {
+        .promo__button--whatsapp {
+          margin-top: 0; } }
+  .promo__img {
+    display: none; }
+    @media (min-width: 1024px) {
+      .promo__img {
+        display: block;
+        position: absolute;
+        top: 110px;
+        right: 0; } }
 
 .stock {
   position: relative;
+  background: #f6a5ab;
+  border-radius: 20px;
+  padding-left: 35px;
   padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 165px;
-  background: #ffffff;
-  border-radius: 20px; }
-  .stock::before {
-    content: "Акция!";
-    position: absolute;
-    top: 145px;
-    left: -50px;
-    width: 251px;
-    height: 81px;
-    font-weight: 700;
-    font-size: 70px;
-    color: #49b462;
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
-    opacity: 0.2; }
+  background-image: url("../../img/content-images/stock-woman-rect.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom right; }
+  @media (min-width: 1024px) {
+    .stock {
+      background: #ffffff; } }
+  @media (min-width: 1024px) {
+    .stock {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 165px; }
+      .stock::before {
+        content: "Акция!";
+        position: absolute;
+        top: 145px;
+        left: -50px;
+        width: 251px;
+        height: 81px;
+        font-weight: 700;
+        font-size: 70px;
+        color: #49b462;
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+        opacity: 0.2; } }
   .stock__title {
     position: relative;
     width: 100px;
@@ -1671,29 +1719,56 @@ img {
     line-height: 30px;
     color: #000000; }
   .stock__price {
-    margin: 0;
     font-weight: 600;
     font-size: 30px;
-    color: #f91155; }
+    color: #f91155;
+    text-align: center;
+    margin-bottom: 20px; }
+    @media (min-width: 1024px) {
+      .stock__price {
+        margin: 0;
+        width: 250px; } }
     .stock__price--old {
       margin-left: 10px;
       font-size: 14px;
       color: #000000;
       text-decoration: line-through; }
   .stock__flex {
+    -webkit-box-ordinal-group: reverse;
+        -ms-flex-order: reverse;
+            order: reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     vertical-align: baseline; }
+    @media (min-width: 1024px) {
+      .stock__flex {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
   .stock__button {
-    margin-right: 35px; }
+    margin: 0 auto;
+    margin-bottom: 35px; }
+    @media (min-width: 1024px) {
+      .stock__button {
+        margin: 0;
+        margin-right: 15px; } }
   .stock__img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: auto;
-    height: 378px;
-    border-radius: 0 20px 20px 0; }
+    display: none; }
+    @media (min-width: 1024px) {
+      .stock__img {
+        display: block;
+        width: auto;
+        height: 378px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0 20px 20px 0; } }
 
 .numbers {
   z-index: 1; }
