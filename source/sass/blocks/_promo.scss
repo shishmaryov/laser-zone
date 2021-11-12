@@ -1,224 +1,225 @@
 .promo
 {
-    margin-bottom: 65px;
-    @media(min-width: 1024px)
-    {
-        margin-bottom: 0;
-    }
+	margin-bottom: 65px;
+	@media(min-width: 1024px)
+	{
+		margin-bottom: 0;
+	}
 
-    &__slider
-    {
-        z-index: 0;
-    }
+	&__slider
+	{
+		z-index: 0;
+	}
 
-    .swiper
-    {
-        &-container
-        {
-            padding-bottom: 45px;
+	.swiper
+	{
+		&-container
+		{
+			padding-bottom: 45px;
 
-            @media(min-width: 1024px)
-            {
-                padding-bottom: 0;
-            }
-        }
-
-
-
-        &-pagination
-        {
-            z-index: 10;
-            bottom: 0;
-            left: 0;
-
-            transition: .3s;
-
-            @media(min-width: 1024px)
-            {
-                bottom: 35px;
-            }
-
-            &-bullet
-            {
-                z-index: 10;
-
-                width: 30px;
-                height: 2px;
-                margin: 0 10px;
-
-                border-radius: 0;
-                background-color: #000;
-
-                &-active
-                {
-                    font-size: 24px;
-
-                    background-color: #49b462;
-                }
-            }
-        }
-    }
-
-    &__slide--1
-    {
-        padding-bottom: 105px;
-    }
+			@media(min-width: 1024px)
+			{
+				padding-bottom: 0;
+			}
+		}
 
 
 
-    &__title
-    {
-        font-size: 14px;
+		&-pagination
+		{
+			z-index: 10;
+			bottom: 0;
+			left: 0;
 
-        position: relative;
+			transition: .3s;
 
-        width: 146px;
+			@media(min-width: 1024px)
+			{
+				bottom: 35px;
+			}
 
-        &::after
-        {
-            position: absolute;
-            top: 0;
-            right: -20px;
+			&-bullet
+			{
+				z-index: 10;
 
-            width: 4px;
-            height: 18px;
+				width: 30px;
+				height: 2px;
+				margin: 0 10px;
 
-            content: '';
+				border-radius: 0;
+				background-color: #000;
 
-            background-color: #49b462;
-        }
-    }
+				&-active
+				{
+					font-size: 24px;
 
-    &__subtitle
-    {
-        font-size: 40px;
+					background-color: #49b462;
+				}
+			}
+		}
+	}
 
-        text-align: center;
+	&__slide--1
+	{
+		padding-bottom: 105px;
+	}
 
-        @media(min-width: 1024px)
-        {
-            font-size: 70px;
 
-            max-width: 440px;
 
-            text-align: left;
-        }
-    }
+	&__title
+	{
+		font-size: 14px;
 
-    &__description
-    {
-        margin-top: 0;
-        margin-bottom: 70px;
+		position: relative;
 
-        text-align: center;
+		width: 146px;
+		margin-top: 75px;
 
-        @media(min-width: 1024px)
-        {
-            text-align: left;
-        }
-    }
+		&::after
+		{
+			position: absolute;
+			top: 0;
+			right: -20px;
 
-    &__buttons
-    {
-        width: fit-content;
-        margin: 0 auto;
+			width: 4px;
+			height: 18px;
 
-        text-align: center;
+			content: '';
 
-        @media(min-width: 1024px)
-        {
-            position: relative;
+			background-color: #49b462;
+		}
+	}
 
-            display: flex;
+	&__subtitle
+	{
+		font-size: 40px;
 
-            width: auto;
-            margin: 0;
-        }
-    }
+		text-align: center;
 
-    &__button
-    {
-        position: relative;
+		@media(min-width: 1024px)
+		{
+			font-size: 70px;
 
-        padding-top: 14px;
-        padding-bottom: 14px;
+			max-width: 440px;
 
-        @media(min-width: 1024px)
-        {
-            margin: 0;
-        }
+			text-align: left;
+		}
+	}
 
-        &--sign
-        {
-            width: 255px;
-            margin-left: 27px;
-            padding-right: 95px;
-            padding-left: 52px;
+	&__description
+	{
+		margin-top: 0;
+		margin-bottom: 70px;
 
-            @media(min-width: 1024px)
-            {
-                margin-right: 20px;
-                margin-left: 0;
-            }
+		text-align: center;
 
-            &::after
-            {
-                position: absolute;
-                top: 14px;
-                right: 50px;
+		@media(min-width: 1024px)
+		{
+			text-align: left;
+		}
+	}
 
-                width: 23px;
-                height: 23px;
+	&__buttons
+	{
+		width: fit-content;
+		margin: 0 auto;
 
-                content: url('../img/icons/bag-edit.png');
-            }
-        }
+		text-align: center;
 
-        &--whatsapp
-        {
-            width: fit-content;
-            margin-top: 30px;
-            margin-left: 0;
-            padding-right: 30px;
-            padding-right: 30px;
-            padding-left: 30px;
-            padding-left: 70px;
+		@media(min-width: 1024px)
+		{
+			position: relative;
 
-            color: #377c4e;
-            border: 2px solid #377c4e;
-            background: none;
+			display: flex;
 
-            &::before
-            {
-                position: absolute;
-                top: 14px;
-                left: 30px;
+			width: auto;
+			margin: 0;
+		}
+	}
 
-                width: 23px;
-                height: 23px;
-                margin-top: 0;
+	&__button
+	{
+		position: relative;
 
-                content: url('../img/icons/whatsapp.png');
-            }
+		padding-top: 14px;
+		padding-bottom: 14px;
 
-            @media(min-width:1024px)
-            {
-                margin-top: 0;
-            }
-        }
-    }
+		@media(min-width: 1024px)
+		{
+			margin: 0;
+		}
 
-    &__img
-    {
-        display: none;
+		&--sign
+		{
+			width: 255px;
+			margin-left: 27px;
+			padding-right: 95px;
+			padding-left: 52px;
 
-        @media(min-width:1024px)
-        {
-            position: absolute;
-            top: 110px;
-            right: 0;
+			@media(min-width: 1024px)
+			{
+				margin-right: 20px;
+				margin-left: 0;
+			}
 
-            display: block;
-        }
-    }
+			&::after
+			{
+				position: absolute;
+				top: 14px;
+				right: 50px;
+
+				width: 23px;
+				height: 23px;
+
+				content: url('../img/icons/bag-edit.png');
+			}
+		}
+
+		&--whatsapp
+		{
+			width: fit-content;
+			margin-top: 30px;
+			margin-left: 0;
+			padding-right: 30px;
+			padding-right: 30px;
+			padding-left: 30px;
+			padding-left: 70px;
+
+			color: #377c4e;
+			border: 2px solid #377c4e;
+			background: none;
+
+			&::before
+			{
+				position: absolute;
+				top: 14px;
+				left: 30px;
+
+				width: 23px;
+				height: 23px;
+				margin-top: 0;
+
+				content: url('../img/icons/whatsapp.png');
+			}
+
+			@media(min-width:1024px)
+			{
+				margin-top: 0;
+			}
+		}
+	}
+
+	&__img
+	{
+		display: none;
+
+		@media(min-width:1024px)
+		{
+			position: absolute;
+			top: 110px;
+			right: 0;
+
+			display: block;
+		}
+	}
 }
