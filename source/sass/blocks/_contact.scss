@@ -5,6 +5,10 @@
 		margin-bottom: 70px;
 	}
 
+	&__subtitle {
+		text-align: center;
+	}
+
 	&__wrapper {
 		@media(min-width: 1024px) {
 			padding: 120px 80px 120px 80px;
@@ -45,5 +49,14 @@
 	&__link {
 		color: #184ffc;
 		text-decoration: none;
+	}
+
+	&__text {
+		font-size: 18px;
+		text-align: center;
+		color: #000000;
+		font-weight: 400;
+		margin-top: 35px;
+		margin-bottom: 70px;
 	}
 }

@@ -26,5 +26,9 @@
     color: #183119;
     text-transform: uppercase;
     text-decoration: none;
+
+    &--active {
+    	color: #49b462;
+    }
   }
 }

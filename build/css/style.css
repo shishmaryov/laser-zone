@@ -1529,6 +1529,8 @@ img {
   color: #183119;
   text-transform: uppercase;
   text-decoration: none; }
+  .nav__link--active {
+    color: #49b462; }
 
 .promo {
   margin-bottom: 65px; }
@@ -2269,6 +2271,8 @@ img {
   position: relative; }
   .contact__title {
     margin-bottom: 70px; }
+  .contact__subtitle {
+    text-align: center; }
   @media (min-width: 1024px) {
     .contact__wrapper {
       padding: 120px 80px 120px 80px;
@@ -2296,6 +2300,13 @@ img {
   .contact__link {
     color: #184ffc;
     text-decoration: none; }
+  .contact__text {
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    font-weight: 400;
+    margin-top: 35px;
+    margin-bottom: 70px; }
 
 .info__title {
   position: relative;
