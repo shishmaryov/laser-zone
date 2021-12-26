@@ -12,7 +12,8 @@
 @import "common/fonts";
 
 // Pages
-@import "pages//index";
+@import "pages/index";
+@import "pages/stocks";
 
 // Blocks
 @import "blocks/container.scss";
@@ -35,4 +36,6 @@
 @import "blocks/info";
 @import "blocks/footer";
 @import "blocks/modal";
+
+@import "blocks/offer";
 

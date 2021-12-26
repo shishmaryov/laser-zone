@@ -1237,6 +1237,13 @@ img {
       background: -webkit-gradient(linear, left top, left bottom, from(#f6e9c5), color-stop(40%, #f6e9c5), to(#fff));
       background: linear-gradient(#f6e9c5 0%, #f6e9c5 40%, #fff 100%); } }
 
+.stocks-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  background: #fffeff; }
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -2272,7 +2279,8 @@ img {
   .contact__title {
     margin-bottom: 70px; }
   .contact__subtitle {
-    text-align: center; }
+    text-align: center;
+    margin-top: 100px; }
   @media (min-width: 1024px) {
     .contact__wrapper {
       padding: 120px 80px 120px 80px;
@@ -2440,3 +2448,102 @@ img {
       .modal-map__frame {
         width: 750px;
         height: 500px; } }
+
+.offers__list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  gap: 20px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  display: grid; }
+  @media (min-width: 560px) {
+    .offers__list {
+      margin-left: calc(50% - 292.5px); } }
+  @media (min-width: 1260px) {
+    .offers__list {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      margin: 0; } }
+
+.offers__item {
+  position: relative;
+  max-width: 585px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 35px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  background: #f6a5ab;
+  z-index: -2; }
+  @media (min-width: 560px) {
+    .offers__item {
+      z-index: auto;
+      background: #fff; } }
+
+.offer__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 40px; }
+
+.offer__list {
+  padding-left: 0;
+  list-style-type: none; }
+
+.offer__item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; }
+
+.offer__prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: calc(50% - 68px); }
+  @media (min-width: 560px) {
+    .offer__prices {
+      margin-left: 0; } }
+
+.offer__price {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin-right: 10px;
+  color: #f91155; }
+
+.offer__subpirce {
+  font-size: 14px;
+  font-weight: 600; }
+
+.offer__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border-radius: 0 20px 20px 0;
+  z-index: -1; }
+  @media (min-width: 560px) {
+    .offer__img {
+      height: 100%;
+      z-index: inherit; } }
+
+.offer::after {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 132px;
+  height: 26px;
+  content: 'до 31 декабря';
+  text-align: center;
+  color: #000;
+  border-radius: 20px 0 20px 0;
+  background-color: #e5e5e5; }
