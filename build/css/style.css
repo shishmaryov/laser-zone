@@ -1353,7 +1353,8 @@ img {
     .header__mobile--active {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      position: relative; }
     .header__mobile .header__close {
       position: absolute;
       top: 30px;
@@ -2279,8 +2280,10 @@ img {
   .contact__title {
     margin-bottom: 70px; }
   .contact__subtitle {
-    text-align: center;
     margin-top: 100px; }
+    @media (min-width: 768px) {
+      .contact__subtitle {
+        text-align: center; } }
   @media (min-width: 1024px) {
     .contact__wrapper {
       padding: 120px 80px 120px 80px;
@@ -2310,11 +2313,13 @@ img {
     text-decoration: none; }
   .contact__text {
     font-size: 18px;
-    text-align: center;
     color: #000000;
     font-weight: 400;
     margin-top: 35px;
     margin-bottom: 70px; }
+    @media (min-width: 768px) {
+      .contact__text {
+        text-align: center; } }
 
 .info__title {
   position: relative;
@@ -2476,11 +2481,18 @@ img {
   -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
   background: #f6a5ab;
-  z-index: -2; }
+  z-index: -2;
+  overflow: hidden; }
   @media (min-width: 560px) {
     .offers__item {
       z-index: auto;
       background: #fff; } }
+
+.offers__title {
+  margin-top: 50px; }
+  @media (min-width: 768px) {
+    .offers__title {
+      margin-top: 90px; } }
 
 .offer__title {
   font-size: 18px;
@@ -2536,14 +2548,16 @@ img {
 .offer__img {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -15px;
   width: 300px;
-  border-radius: 0 20px 20px 0;
+  border-radius: 200px 20px 20px 200px;
   z-index: -1; }
   @media (min-width: 560px) {
     .offer__img {
+      right: 0;
       height: 100%;
-      z-index: inherit; } }
+      z-index: inherit;
+      border-radius: 0 20px 20px 0; } }
 
 .offer::after {
   font-size: 14px;
