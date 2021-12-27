@@ -1266,7 +1266,7 @@ img {
   .section__number {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1899,6 +1899,21 @@ img {
       .about .container {
         padding-top: 200px;
         padding-bottom: 200px; } }
+  @media (min-width: 1024px) {
+    .about::before {
+      content: "";
+      position: absolute;
+      right: 0px;
+      top: 335px;
+      height: 700px;
+      width: 100%;
+      background: #fff; } }
+  @media (min-width: 1024px) and (min-width: 1140px) {
+    .about::before {
+      top: 323px; } }
+  @media (min-width: 1024px) and (min-width: 2100px) {
+    .about::before {
+      top: 328px; } }
   .about::after {
     content: "";
     position: absolute;

@@ -26,6 +26,29 @@
     position: relative;
   }
 
+@media(min-width: 1024px) {
+	&::before {
+  	content: "";
+    position: absolute;
+    right: 0px;
+    top: 335px;
+    height: 700px;
+    width: 100%;
+    background: #fff;
+   // border: 1px solid #000;
+
+    @media(min-width: 1140px) {
+    	top: 323px;
+    }
+
+    @media(min-width: 2100px) {
+    	top: 328px;
+    }
+
+
+  }
+}
+
   &::after {
     content: "";
     position: absolute;
