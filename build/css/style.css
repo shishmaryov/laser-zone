@@ -2517,9 +2517,21 @@ img {
   margin-right: 10px;
   color: #f91155; }
 
-.offer__subpirce {
+.offer__subprice {
   font-size: 14px;
-  font-weight: 600; }
+  font-weight: 600;
+  position: relative;
+  margin: 0; }
+  .offer__subprice::after {
+    position: absolute;
+    top: 7px;
+    left: -2px;
+    content: "";
+    width: 50px;
+    height: 1px;
+    background: #f91155;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
 
 .offer__img {
   position: absolute;
