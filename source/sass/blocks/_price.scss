@@ -1,6 +1,10 @@
 .price {
 	position: relative;
 
+	&__number {
+		right: 0;
+	}
+
 	&__title {
 		margin-bottom: 85px;
 	}

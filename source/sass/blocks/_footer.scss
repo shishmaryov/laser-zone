@@ -1,47 +1,51 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 90px;
-  margin-bottom: 75px;
+	display: flex;
+	flex-direction: column;
 
-  @media(min-width: 1024px) {
-    flex-direction: row;
-  }
+	margin-top: 90px;
+	margin-bottom: 75px;
 
-  &__logo {
-    width: 157px;
-    height: 36px;
-    margin-left: calc(50% - 78.5px);
+	justify-content: space-between;
 
-    @media(min-width: 1024px) {
-      margin: 0;
-    }
-  }
+	@media(min-width: 1024px) {
+		flex-direction: row;
+	}
 
-  &__nav {
-    @media(min-width: 1024px) {
-      width: 460px;
-    }
-  }
+	&__logo {
+		width: 157px;
+		height: 36px;
+		margin-left: calc(50% - 78.5px);
 
-  &__button {
-    align-items: center;
-    padding: 0;
+		@media(min-width: 1024px) {
+			margin: 0;
+		}
+	}
 
-    font-weight: 700;
-    font-size: 14px;
-    text-align: center;
-    color: #49b462;
-    text-transform: uppercase;
+	&__nav {
+		@media(min-width: 1024px) {
+			width: 460px;
+		}
+	}
 
-    background: transparent;
-    border: none;
-  }
+	&__button {
+		font-size: 14px;
+		font-weight: 700;
 
-  &__geo {
-    width: 15px;
-    height: 19px;
-    margin-bottom: -5px;
-  }
+		padding: 0;
+
+		text-align: center;
+		text-transform: uppercase;
+
+		color: #49b462;
+		border: none;
+		background: transparent;
+
+		align-items: center;
+	}
+
+	&__geo {
+		width: 15px;
+		height: 19px;
+		margin-bottom: -5px;
+	}
 }

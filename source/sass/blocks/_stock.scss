@@ -1,5 +1,4 @@
-.stock
-{
+.stock {
 	position: relative;
 
 	padding-top: 50px;
@@ -14,20 +13,17 @@
 
 
 
-	@media(min-width: 1024px)
-	{
+	@media(min-width: 1024px) {
 		background: #fff;
 	}
 
 
-	@media(min-width: 1024px)
-	{
+	@media(min-width: 1024px) {
 		padding-top: 50px;
 		padding-bottom: 50px;
 		padding-left: 165px;
 
-		&::before
-		{
+		&::before {
 			font-size: 70px;
 			font-weight: 700;
 
@@ -47,18 +43,15 @@
 	}
 
 
-	&__title
-	{
+	&__title {
 		font-size: 14px;
 
 		position: relative;
 
 		width: 100px;
-
 		margin-top: 85px;
 
-		&::after
-		{
+		&::after {
 			position: absolute;
 			top: 0;
 			right: -20px;
@@ -72,8 +65,7 @@
 		}
 	}
 
-	&__subtitle
-	{
+	&__subtitle {
 		font-size: 18px;
 		font-weight: 600;
 
@@ -83,8 +75,7 @@
 		color: #000;
 	}
 
-	&__list
-	{
+	&__list {
 		margin-top: 0;
 		margin-bottom: 72px;
 		padding-left: 0;
@@ -92,16 +83,14 @@
 		list-style: none;
 	}
 
-	&__item
-	{
+	&__item {
 		font-size: 16px;
 		line-height: 30px;
 
 		color: #000;
 	}
 
-	&__price
-	{
+	&__price {
 		font-size: 30px;
 		font-weight: 600;
 
@@ -111,15 +100,13 @@
 
 		color: #f91155;
 
-		@media(min-width: 1024px)
-		{
+		@media(min-width: 1024px) {
 			width: 250px;
 			margin: 0;
 		}
 
 
-		&--old
-		{
+		&--old {
 			font-size: 14px;
 
 			margin-left: 10px;
@@ -130,8 +117,7 @@
 		}
 	}
 
-	&__flex
-	{
+	&__flex {
 		display: flex;
 		flex-direction: column-reverse;
 
@@ -139,30 +125,26 @@
 
 		order: reverse;
 
-		@media(min-width: 1024px)
-		{
+		@media(min-width: 1024px) {
 			flex-direction: row;
 		}
 	}
 
-	&__button
-	{
+	&__button {
 		margin: 0 auto;
 		margin-bottom: 35px;
 
 
-		@media(min-width: 1024px)
-		{
+		@media(min-width: 1024px) {
 			margin: 0;
 			margin-right: 15px;
 		}
 	}
 
-	&__img
-	{
+	&__img {
 		display: none;
-		@media(min-width: 1024px)
-		{
+
+		@media(min-width: 1024px) {
 			position: absolute;
 			top: 0;
 			right: 0;

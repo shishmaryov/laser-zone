@@ -1,46 +1,38 @@
-.promo
-{
+.promo {
 	margin-bottom: 65px;
-	@media(min-width: 1024px)
-	{
+
+	@media(min-width: 1024px) {
 		margin-bottom: 0;
 	}
 
-	&__slider
-	{
+	&__slider {
 		z-index: 0;
 	}
 
-	.swiper
-	{
-		&-container
-		{
+	.swiper {
+		&-container {
 			padding-bottom: 45px;
 
-			@media(min-width: 1024px)
-			{
-				padding-bottom: 0;
+			@media(min-width: 1024px) {
 				height: 550px;
+				padding-bottom: 0;
 			}
 		}
 
 
 
-		&-pagination
-		{
+		&-pagination {
 			z-index: 10;
 			bottom: 0;
 			left: 0;
 
 			transition: .3s;
 
-			@media(min-width: 1024px)
-			{
+			@media(min-width: 1024px) {
 				bottom: 35px;
 			}
 
-			&-bullet
-			{
+			&-bullet {
 				z-index: 10;
 
 				width: 30px;
@@ -50,8 +42,7 @@
 				border-radius: 0;
 				background-color: #000;
 
-				&-active
-				{
+				&-active {
 					font-size: 24px;
 
 					background-color: #49b462;
@@ -60,15 +51,13 @@
 		}
 	}
 
-	&__slide--1
-	{
+	&__slide--1 {
 		padding-bottom: 105px;
 	}
 
 
 
-	&__title
-	{
+	&__title {
 		font-size: 14px;
 
 		position: relative;
@@ -77,8 +66,7 @@
 		margin-top: 50px;
 		margin-bottom: 30px;
 
-		&::after
-		{
+		&::after {
 			position: absolute;
 			top: 0;
 			right: -20px;
@@ -92,14 +80,12 @@
 		}
 	}
 
-	&__subtitle
-	{
+	&__subtitle {
 		font-size: 40px;
 
 		text-align: center;
 
-		@media(min-width: 1024px)
-		{
+		@media(min-width: 1024px) {
 			font-size: 70px;
 
 			max-width: 440px;
@@ -108,28 +94,24 @@
 		}
 	}
 
-	&__description
-	{
+	&__description {
 		margin-top: 0;
 		margin-bottom: 35px;
 
 		text-align: center;
 
-		@media(min-width: 1024px)
-		{
+		@media(min-width: 1024px) {
 			text-align: left;
 		}
 	}
 
-	&__buttons
-	{
+	&__buttons {
 		width: fit-content;
 		margin: 0 auto;
 
 		text-align: center;
 
-		@media(min-width: 1024px)
-		{
+		@media(min-width: 1024px) {
 			position: relative;
 
 			display: flex;
@@ -139,33 +121,28 @@
 		}
 	}
 
-	&__button
-	{
+	&__button {
 		position: relative;
 
 		padding-top: 14px;
 		padding-bottom: 14px;
 
-		@media(min-width: 1024px)
-		{
+		@media(min-width: 1024px) {
 			margin: 0;
 		}
 
-		&--sign
-		{
+		&--sign {
 			width: 255px;
 			margin-left: 27px;
 			padding-right: 95px;
 			padding-left: 52px;
 
-			@media(min-width: 1024px)
-			{
+			@media(min-width: 1024px) {
 				margin-right: 20px;
 				margin-left: 0;
 			}
 
-			&::after
-			{
+			&::after {
 				position: absolute;
 				top: 14px;
 				right: 50px;
@@ -177,8 +154,7 @@
 			}
 		}
 
-		&--whatsapp
-		{
+		&--whatsapp {
 			width: fit-content;
 			margin-top: 30px;
 			margin-left: 0;
@@ -191,8 +167,7 @@
 			border: 2px solid #377c4e;
 			background: none;
 
-			&::before
-			{
+			&::before {
 				position: absolute;
 				top: 14px;
 				left: 30px;
@@ -204,19 +179,16 @@
 				content: url('../img/icons/whatsapp.png');
 			}
 
-			@media(min-width:1024px)
-			{
+			@media(min-width:1024px) {
 				margin-top: 0;
 			}
 		}
 	}
 
-	&__img
-	{
+	&__img {
 		display: none;
 
-		@media(min-width:1024px)
-		{
+		@media(min-width:1024px) {
 			position: absolute;
 			top: 110px;
 			right: 0;

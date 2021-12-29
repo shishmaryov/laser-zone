@@ -1,34 +1,40 @@
 .header {
 	display: flex;
+
+	padding-top: 35px;
+
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 35px;
 
 	@media(min-width: 1024px) {
 		flex-direction: row;
+
 		flex-wrap: nowrap;
 	}
 
 	&__mobile {
 		position: absolute;
+		z-index: 3;
 		top: 0;
 		right: 0;
-		z-index: 3;
 
 		display: none;
 		flex-direction: column;
-		align-items: center;
+
 		width: 100%;
 		padding: 50px 30px;
 
-		background: #ffffff;
 		border-radius: 20px;
-		box-shadow: 0 0 100px 1px rgba(0, 0, 0, 0.1);
+		background: #fff;
+		box-shadow: 0 0 100px 1px rgba(0, 0, 0, .1);
+
+		align-items: center;
 
 		&--active {
-			display: flex;
 			position: relative;
+
+			display: flex;
 		}
 
 		.header {
@@ -37,8 +43,8 @@
 				top: 30px;
 				right: 30px;
 
-				background: transparent;
 				border: none;
+				background: transparent;
 			}
 
 			&__nav {
@@ -57,9 +63,11 @@
 
 	&__right {
 		display: flex;
+
+		margin-top: -25px;
+
 		justify-content: space-between;
 		align-items: center;
-		margin-top: -25px;
 
 		@media(min-width: 768px) {
 			width: 10%;
@@ -97,31 +105,35 @@
 	}
 
 	&__adress {
+		font-size: 12px;
+		font-weight: 600;
+
 		position: relative;
 
 		display: none;
+
 		margin-top: 0;
 		margin-bottom: 0;
 		margin-bottom: 30px;
 		padding-left: 30px;
 
-		font-weight: 600;
-		font-size: 12px;
 		color: #183119;
 
 		@media(min-width: 1024px) {
 			display: block;
+
 			margin-bottom: 0;
 		}
 
 		&::before {
-			content: url("../img/icons/geo.png");
 			position: absolute;
 			top: 7px;
 			left: 0;
 
 			width: 15px;
 			height: 19px;
+
+			content: url('../img/icons/geo.png');
 		}
 	}
 
@@ -129,6 +141,7 @@
 		position: relative;
 
 		display: none;
+
 		padding-left: 30px;
 
 		@media(min-width: 1024px) {
@@ -136,31 +149,33 @@
 		}
 
 		&::before {
-			content: url("../img/icons/call.png");
 			position: absolute;
 			top: 15px;
 			left: 0;
 
 			width: 19px;
 			height: 19px;
+
+			content: url('../img/icons/call.png');
 		}
 	}
 
 	&__number {
+		font-size: 18px;
+		font-weight: 700;
+
 		margin-top: 0;
 		margin-bottom: 10px;
 
-		font-weight: 700;
-		font-size: 18px;
 		color: #49b462;
 	}
 
 	&__clock {
+		font-size: 12px;
+		font-weight: 600;
+
 		margin-top: 0;
 		margin-bottom: 0;
-
-		font-weight: 600;
-		font-size: 12px;
 	}
 
 	&__tel {
@@ -172,13 +187,14 @@
 		position: relative;
 
 		display: block;
+
 		width: 20px;
 		height: 37px;
 		margin-left: 20px;
 
-		background: transparent;
 		border: none;
 		border-radius: 50%;
+		background: transparent;
 
 		@media(min-width: 768px) {
 			margin-left: 0;
@@ -186,6 +202,7 @@
 
 		@media(min-width: 1024px) {
 			display: none;
+
 			padding-right: 0;
 		}
 	}
@@ -207,11 +224,10 @@
 
 	&__burger span::before,
 	&__burger span::after {
-		content: "";
-
 		display: block;
 
-		transition: 0.2s;
+		content: '';
+		transition: .2s;
 	}
 
 	&__burger span::before {

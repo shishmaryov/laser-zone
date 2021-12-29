@@ -1,13 +1,14 @@
 .prepare {
-  margin-top: 0;
-  margin-bottom: 40px;
+	font-size: 14px;
+	font-weight: 700;
 
-  font-weight: 700;
-  font-size: 14px;
-  color: #377c4e;
+	margin-top: 0;
+	margin-bottom: 40px;
 
-  &__title {
-    margin: 0;
-    margin-bottom: 24px;
-  }
+	color: #377c4e;
+
+	&__title {
+		margin: 0;
+		margin-bottom: 24px;
+	}
 }

@@ -6,7 +6,6 @@
 	}
 
 	&__subtitle {
-
 		margin-top: 100px;
 
 		@media(min-width: 768px) {
@@ -18,7 +17,7 @@
 		@media(min-width: 1024px) {
 			padding: 120px 80px 120px 80px;
 
-			background: url("../img/bg/map.webp");
+			background: url('../img/bg/map.jpg');
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
@@ -26,6 +25,7 @@
 
 	&__list {
 		display: grid;
+
 		margin: 0;
 		padding-left: 0;
 
@@ -46,22 +46,25 @@
 
 		text-align: center;
 
-		background-color: #ffffff;
 		border: 2px solid #e5e5e5;
 		border-radius: 20px;
+		background-color: #fff;
 	}
 
 	&__link {
-		color: #184ffc;
 		text-decoration: none;
+
+		color: #184ffc;
 	}
 
 	&__text {
 		font-size: 18px;
-		color: #000000;
 		font-weight: 400;
+
 		margin-top: 35px;
 		margin-bottom: 70px;
+
+		color: #000;
 
 		@media(min-width: 768px) {
 			text-align: center;

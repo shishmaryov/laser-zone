@@ -1,4 +1,4 @@
-# Lasles VPN
+# Laser zone
 Web developer: Konstantin Shishmaryov
 
 Designer: 

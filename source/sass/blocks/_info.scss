@@ -1,52 +1,54 @@
 .info {
-  &__title {
-    position: relative;
+	&__title {
+		font-size: 20px;
+		font-weight: 700;
 
-    margin-top: 70px;
-    margin-bottom: 35px;
-    padding-top: 100px;
+		position: relative;
 
-    font-weight: 700;
-    font-size: 20px;
+		margin-top: 70px;
+		margin-bottom: 35px;
+		padding-top: 100px;
 
-    &::before {
-      position: absolute;
-      top: 0;
-      left: calc(50% - 30px);
+		&::before {
+			position: absolute;
+			top: 0;
+			left: calc(50% - 30px);
 
-      width: 60px;
-      height: 60px;
-    }
+			width: 60px;
+			height: 60px;
+		}
 
-    &--location {
-      &::before {
-        content: url("../img/icons/location.png");
-      }
-    }
+		&--location {
+			&::before {
+				content: url('../img/icons/location.png');
+			}
+		}
 
-    &--phone {
-      &::before {
-        content: url("../img/icons/phone.png");
-        left: calc(50% - 25px);
+		&--phone {
+			&::before {
+				left: calc(50% - 25px);
 
-        width: 50px;
-      }
-    }
+				width: 50px;
 
-    &--media {
-      &::before {
-        content: url("../img/icons/social-media.png");
-      }
-    }
-  }
+				content: url('../img/icons/phone.png');
+			}
+		}
 
-  &__text {
-    max-width: 200px;
-    margin: 0;
-    margin-left: calc(50% - 100px);
+		&--media {
+			&::before {
+				content: url('../img/icons/social-media.png');
+			}
+		}
+	}
 
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-  }
+	&__text {
+		font-size: 14px;
+		font-weight: 400;
+
+		max-width: 200px;
+		margin: 0;
+		margin-left: calc(50% - 100px);
+
+		text-align: center;
+	}
 }
