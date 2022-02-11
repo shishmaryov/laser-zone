@@ -1200,7 +1200,8 @@ img {
 
 .phone-link {
   color: #49b462;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-top: 5px; }
 
 .undecorated-link {
   text-decoration: none; }
@@ -1430,13 +1431,12 @@ img {
       position: absolute;
       top: 7px;
       left: 0;
-      width: 15px;
-      height: 19px;
-      content: url("../img/icons/geo.png"); }
+      width: 19px;
+      content: url("../img/icons/geo.svg"); }
   .header__phone {
     position: relative;
     display: none;
-    padding-left: 30px; }
+    padding-left: 37px; }
     @media (min-width: 1024px) {
       .header__phone {
         display: block; } }
@@ -1446,7 +1446,7 @@ img {
       left: 0;
       width: 19px;
       height: 19px;
-      content: url("../img/icons/call.png"); }
+      content: url("../img/icons/call.svg"); }
   .header__number {
     font-size: 18px;
     font-weight: 700;
@@ -1466,7 +1466,7 @@ img {
     display: block;
     width: 20px;
     height: 37px;
-    margin-left: 20px;
+    margin-left: 25px;
     border: none;
     border-radius: 50%;
     background: transparent; }
@@ -1662,12 +1662,12 @@ img {
       background: none; }
       .promo__button--whatsapp::before {
         position: absolute;
-        top: 14px;
-        left: 30px;
-        width: 23px;
-        height: 23px;
+        top: 9px;
+        left: 25px;
+        width: 25px;
+        height: 25px;
         margin-top: 0;
-        content: url("../img/icons/whatsapp.png"); }
+        content: url("../img/icons/whatsapp.svg"); }
       @media (min-width: 1024px) {
         .promo__button--whatsapp {
           margin-top: 0; } }
@@ -1972,11 +1972,11 @@ img {
       width: 42px;
       height: 42px; }
     .about__item--painless::before {
-      content: url("../img/icons/painless.png"); }
+      content: url("../img/icons/painless.svg"); }
     .about__item--security::before {
-      content: url("../img/icons/security.png"); }
+      content: url("../img/icons/security.svg"); }
     .about__item--available::before {
-      content: url("../img/icons/available.png"); }
+      content: url("../img/icons/available.svg"); }
   .about__button {
     margin-top: 75px; }
     @media (min-width: 1400px) {
@@ -2222,9 +2222,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    @media (min-width: 1024px) {
-      .reviews .slide__mark {
-        width: 230px; } }
   .reviews .slide__text {
     font-size: 14px;
     font-weight: 400;
@@ -2351,13 +2348,13 @@ img {
     width: 60px;
     height: 60px; }
   .info__title--location::before {
-    content: url("../img/icons/location.png"); }
+    content: url("../img/icons/location.svg"); }
   .info__title--phone::before {
     left: calc(50% - 25px);
     width: 50px;
-    content: url("../img/icons/phone.png"); }
+    content: url("../img/icons/phone.svg"); }
   .info__title--media::before {
-    content: url("../img/icons/social-media.png"); }
+    content: url("../img/icons/social-media.svg"); }
 
 .info__text {
   font-size: 14px;
@@ -2412,7 +2409,8 @@ img {
   .footer__geo {
     width: 15px;
     height: 19px;
-    margin-bottom: -5px; }
+    margin-bottom: -5px;
+    margin-right: 5px; }
 
 .modal {
   z-index: 20; }

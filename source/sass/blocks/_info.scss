@@ -21,7 +21,7 @@
 
 		&--location {
 			&::before {
-				content: url('../img/icons/location.png');
+				content: url('../img/icons/location.svg');
 			}
 		}
 
@@ -31,13 +31,13 @@
 
 				width: 50px;
 
-				content: url('../img/icons/phone.png');
+				content: url('../img/icons/phone.svg');
 			}
 		}
 
 		&--media {
 			&::before {
-				content: url('../img/icons/social-media.png');
+				content: url('../img/icons/social-media.svg');
 			}
 		}
 	}

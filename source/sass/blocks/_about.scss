@@ -124,19 +124,19 @@
 
 		&--painless {
 			&::before {
-				content: url('../img/icons/painless.png');
+				content: url('../img/icons/painless.svg');
 			}
 		}
 
 		&--security {
 			&::before {
-				content: url('../img/icons/security.png');
+				content: url('../img/icons/security.svg');
 			}
 		}
 
 		&--available {
 			&::before {
-				content: url('../img/icons/available.png');
+				content: url('../img/icons/available.svg');
 			}
 		}
 	}

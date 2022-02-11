@@ -130,10 +130,9 @@
 			top: 7px;
 			left: 0;
 
-			width: 15px;
-			height: 19px;
+			width: 19px;
 
-			content: url('../img/icons/geo.png');
+			content: url('../img/icons/geo.svg');
 		}
 	}
 
@@ -142,7 +141,7 @@
 
 		display: none;
 
-		padding-left: 30px;
+		padding-left: 37px;
 
 		@media(min-width: 1024px) {
 			display: block;
@@ -156,7 +155,7 @@
 			width: 19px;
 			height: 19px;
 
-			content: url('../img/icons/call.png');
+			content: url('../img/icons/call.svg');
 		}
 	}
 
@@ -190,7 +189,7 @@
 
 		width: 20px;
 		height: 37px;
-		margin-left: 20px;
+		margin-left: 25px;
 
 		border: none;
 		border-radius: 50%;
