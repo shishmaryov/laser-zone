@@ -1,4 +1,5 @@
-var anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
+document.addEventListener('DOMContentLoaded', function() {
+	var anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
 	animationTime = 500,
 	framesCount = 60;
 
@@ -53,3 +54,4 @@ mapClose.addEventListener('click', function () {
 });
 
 new WOW().init();
+});
