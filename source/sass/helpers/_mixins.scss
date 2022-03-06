@@ -1,0 +1,197 @@
+@mixin DesktopHeadline1 {
+font-size: 64px;
+font-weight: 700;
+line-height: 70px;
+}
+
+@mixin DesktopHeadline2 {
+font-size: 34px;
+font-weight: 900;
+line-height: 37px;
+}
+
+@mixin DesktopHeadline3 {
+font-size: 32px;
+font-weight: 700;
+line-height: 38px;
+}
+
+@mixin DesktopHeadline4 {
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+}
+
+@mixin DesktopHeadline5 {
+font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+}
+
+@mixin TabletHeadline1 {
+font-size: 48px;
+font-weight: 700;
+line-height: 53px;
+}
+
+@mixin TabletHeadline2 {
+font-size: 32px;
+font-weight: 700;
+line-height: 38px;
+}
+
+@mixin TabletHeadline3 {
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+}
+
+@mixin TabletHeadline4 {
+font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+}
+
+@mixin TabletHeadline5 {
+font-size: 16px;
+font-weight: 700;
+line-height: 19px;
+}
+
+@mixin MobileHeadline1 {
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+}
+
+@mixin MobileHeadline2 {
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+}
+
+@mixin MobileHeadline3 {
+font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+}
+
+@mixin MobileHeadline4 {
+font-size: 16px;
+font-weight: 700;
+line-height: 19px;
+}
+
+@mixin MobileHeadline5 {
+font-size: 14px;
+font-weight: 700;
+line-height: 17px;
+}
+
+@mixin DesktopBody1Regular {
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+}
+
+@mixin DesktopBody1Bold {
+font-size: 18px;
+font-weight: 700;
+line-height: 25px;
+
+}
+
+@mixin DesktopBody2Regular {
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+
+}
+
+@mixin DesktopBody2Light {
+font-size: 16px;
+font-weight: 300;
+line-height: 22px;
+
+}
+
+@mixin DesktopBody3Regular {
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+}
+
+@mixin TabletBody1Regular {
+font-size: 16px;
+font-weight: 400;
+line-height: 21px;
+}
+
+@mixin TabletBody2Regular {
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+}
+
+@mixin MobileBody1Regular {
+font-size: 16px;
+font-weight: 400;
+line-height: 21px;
+
+}
+
+@mixin MobileBody2 {
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+}
+
+@mixin BottonLinkLarge {
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+}
+
+@mixin BottonLinkNormal {
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+}
+
+@mixin BottonLinkMedium {
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+}
+
+@mixin BottonLinkSmall {
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+}
+
+@mixin BottonLinkExtrasmall {
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+}
+
+@mixin FieldsTextPlaceholder {
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+
+}
+
+@mixin FieldsTextTitle {
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+
+}
+
+@mixin FieldsTextDescription {
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+}

@@ -13,6 +13,10 @@
 		flex-wrap: nowrap;
 	}
 
+	&__ap {
+		display: flex;
+	}
+
 	&__mobile {
 		position: absolute;
 		z-index: 3;
@@ -69,10 +73,6 @@
 		justify-content: space-between;
 		align-items: center;
 
-		@media(min-width: 768px) {
-			width: 10%;
-		}
-
 		@media(min-width: 1024px) {
 			display: none;
 		}
@@ -105,8 +105,11 @@
 	}
 
 	&__adress {
-		font-size: 12px;
-		font-weight: 600;
+		font-family: Mulish;
+font-size: 12px;
+font-weight: 700;
+line-height: 16px;
+
 
 		position: relative;
 
@@ -123,14 +126,16 @@
 			display: block;
 
 			margin-bottom: 0;
+			margin-right: 50px;
 		}
 
 		&::before {
 			position: absolute;
-			top: 7px;
+			top: 5px;
 			left: 0;
 
-			width: 19px;
+			width: 24px;
+			height: 24px;
 
 			content: url('../img/icons/geo.svg');
 		}
@@ -149,11 +154,11 @@
 
 		&::before {
 			position: absolute;
-			top: 15px;
+			top: 10px;
 			left: 0;
 
-			width: 19px;
-			height: 19px;
+			width: 24px;
+			height: 24px;
 
 			content: url('../img/icons/call.svg');
 		}
@@ -177,27 +182,11 @@
 		margin-bottom: 0;
 	}
 
-	&__tel {
-		width: 19px;
-		height: 19px;
-	}
-
 	&__burger {
 		position: relative;
-
-		display: block;
-
-		width: 20px;
-		height: 37px;
-		margin-left: 25px;
-
-		border: none;
-		border-radius: 50%;
 		background: transparent;
-
-		@media(min-width: 768px) {
-			margin-left: 0;
-		}
+		border: none;
+		margin: 0;
 
 		@media(min-width: 1024px) {
 			display: none;
@@ -205,49 +194,7 @@
 			padding-right: 0;
 		}
 	}
-
-	&__burger span,
-	&__burger span::before,
-	&__burger span::after {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-
-		width: 20px;
-		height: 2px;
-		margin-top: -1px;
-		margin-left: -10px;
-
-		background-color: #49b462;
-	}
-
-	&__burger span::before,
-	&__burger span::after {
-		display: block;
-
-		content: '';
-		transition: .2s;
-	}
-
-	&__burger span::before {
-		transform: translateY(-5px);
-	}
-
-	&__burger span::after {
-		transform: translateY(5px);
-	}
-
-	&__burger--active span:before {
-		width: 10px;
-
-		transform: rotate(-35deg);
-		transform-origin: left bottom;
-	}
-
-	&__burger--active span:after {
-		width: 10px;
-
-		transform: rotate(35deg);
-		transform-origin: left top;
+	&__tel {
+		margin-right: 20px;
 	}
 }

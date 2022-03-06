@@ -18,16 +18,74 @@ img {
 }
 
 .button {
-	display: flex;
-	margin: 0 auto;
-	padding: 22px 74px;
-	font-weight: 700;
-	font-size: 18px;
-	font-family: "Open Sans", sans-serif;
-	color: #183119;
-	background: #f8db3d;
-	border: none;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	padding-right: 70px;
+	padding-left: 30px;
+	width: 100%;
+	@include DesktopHeadline5;
+	position: relative;
 	border-radius: 4px;
+	flex-wrap: nowrap;
+	line-height: 1;
+	border-radius: 10px;
+
+	&::after {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		top: 14.3px;
+	}
+
+	@media(min-width: 768px) {
+		width: auto;
+
+		&::after {
+		right: 30px;
+	}
+	}
+
+	&--sign {
+		background: $yellow;
+		color: #183119;
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+		border: none;
+
+		&::after {
+			right: calc(50% - 71px);
+		}
+
+
+		&::hover {
+			background: linear-gradient(0deg, rgba(222, 177, 128, 0.25), rgba(222, 177, 128, 0.25)), linear-gradient(0deg, #F8DB3D, #F8DB3D);
+			transition: 0.3s;
+		}
+
+		&::after {
+			content: url('../img/icons/sign.svg');
+		}
+	}
+
+	&--whatsapp {
+		background: none;
+		border: 1px solid $darkgreen;
+		color: $darkgreen;
+
+		&::after {
+			right: calc(50% - 121px);
+		}
+
+		&::hover {
+			color: #377C4E;
+			border-color: #377C4E;
+			transition: 0.3s;
+
+		}
+
+		&::after {
+			content: url('../img/icons/whatsapp.svg');
+		}
+	}
 
 	&--map {
 		cursor: pointer;
@@ -35,10 +93,6 @@ img {
 
 	&--phone {
 		cursor: pointer;
-	}
-
-	@media(min-width: 768px) {
-		margin-left: calc(100% - 258px);
 	}
 
 	&:hover {
