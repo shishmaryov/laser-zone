@@ -49,9 +49,10 @@
 		right: -45%;
 		width: 263px;
 		height: auto;
+		z-index: 1;
 
 		@media(min-width: 420px) {
-			right: -10%;
+			right: -20%;
 		}
 
 		@media(min-width: 768px) {
@@ -61,7 +62,7 @@
 		@media(min-width: 1024px) {
 			display: block;
 			position: static;
-			width: 100%;
+			width: auto;
 			height: auto;
 			top: 100px;
 		}
@@ -83,9 +84,15 @@
 		}
 	}
 
-	.button--sign {
-		margin-bottom: 30px;
-	}
+	.button {
+		&--sign {
+			margin-bottom: 30px;
+			z-index: 3;
+		}
+		&--whatsapp {
+			z-index: 3;
+		}
+}
 
 	&__numbers {
 
@@ -136,6 +143,33 @@
 
 		@media(min-width: 1024px) {
 			@include DesktopBody1Regular;
+		}
+	}
+	&__wave {
+		background: #FCF1D3;
+		position: absolute;
+		bottom: 0;
+		overflow: hidden;
+		height: 450px;
+
+		@media(min-width: 400px) {
+			height: 365px;
+		}
+
+		@media(min-width: 550px) {
+			height: 275px;
+		}
+
+		@media(min-width: 768px) {
+			margin-bottom: -200px;
+		}
+
+		@media(min-width: 1024px) {
+			margin-bottom: -55px;
+			height: 400px;
+			bottom: -100px;
+			z-index: 2;
+			background: transparent;
 		}
 	}
 }

@@ -6,13 +6,12 @@
   background: #fffeff;
 
   &__bg {
-    @media(min-width: 1024px) {
-      background: linear-gradient(#f6e9c5 0%, #f6e9c5 40%, #fff 100%);
-    }
+      background: linear-gradient(#fcf1d3 0%, #f6e9c5 40%, #fff 100%);
+
   }
 }
 
 
 .header-promo {
-	background-color: #FCF1D3;
+	position: relative;
 }

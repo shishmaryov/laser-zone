@@ -1,0 +1,258 @@
+.discounts
+{
+    position: relative;
+    z-index: 4;
+
+    background: #fff;
+
+    .container {
+    	position: relative;
+    }
+
+    &__title
+    {
+        margin-top: 0;
+        padding-top: 50px;
+    }
+
+    &__number
+    {
+        top: 50px;
+    }
+
+
+
+
+
+    &__item
+    {
+        display: flex;
+        flex-direction: column;
+
+        width: 223px;
+        height: 475px;
+
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 0 14px rgba(0, 0, 0, .2);
+
+        justify-content: space-between;
+    }
+
+    &__slider
+    {
+    		@media(min-width: 1024px) {
+    			margin-right: -70px;
+    		}
+        overflow: visible;
+
+        .swiper-wrapper
+        {
+            display: flex;
+            overflow: visible;
+
+            padding-top: 35px;
+            padding-bottom: 25px;
+
+            justify-content: space-between;
+
+        }
+    }
+
+    .swiper-slide
+    {
+        margin-left: calc(50% - 129px);
+
+
+        @media(min-width: 768px)
+        {
+            margin-left: 0;
+        }
+    }
+
+    &__swiper-pagination
+    {
+        text-align: center;
+
+        @media(min-width: 1024px)
+        {
+            display: none;
+        }
+    }
+
+    .swiper-pagination-bullet
+    {
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        opacity: 1;
+        border-radius: 100%;
+        background: #e0e0e0;
+
+        &-active
+        {
+            background: $darkgreen;
+        }
+    }
+}
+
+.discount
+{
+    padding: 16px;
+
+    &__img
+    {
+        overflow: hidden;
+
+        width: 223px;
+        height: 181px;
+
+        text-align: center;
+
+        border-radius: 10px;
+    }
+
+    &__title
+    {
+        margin-top: 16px;
+        margin-bottom: 16px;
+
+        @include DesktopBody1Bold;
+    }
+
+    &__list
+    {
+        margin: 0;
+        padding-left: 26px;
+
+        list-style: none;
+    }
+
+    &__item
+    {
+        position: relative;
+
+        margin-bottom: 12px;
+
+        @include DesktopBody2Light;
+
+        &::before
+        {
+            position: absolute;
+            top: 3px;
+            left: -26px;
+
+            width: 16px;
+            height: 16px;
+
+            content: url('../img/icons/heart.svg');
+        }
+    }
+
+    &__prices
+    {
+        display: flex;
+
+        margin-top: auto;
+        margin-left: 33px;
+
+        align-items: center;
+    }
+
+    &__price
+    {
+        position: relative;
+
+        margin: 0;
+
+        &--disable
+        {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+
+            color: $green;
+
+            &::after
+            {
+                position: absolute;
+                top: -8px;
+                left: 7px;
+
+                width: 30px;
+                height: 30px;
+
+                content: url('../img/icons/price-disable.svg');
+            }
+        }
+
+        &--active
+        {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 26px;
+
+            margin-left: 35px;
+
+            color: $darkgreen;
+
+            &::after
+            {
+                position: absolute;
+                top: -18px;
+                left: -19px;
+
+                width: 30px;
+                height: 30px;
+
+                content: url('../img/icons/price-active.svg');
+            }
+
+            @media(min-width: 768px)
+            {
+            }
+
+            @media(min-width: 1024px)
+            {
+            }
+        }
+    }
+
+    &__link
+    {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25px;
+
+        margin-top: 30px;
+        margin-left: calc(50% - 46.35px);
+        padding: 0;
+
+        text-align: center;
+        text-decoration: none;
+
+        color: $darkgreen;
+        border: none;
+        background: transparent;
+
+        @include DesktopBody2Bold;
+    }
+
+    &__button
+    {
+        margin-top: 45px;
+        padding-right: 30px;
+
+        text-decoration: none;
+        @media(min-width: 768px) {
+        	margin-left: calc(100% - 262px);
+        }
+
+        &::after
+        {
+            content: '';
+        }
+    }
+}

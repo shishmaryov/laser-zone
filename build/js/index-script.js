@@ -58,14 +58,28 @@ mapClose.addEventListener('click', function () {
 });
 
 
-new Swiper('.promo__slider', {
+
+
+new Swiper('.discounts__slider', {
 	pagination: {
 		clickable: true,
-		el: '.swiper-pagination',
+		el: '.discounts__swiper-pagination',
 	},
 	slidesPerView: 'auto',
-	spaceBetween: 50,
-	centerSlides: true
+	centerSlides: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	breakpoints: {
+		768: {
+			slidesPerView: 2
+		},
+		1024: {
+			slidesPerView: 3
+		},
+		1170: {
+			slidesPerView: 4
+		}
+	}
 });
 
 
@@ -76,7 +90,7 @@ new Swiper('.reviews__slider', {
 		clickable: true
 	},
 	slidesPerView: 'auto',
-	spaceBetween: 50,
+	spaceBetween: 30,
 	centerSlides: true
 });
 
