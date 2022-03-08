@@ -1,19 +1,11 @@
 .prepare {
-	font-size: 14px;
-	font-weight: 700;
-
-	margin-top: 0;
-	margin-bottom: 40px;
-
-	color: $green;
-
-font-size: 18px;
-font-weight: 700;
-line-height: 25px;
-
 
 	&__title {
 		margin: 0;
-		margin-bottom: 24px;
+		margin-bottom: 16px;
+		font-size: 18px;
+		font-weight: 800;
+		line-height: 140%;
+		color: $darkgreen;
 	}
 }

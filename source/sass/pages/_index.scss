@@ -1,17 +1,18 @@
 .index-page {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  font-family: "Mulish", sans-serif;
-  background: #fffeff;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	font-family: "Mulish", sans-serif;
+	background: #fffeff;
 
-  &__bg {
-      background: linear-gradient(#fcf1d3 0%, #f6e9c5 40%, #fff 100%);
+	&__bg {
+			background: linear-gradient(#fcf1d3 0%, #f6e9c5 40%, #fff 100%);
 
-  }
+	}
 }
 
 
 .header-promo {
 	position: relative;
+	background: #fcf1d3;
 }

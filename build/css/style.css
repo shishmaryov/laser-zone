@@ -1266,7 +1266,8 @@ img {
     background: linear-gradient(#fcf1d3 0%, #f6e9c5 40%, #fff 100%); }
 
 .header-promo {
-  position: relative; }
+  position: relative;
+  background: #fcf1d3; }
 
 .stocks-page {
   width: 100%;
@@ -2181,7 +2182,8 @@ img {
     right: 0;
     top: 99%;
     width: 100%;
-    height: auto; }
+    height: auto;
+    background: #f5e9c3; }
     .about__wave-container {
       position: relative; }
 
@@ -2209,8 +2211,9 @@ img {
 .useful {
   position: relative;
   margin-top: 150px; }
-  .useful__title {
-    margin-top: -50px; }
+  .useful__bg {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(9.38%, #F5E9C3), color-stop(88.68%, rgba(246, 236, 203, 0)));
+    background: linear-gradient(180deg, #F5E9C3 9.38%, rgba(246, 236, 203, 0) 88.68%); }
   .useful__number {
     color: #fff; }
     @media (max-width: 1024px) {
@@ -2218,7 +2221,9 @@ img {
         color: #e5e5e5; } }
   .useful__description {
     margin-top: 0;
-    margin-bottom: 70px; }
+    margin-bottom: 70px;
+    max-width: 635px;
+    margin-bottom: 35px; }
   .useful__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2242,41 +2247,59 @@ img {
                 flex-direction: row; } }
   .useful__item {
     margin-right: 0;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 10px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-    background: #fff; }
-    @media (min-width: 768px) {
-      .useful__item--1, .useful__item--2 {
-        margin-right: 30px; } }
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: auto;
+    height: 192px; }
+    @media (min-width: 1024px) {
+      .useful__item {
+        width: 350px;
+        height: 192px;
+        padding-bottom: 0; } }
+    .useful__item--1, .useful__item--2 {
+      margin-bottom: 24px; }
+      @media (min-width: 768px) {
+        .useful__item--1, .useful__item--2 {
+          margin-right: 30px;
+          margin-bottom: 0; } }
     @media (min-width: 768px) {
       .useful__item {
         width: calc(100% / 3);
         max-width: 380px;
-        max-height: 217px; } }
+        padding-bottom: 50px;
+        height: auto; } }
   .useful__text {
-    font-size: 16px;
-    font-weight: 300;
-    margin: 0; }
-
-.prepare {
-  font-size: 14px;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 40px;
-  color: #49B462;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 25px; }
-  .prepare__title {
     margin: 0;
-    margin-bottom: 24px; }
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px; }
+  .useful__button {
+    padding-left: 65px;
+    padding-right: 65px;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .useful__button {
+        width: auto;
+        margin-left: calc(100% - 235px); } }
+    .useful__button::after {
+      content: url(""); }
+
+.prepare__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 140%;
+  color: #377C4E; }
 
 .versus__subtitle {
-  margin-top: 110px;
-  margin-bottom: 70px; }
+  margin-top: 50px;
+  margin-bottom: 32px; }
   @media (min-width: 768px) {
     .versus__subtitle {
       margin-top: 150px; } }
@@ -2284,7 +2307,7 @@ img {
 .versus__list {
   display: grid;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   padding-left: 0;
   list-style: none;
   gap: 30px;
@@ -2296,9 +2319,13 @@ img {
       grid-template-rows: 1fr 1fr; } }
 
 .versus__item {
-  padding: 50px 25px;
-  border: 2px solid #49b462;
-  border-radius: 20px; }
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+  -webkit-filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.1));
+  border-radius: 10px;
+  background: #fff; }
   @media (min-width: 768px) {
     .versus__item {
       max-width: 380px;
@@ -2306,7 +2333,8 @@ img {
 
 .versus__text {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 22px;
   margin: 0; }
 
 .price {
