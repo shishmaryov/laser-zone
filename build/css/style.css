@@ -1270,6 +1270,14 @@ img {
   position: relative;
   background: #fcf1d3; }
 
+.reviews-contact-footer {
+  background: linear-gradient(179.81deg, #F5E9C3 5.03%, rgba(245, 233, 195, 0) 61.76%);
+  position: relative; }
+  .reviews-contact-footer .wave {
+    position: absolute;
+    width: 100%;
+    bottom: 99%; }
+
 .stocks-page {
   width: 100%;
   max-width: 100%;
@@ -2465,7 +2473,8 @@ img {
   .reviews .container {
     position: relative; }
   .reviews__number {
-    right: 20px; }
+    right: 20px;
+    color: #fff; }
   .reviews__subtitle {
     max-width: 260px;
     margin-bottom: 20px; }
@@ -2583,40 +2592,88 @@ img {
         text-align: center; } }
   @media (min-width: 1024px) {
     .contact__wrapper {
-      padding: 120px 80px 120px 80px;
-      background: url("../img/bg/map.jpg");
-      background-repeat: no-repeat;
-      background-size: cover; } }
-  .contact__list {
-    display: grid;
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-    gap: 30px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr; }
-    @media (min-width: 1024px) {
-      .contact__list {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100%; } }
-  .contact__item {
-    height: 320px;
-    text-align: center;
-    border: 2px solid #e5e5e5;
-    border-radius: 20px;
-    background-color: #fff; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+  .contact__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px; }
+  .contact__adress {
+    margin-bottom: 32px;
+    position: relative;
+    padding-left: 65px; }
+    .contact__adress::before {
+      position: absolute;
+      content: url("../img/icons/map.svg");
+      width: 42px;
+      height: 42px;
+      top: 0;
+      left: 0; }
+  .contact__phone {
+    position: relative;
+    padding-left: 65px; }
+    .contact__phone::before {
+      position: absolute;
+      content: url("../img/icons/phone.svg");
+      left: 7px;
+      top: 7px;
+      width: 27px;
+      height: 39px; }
   .contact__link {
-    text-decoration: none;
-    color: #184ffc; }
-  .contact__text {
+    -webkit-text-emphasis: none;
+            text-emphasis: none;
+    padding: 10px;
+    border-radius: 100%;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    width: 65px;
+    height: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+    .contact__link--instagram {
+      margin-right: 30px; }
+  .contact__map--mobile {
+    margin-bottom: 24px; }
+    @media (min-width: 1024px) {
+      .contact__map--mobile {
+        display: none; } }
+  .contact__map--desktop {
+    display: none; }
+    @media (min-width: 1024px) {
+      .contact__map--desktop {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+  .contact__frame--mobile {
+    width: 100%;
+    height: 350px; }
+  .contact .phone__title, .contact .adress__title {
     font-size: 18px;
-    font-weight: 400;
-    margin-top: 35px;
-    margin-bottom: 70px;
-    color: #000; }
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 13px;
+    margin-top: 0; }
+  .contact .phone__text, .contact .adress__text {
+    font-size: 16px;
+    margin: 0; }
     @media (min-width: 768px) {
-      .contact__text {
-        text-align: center; } }
+      .contact .phone__text, .contact .adress__text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px; } }
 
 .info__title {
   font-size: 20px;

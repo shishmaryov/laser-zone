@@ -14,60 +14,111 @@
 	}
 
 	&__wrapper {
-		@media(min-width: 1024px) {
-			padding: 120px 80px 120px 80px;
 
-			background: url('../img/bg/map.jpg');
-			background-repeat: no-repeat;
-			background-size: cover;
+
+		@media(min-width: 1024px) {
+			display: flex;
+		justify-content: space-between;
 		}
 	}
 
-	&__list {
-		display: grid;
+	&__info {
 
-		margin: 0;
-		padding-left: 0;
+	}
 
-		list-style: none;
+	&__links {
+		display: flex;
+		margin-top: 30px;
+	}
 
-		gap: 30px;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
+	&__adress {
+		margin-bottom: 32px;
+		position: relative;
+		padding-left: 65px;
 
-		@media(min-width: 1024px) {
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: 100%;
+		&::before {
+			position: absolute;
+			content: url('../img/icons/map.svg');
+			width: 42px;
+			height: 42px;
+			top: 0;
+			left: 0;
 		}
 	}
 
-	&__item {
-		height: 320px;
+	&__phone {
+		position: relative;
+		padding-left: 65px;
 
-		text-align: center;
-
-		border: 2px solid #e5e5e5;
-		border-radius: 20px;
-		background-color: #fff;
+		&::before {
+			position: absolute;
+			content: url('../img/icons/phone.svg');
+			left: 7px;
+			top: 7px;
+			width: 27px;
+			height: 39px;
+		}
 	}
 
 	&__link {
-		text-decoration: none;
+		text-emphasis: none;
+		padding: 10px;
+		border-radius: 100%;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+		width: 65px;
+		height: 65px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: space-evenly;
 
-		color: #184ffc;
-	}
-
-	&__text {
-		font-size: 18px;
-		font-weight: 400;
-
-		margin-top: 35px;
-		margin-bottom: 70px;
-
-		color: #000;
-
-		@media(min-width: 768px) {
-			text-align: center;
+		&--instagram {
+			margin-right: 30px;
 		}
 	}
+
+
+
+	&__map {
+		&--mobile {
+			margin-bottom: 24px;
+			@media(min-width: 1024px) {
+				display: none;
+			}
+		}
+		&--desktop {
+			display: none;
+
+			@media(min-width: 1024px) {
+				display: flex;
+			}
+		}
+	}
+
+	&__frame {
+		&--mobile {
+			width: 100%;
+			height: 350px;
+		}
+		&--desktop {
+
+		}
+	}
+
+	.phone__title, .adress__title {
+		@include DesktopBody1Bold;
+		margin-bottom: 13px;
+		margin-top: 0;
+	}
+
+	.phone__text, .adress__text {
+		font-size: 16px;
+		margin: 0;
+
+		@media(min-width: 768px) {
+			@include DesktopBody1Regular;
+		}
+
+	}
+
 }

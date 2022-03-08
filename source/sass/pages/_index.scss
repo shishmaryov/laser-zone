@@ -11,8 +11,18 @@
 	}
 }
 
-
 .header-promo {
 	position: relative;
 	background: #fcf1d3;
+}
+
+.reviews-contact-footer {
+	background: linear-gradient(179.81deg, #F5E9C3 5.03%, rgba(245, 233, 195, 0) 61.76%);
+	position: relative;
+
+	.wave {
+		position: absolute;
+		width: 100%;
+		bottom: 99%;
+	}
 }
