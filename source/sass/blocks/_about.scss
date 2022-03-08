@@ -1,143 +1,221 @@
-.about {
-	position: relative;
-	z-index: 0;
-	max-width: 1675px;
-	margin-bottom: 140px;
-	background: #fff;
-	padding-top: 60px;
-	margin-top: -10px;
+.about
+{
+    position: relative;
+    z-index: 0;
 
-	@media(min-width: 768px) {
-		margin-bottom: 0;
-	}
+    max-width: 1675px;
+    margin-top: -10px;
+    margin-bottom: 140px;
+    padding-top: 60px;
 
-	.container {
-		position: relative;
-	}
+    background: #fff;
 
-	&::after {
-		position: absolute;
-		z-index: -1;
-		right: -150px;
-		bottom: -25px;
+    @media(min-width: 768px)
+    {
+        margin-bottom: 0;
+    }
 
-		overflow: hidden;
-		overflow-x: hidden;
-		overflow-y: hidden;
+    .container
+    {
+        position: relative;
+    }
 
-		width: 600px;
-		height: 600px;
+    &::after
+    {
+        position: absolute;
+        z-index: -1;
+        right: -65px;
+        bottom: 10px;
 
-		content: '';
+        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
 
-		opacity: .7;
-		background-image: url('../img/content-images/woman.jpg');
-		background-repeat: no-repeat;
-		background-position: 100% 50%;
-		background-size: contain;
+        width: 400px;
+        height: 400px;
 
-		@media(min-width: 768px) {
-			bottom: 0;
-		}
+        content: '';
 
-		@media(min-width: 1400px) {
-			right: 0;
+        opacity: .7;
+        background-image: url('../img/content-images/woman.jpg');
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        background-size: contain;
 
-			width: 500px;
-			height: 500px;
+        @media(min-width: 400px)
+        {
+            right: calc(50% - 250px);
+            bottom: -15px;
 
-			opacity: 1;
-		}
+            width: 500px;
+            height: 500px;
+        }
 
-		@media(min-width: 1140px) {
-			width: 950px;
-			height: 950px;
+        @media(min-width: 650px)
+        {
+            right: 4%;
+        }
 
-			opacity: 1;
-		}
-	}
+        @media(min-width: 768px)
+        {
+            right: -10%;
+            bottom: 110px;
 
-	&__title {
-		margin-top: 0;
-	}
+            width: 575px;
+            height: 600px;
 
-	&__number {
-		right: 15px;
-	}
+            opacity: 1;
+        }
 
-	&__content {
-		max-width: 585px;
-		margin-bottom: 200px;
+        @media(min-width: 1024px)
+        {
+            right: -8%;
+            bottom: 165px;
 
-		@media(min-width: 768px) {
-			margin-bottom: 0;
-		}
-	}
+            width: 700px;
+        }
 
+        @media(min-width: 1140px)
+        {
+            top: -65px;
+            right: -6%;
 
-	&__description {
-		z-index: 5;
+            width: 950px;
+            height: 950px;
 
-		margin-top: 0;
-		margin-bottom: 30px;
-	}
+            opacity: 1;
+        }
 
-	&__list {
-		max-width: 415px;
-		margin: 0;
-		padding-left: 0;
+        @media(min-width: 1400px)
+        {
+            top: -65px;
+            right: -2%;
+        }
+    }
 
-		list-style: none;
-	}
+    &__title
+    {
+        margin-top: 0;
+    }
 
-	&__item {
-		position: relative;
-		z-index: 2;
+    &__number
+    {
+        right: 15px;
+    }
 
-		margin-bottom: 50px;
-		padding-left: 65px;
+    &__content
+    {
+        max-width: 585px;
+        margin-bottom: 215px;
 
-		&::before {
-			position: absolute;
-			top: -12px;
-			left: 0;
-
-			width: 45px;
-			height: 45px;
-		}
-
-		&--painless {
-			&::before {
-				content: url('../img/icons/painless.svg');
-			}
-		}
-
-		&--security {
-			&::before {
-				content: url('../img/icons/security.svg');
-			}
-		}
-
-		&--available {
-			&::before {
-				content: url('../img/icons/available.svg');
-			}
-		}
-	}
-
-	&__button {
-		margin-top: 75px;
-		&::after {
-			content: '';
-		}
-		margin-left: calc(100% - 105px);
+        @media(min-width: 768px)
+        {
+            margin-bottom: 0;
+        }
+    }
 
 
-		padding-left: 65px;
-		padding-right: 65px;
+    &__description
+    {
+        z-index: 5;
 
-		@media(min-width: 1400px) {
-			margin-top: -25px;
-		}
-	}
+        max-width: 635px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    &__list
+    {
+        max-width: 435px;
+        margin: 0;
+        padding-left: 0;
+
+        list-style: none;
+    }
+
+    &__item
+    {
+        position: relative;
+        z-index: 2;
+
+        margin-bottom: 50px;
+        padding-left: 65px;
+
+        &::before
+        {
+            position: absolute;
+            top: -12px;
+            left: 0;
+
+            width: 45px;
+            height: 45px;
+        }
+
+        &--painless
+        {
+            &::before
+            {
+                content: url('../img/icons/painless.svg');
+            }
+        }
+
+        &--security
+        {
+            &::before
+            {
+                content: url('../img/icons/security.svg');
+            }
+        }
+
+        &--available
+        {
+            &::before
+            {
+                content: url('../img/icons/available.svg');
+            }
+        }
+    }
+
+    &__button
+    {
+        width: 100%;
+        margin-top: 0;
+        padding-right: 65px;
+        padding-left: 65px;
+
+        @media(min-width: 768px)
+        {
+            margin-top: 75px;
+        }
+
+
+        &::after
+        {
+            content: '';
+        }
+
+        @media(min-width: 768px)
+        {
+            width: auto;
+            margin-left: calc(100% - 229px);
+        }
+
+        @media(min-width: 1400px)
+        {
+            margin-top: -25px;
+        }
+    }
+
+    &__wave {
+    	position: absolute;
+    	z-index: 0;
+    	right: 0;
+    	top: 99%;
+    	width: 100%;
+    	height: auto;
+
+    	&-container {
+    		position: relative;
+    	}
+    }
 }

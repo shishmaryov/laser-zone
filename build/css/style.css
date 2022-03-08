@@ -1759,6 +1759,16 @@ img {
     background: #e0e0e0; }
     .discounts .swiper-pagination-bullet-active {
       background: #377C4E; }
+  .discounts__button {
+    margin-top: 45px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-decoration: none; }
+    @media (min-width: 768px) {
+      .discounts__button {
+        margin-left: calc(100% - 262px); } }
+    .discounts__button::after {
+      content: ''; }
 
 .discount {
   padding: 16px; }
@@ -1843,15 +1853,6 @@ img {
     font-size: 16px;
     font-weight: 700;
     line-height: 25px; }
-  .discount__button {
-    margin-top: 45px;
-    padding-right: 30px;
-    text-decoration: none; }
-    @media (min-width: 768px) {
-      .discount__button {
-        margin-left: calc(100% - 262px); } }
-    .discount__button::after {
-      content: ''; }
 
 .stock {
   position: relative;
@@ -2063,10 +2064,10 @@ img {
   position: relative;
   z-index: 0;
   max-width: 1675px;
+  margin-top: -10px;
   margin-bottom: 140px;
-  background: #fff;
   padding-top: 60px;
-  margin-top: -10px; }
+  background: #fff; }
   @media (min-width: 768px) {
     .about {
       margin-bottom: 0; } }
@@ -2075,49 +2076,68 @@ img {
   .about::after {
     position: absolute;
     z-index: -1;
-    right: -150px;
-    bottom: -25px;
+    right: -65px;
+    bottom: 10px;
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     content: '';
     opacity: .7;
     background-image: url("../img/content-images/woman.jpg");
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: contain; }
+    @media (min-width: 400px) {
+      .about::after {
+        right: calc(50% - 250px);
+        bottom: -15px;
+        width: 500px;
+        height: 500px; } }
+    @media (min-width: 650px) {
+      .about::after {
+        right: 4%; } }
     @media (min-width: 768px) {
       .about::after {
-        bottom: 0; } }
-    @media (min-width: 1400px) {
-      .about::after {
-        right: 0;
-        width: 500px;
-        height: 500px;
+        right: -10%;
+        bottom: 110px;
+        width: 575px;
+        height: 600px;
         opacity: 1; } }
+    @media (min-width: 1024px) {
+      .about::after {
+        right: -8%;
+        bottom: 165px;
+        width: 700px; } }
     @media (min-width: 1140px) {
       .about::after {
+        top: -65px;
+        right: -6%;
         width: 950px;
         height: 950px;
         opacity: 1; } }
+    @media (min-width: 1400px) {
+      .about::after {
+        top: -65px;
+        right: -2%; } }
   .about__title {
     margin-top: 0; }
   .about__number {
     right: 15px; }
   .about__content {
     max-width: 585px;
-    margin-bottom: 200px; }
+    margin-bottom: 215px; }
     @media (min-width: 768px) {
       .about__content {
         margin-bottom: 0; } }
   .about__description {
     z-index: 5;
+    max-width: 635px;
     margin-top: 0;
     margin-bottom: 30px; }
   .about__list {
-    max-width: 415px;
+    max-width: 435px;
     margin: 0;
     padding-left: 0;
     list-style: none; }
@@ -2139,15 +2159,31 @@ img {
     .about__item--available::before {
       content: url("../img/icons/available.svg"); }
   .about__button {
-    margin-top: 75px;
-    margin-left: calc(100% - 105px);
-    padding-left: 65px;
-    padding-right: 65px; }
+    width: 100%;
+    margin-top: 0;
+    padding-right: 65px;
+    padding-left: 65px; }
+    @media (min-width: 768px) {
+      .about__button {
+        margin-top: 75px; } }
     .about__button::after {
       content: ''; }
+    @media (min-width: 768px) {
+      .about__button {
+        width: auto;
+        margin-left: calc(100% - 229px); } }
     @media (min-width: 1400px) {
       .about__button {
         margin-top: -25px; } }
+  .about__wave {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 99%;
+    width: 100%;
+    height: auto; }
+    .about__wave-container {
+      position: relative; }
 
 .advantage__title {
   font-size: 16px;
@@ -2161,7 +2197,11 @@ img {
 .advantage__text {
   font-size: 14px;
   font-weight: 400;
-  margin: 0; }
+  margin: 0;
+  max-width: 215px; }
+  @media (min-width: 650px) {
+    .advantage__text {
+      max-width: 100%; } }
   @media (min-width: 768px) {
     .advantage__text {
       font-size: 16px; } }

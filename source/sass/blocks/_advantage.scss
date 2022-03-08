@@ -16,6 +16,11 @@
 		font-weight: 400;
 
 		margin: 0;
+		max-width: 215px;
+
+		@media(min-width: 650px) {
+			max-width: 100%;
+		}
 
 		@media(min-width: 768px) {
 			font-size: 16px;
