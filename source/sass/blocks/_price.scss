@@ -211,6 +211,7 @@
 
     &__button
     {
+    	z-index: 1;
         margin-top: 65px;
 
         @media(min-width: 768px)

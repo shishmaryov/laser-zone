@@ -56,12 +56,17 @@
 
 		&__mark {
 			display: flex;
+			justify-content: space-between;
 
 			margin-bottom: 40px;
 			margin-left: 35px;
 
 			flex-wrap: wrap;
 			align-items: center;
+
+			&--right {
+				display: flex;
+			}
 		}
 
 		&__text {
@@ -86,6 +91,7 @@
 		&__link {
 			font-size: 14px;
 			font-weight: 400;
+			color: $green;
 
 			text-decoration: none;
 		}
@@ -98,7 +104,7 @@
 			padding: 15px;
 
 			border-radius: 100%;
-			background-color: rgba(73, 180, 98, .2);
+			background: #F6E7C1;
 		}
 
 		&__name {
@@ -129,8 +135,9 @@
 		&__word {
 			font-size: 14px;
 			font-weight: 400;
-
-			margin: 0;
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-right: 20px;
 
 			&--best {
 				color: #49b462;

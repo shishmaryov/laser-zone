@@ -39,10 +39,15 @@
 		&::before {
 			position: absolute;
 			content: url('../img/icons/map.svg');
-			width: 42px;
-			height: 42px;
+			width: 30px;
+			height: 30px;
 			top: 0;
 			left: 0;
+
+			@media(min-width: 768px) {
+				width: 42px;
+			height: 42px;
+			}
 		}
 	}
 
@@ -55,8 +60,14 @@
 			content: url('../img/icons/phone.svg');
 			left: 7px;
 			top: 7px;
-			width: 27px;
+			width: 20px;
+			height: 29px;
+
+
+			@media(min-width: 768px) {
+				width: 27px;
 			height: 39px;
+			}
 		}
 	}
 
@@ -65,15 +76,42 @@
 		padding: 10px;
 		border-radius: 100%;
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-		width: 65px;
-		height: 65px;
+		width: 45px;
+		height: 45px;
 		display: flex;
 		align-items: center;
 		text-align: center;
 		justify-content: space-evenly;
 
+		@media(min-width: 768px) {
+			width: 65px;
+		height: 65px;
+		}
+
 		&--instagram {
 			margin-right: 30px;
+		}
+	}
+
+	&__img {
+		&--instagram {
+			width: 23px;
+			height: 23px;
+
+			@media(min-width: 768px) {
+				width: 33px;
+				height: 33px;
+			}
+		}
+
+		&--vk {
+			width: 27px;
+			height: 17px;
+
+			@media(min-width: 768px) {
+				width: 38px;
+				height: 24px;
+			}
 		}
 	}
 

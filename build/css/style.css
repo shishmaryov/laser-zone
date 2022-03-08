@@ -2192,8 +2192,7 @@ img {
     right: 0;
     top: 99%;
     width: 100%;
-    height: auto;
-    background: #f5e9c3; }
+    height: auto; }
     .about__wave-container {
       position: relative; }
 
@@ -2455,6 +2454,7 @@ img {
   .price .table__left {
     text-align: left; }
   .price__button {
+    z-index: 1;
     margin-top: 65px; }
     @media (min-width: 768px) {
       .price__button {
@@ -2509,6 +2509,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 40px;
     margin-left: 35px;
     -ms-flex-wrap: wrap;
@@ -2516,6 +2519,10 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .reviews .slide__mark--right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .reviews .slide__text {
     font-size: 14px;
     font-weight: 400;
@@ -2532,13 +2539,14 @@ img {
   .reviews .slide__link {
     font-size: 14px;
     font-weight: 400;
+    color: #49B462;
     text-decoration: none; }
   .reviews .author__icon {
     width: 18px;
     height: 18px;
     padding: 15px;
     border-radius: 100%;
-    background-color: rgba(73, 180, 98, 0.2); }
+    background: #F6E7C1; }
   .reviews .author__name {
     font-size: 16px;
     font-weight: 700;
@@ -2555,7 +2563,9 @@ img {
   .reviews .mark__word {
     font-size: 14px;
     font-weight: 400;
-    margin: 0; }
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px; }
     .reviews .mark__word--best {
       color: #49b462; }
     .reviews .mark__word--good {
@@ -2610,10 +2620,14 @@ img {
     .contact__adress::before {
       position: absolute;
       content: url("../img/icons/map.svg");
-      width: 42px;
-      height: 42px;
+      width: 30px;
+      height: 30px;
       top: 0;
       left: 0; }
+      @media (min-width: 768px) {
+        .contact__adress::before {
+          width: 42px;
+          height: 42px; } }
   .contact__phone {
     position: relative;
     padding-left: 65px; }
@@ -2622,8 +2636,12 @@ img {
       content: url("../img/icons/phone.svg");
       left: 7px;
       top: 7px;
-      width: 27px;
-      height: 39px; }
+      width: 20px;
+      height: 29px; }
+      @media (min-width: 768px) {
+        .contact__phone::before {
+          width: 27px;
+          height: 39px; } }
   .contact__link {
     -webkit-text-emphasis: none;
             text-emphasis: none;
@@ -2631,8 +2649,8 @@ img {
     border-radius: 100%;
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    width: 65px;
-    height: 65px;
+    width: 45px;
+    height: 45px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2643,8 +2661,26 @@ img {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly; }
+    @media (min-width: 768px) {
+      .contact__link {
+        width: 65px;
+        height: 65px; } }
     .contact__link--instagram {
       margin-right: 30px; }
+  .contact__img--instagram {
+    width: 23px;
+    height: 23px; }
+    @media (min-width: 768px) {
+      .contact__img--instagram {
+        width: 33px;
+        height: 33px; } }
+  .contact__img--vk {
+    width: 27px;
+    height: 17px; }
+    @media (min-width: 768px) {
+      .contact__img--vk {
+        width: 38px;
+        height: 24px; } }
   .contact__map--mobile {
     margin-bottom: 24px; }
     @media (min-width: 1024px) {
@@ -2749,8 +2785,8 @@ img {
         -ms-flex-align: center;
             align-items: center; }
   .footer__geo {
-    width: 15px;
-    height: 19px;
+    width: 24px;
+    height: 24px;
     margin-bottom: -5px;
     margin-right: 5px; }
 
@@ -2792,10 +2828,13 @@ img {
     z-index: 22;
     margin-left: calc(100% - 23px);
     border: none;
-    background: transparent; }
+    background: transparent;
+    position: absolute;
+    top: 5px;
+    right: 0; }
   .modal-map__map {
     z-index: 21;
-    margin-top: 30px;
+    padding: 40px;
     border: none;
     border-radius: 5px; }
   .modal-map__frame {
