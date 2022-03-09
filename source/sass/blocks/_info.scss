@@ -1,14 +1,14 @@
 .info {
 	&__title {
-		font-size: 20px;
-		color: #000;
-		font-weight: 700;
-
 		position: relative;
 
 		margin-top: 70px;
 		margin-bottom: 35px;
 		padding-top: 100px;
+
+		font-weight: 700;
+		font-size: 20px;
+		color: #000000;
 
 		&::before {
 			position: absolute;
@@ -21,36 +21,34 @@
 
 		&--location {
 			&::before {
-				content: url('../img/icons/location.svg');
+				content: url("../img/icons/location.svg");
 			}
 		}
 
 		&--phone {
 			&::before {
+				content: url("../img/icons/phone.svg");
 				left: calc(50% - 25px);
 
 				width: 50px;
-
-				content: url('../img/icons/phone.svg');
 			}
 		}
 
 		&--media {
 			&::before {
-				content: url('../img/icons/social-media.svg');
+				content: url("../img/icons/social-media.svg");
 			}
 		}
 	}
 
 	&__text {
-		font-size: 14px;
-		font-weight: 400;
-		color: #000;
-
 		max-width: 200px;
 		margin: 0;
 		margin-left: calc(50% - 100px);
 
+		font-weight: 400;
+		font-size: 14px;
 		text-align: center;
+		color: #000000;
 	}
 }

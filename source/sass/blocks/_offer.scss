@@ -2,15 +2,14 @@
 	&s {
 		&__list {
 			display: grid;
-
 			margin: 0;
 			padding-left: 0;
 
 			list-style-type: none;
 
 			gap: 20px;
-			grid-template-rows: 1fr 1fr;
 			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr;
 
 			@media(min-width: 560px) {
 				margin-left: calc(50% - 292.5px);
@@ -20,8 +19,8 @@
 			@media(min-width: 1260px) {
 				margin: 0;
 
-				grid-template-rows: 1fr 1fr;
 				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
 			}
 		}
 
@@ -29,21 +28,20 @@
 			position: relative;
 			z-index: -2;
 
-			overflow: hidden;
-
 			max-width: 585px;
 			padding-top: 35px;
 			padding-bottom: 35px;
 			padding-left: 35px;
+			overflow: hidden;
 
-			border-radius: 20px;
 			background: #f6a5ab;
-			box-shadow: 0 0 35px rgba(0, 0, 0, .1);
+			border-radius: 20px;
+			box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
 
 			@media(min-width: 560px) {
 				z-index: auto;
 
-				background: #fff;
+				background: #ffffff;
 			}
 		}
 
@@ -57,11 +55,11 @@
 	}
 
 	&__title {
-		font-size: 18px;
-		font-weight: 600;
-
 		margin-top: 0;
 		margin-bottom: 40px;
+
+		font-weight: 600;
+		font-size: 18px;
 	}
 
 	&__list {
@@ -71,18 +69,16 @@
 	}
 
 	&__item {
-		font-size: 16px;
 		font-weight: 400;
+		font-size: 16px;
 		line-height: 30px;
 	}
 
 	&__prices {
 		display: flex;
-
+		align-items: center;
 		margin-top: 45px;
 		margin-left: calc(50% - 68px);
-
-		align-items: center;
 
 		@media(min-width: 560px) {
 			margin-left: 0;
@@ -90,24 +86,24 @@
 	}
 
 	&__price {
-		font-size: 24px;
-		font-weight: 700;
-
 		margin: 0;
 		margin-right: 10px;
 
+		font-weight: 700;
+		font-size: 24px;
 		color: #f91155;
 	}
 
 	&__subprice {
-		font-size: 14px;
-		font-weight: 600;
-
 		position: relative;
 
 		margin: 0;
 
+		font-weight: 600;
+		font-size: 14px;
+
 		&::after {
+			content: "";
 			position: absolute;
 			top: 7px;
 			left: -2px;
@@ -115,26 +111,24 @@
 			width: 50px;
 			height: 1px;
 
-			content: '';
-			transform: rotate(-5deg);
-
 			background: #f91155;
+			transform: rotate(-5deg);
 		}
 	}
 
 	&__img {
 		position: absolute;
-		z-index: -1;
 		right: -15px;
 		bottom: 0;
+		z-index: -1;
 
 		width: 300px;
 
 		border-radius: 200px 20px 20px 200px;
 
 		@media(min-width: 560px) {
-			z-index: inherit;
 			right: 0;
+			z-index: inherit;
 
 			height: 100%;
 
@@ -143,10 +137,7 @@
 	}
 
 	&::after {
-		font-size: 14px;
-		font-weight: 700;
-		line-height: 30px;
-
+		content: "до 31 декабря";
 		position: absolute;
 		right: 0;
 		bottom: 0;
@@ -154,12 +145,14 @@
 		width: 132px;
 		height: 26px;
 
-		content: 'до 31 декабря';
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 30px;
 		text-align: center;
+		color: #000000;
 
-		color: #000;
-		border-radius: 20px 0 20px 0;
 		background-color: #e5e5e5;
+		border-radius: 20px 0 20px 0;
 		;
 	}
 }

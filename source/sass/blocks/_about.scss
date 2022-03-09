@@ -1,221 +1,191 @@
-.about
-{
-    position: relative;
-    z-index: 0;
+.about {
+	position: relative;
+	z-index: 0;
 
-    max-width: 1675px;
-    margin-top: -10px;
-    margin-bottom: 140px;
-    padding-top: 60px;
+	max-width: 1675px;
+	margin-top: -10px;
+	margin-bottom: 140px;
+	padding-top: 60px;
 
-    background: #fff;
+	background: #ffffff;
 
-    @media(min-width: 768px)
-    {
-        margin-bottom: 0;
-    }
+	@media(min-width: 768px) {
+		margin-bottom: 0;
+	}
 
-    .container
-    {
-        position: relative;
-    }
+	.container {
+		position: relative;
+	}
 
-    &::after
-    {
-        position: absolute;
-        z-index: -1;
-        right: -65px;
-        bottom: 10px;
+	&::after {
+		content: "";
+		position: absolute;
+		right: -65px;
+		bottom: 10px;
+		z-index: -1;
 
-        overflow: hidden;
-        overflow-x: hidden;
-        overflow-y: hidden;
+		width: 400px;
+		height: 400px;
+		overflow: hidden;
+		overflow-x: hidden;
+		overflow-y: hidden;
 
-        width: 400px;
-        height: 400px;
+		background-image: url("../img/content-images/woman.jpg");
+		background-repeat: no-repeat;
+		background-position: 100% 50%;
+		background-size: contain;
+		opacity: 0.7;
 
-        content: '';
+		@media(min-width: 400px) {
+			right: calc(50% - 250px);
+			bottom: -15px;
 
-        opacity: .7;
-        background-image: url('../img/content-images/woman.jpg');
-        background-repeat: no-repeat;
-        background-position: 100% 50%;
-        background-size: contain;
+			width: 500px;
+			height: 500px;
+		}
 
-        @media(min-width: 400px)
-        {
-            right: calc(50% - 250px);
-            bottom: -15px;
+		@media(min-width: 650px) {
+			right: 4%;
+		}
 
-            width: 500px;
-            height: 500px;
-        }
+		@media(min-width: 768px) {
+			right: -10%;
+			bottom: 110px;
 
-        @media(min-width: 650px)
-        {
-            right: 4%;
-        }
+			width: 575px;
+			height: 600px;
 
-        @media(min-width: 768px)
-        {
-            right: -10%;
-            bottom: 110px;
+			opacity: 1;
+		}
 
-            width: 575px;
-            height: 600px;
+		@media(min-width: 1024px) {
+			right: -8%;
+			bottom: 165px;
 
-            opacity: 1;
-        }
+			width: 700px;
+		}
 
-        @media(min-width: 1024px)
-        {
-            right: -8%;
-            bottom: 165px;
+		@media(min-width: 1140px) {
+			top: -65px;
+			right: -6%;
 
-            width: 700px;
-        }
+			width: 950px;
+			height: 950px;
 
-        @media(min-width: 1140px)
-        {
-            top: -65px;
-            right: -6%;
+			opacity: 1;
+		}
 
-            width: 950px;
-            height: 950px;
+		@media(min-width: 1400px) {
+			top: -65px;
+			right: -2%;
+		}
+	}
 
-            opacity: 1;
-        }
+	&__title {
+		margin-top: 0;
+	}
 
-        @media(min-width: 1400px)
-        {
-            top: -65px;
-            right: -2%;
-        }
-    }
+	&__number {
+		right: 15px;
+	}
 
-    &__title
-    {
-        margin-top: 0;
-    }
+	&__content {
+		max-width: 585px;
+		margin-bottom: 215px;
 
-    &__number
-    {
-        right: 15px;
-    }
-
-    &__content
-    {
-        max-width: 585px;
-        margin-bottom: 215px;
-
-        @media(min-width: 768px)
-        {
-            margin-bottom: 0;
-        }
-    }
+		@media(min-width: 768px) {
+			margin-bottom: 0;
+		}
+	}
 
 
-    &__description
-    {
-        z-index: 5;
+	&__description {
+		z-index: 5;
 
-        max-width: 635px;
-        margin-top: 0;
-        margin-bottom: 30px;
-    }
+		max-width: 635px;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
 
-    &__list
-    {
-        max-width: 435px;
-        margin: 0;
-        padding-left: 0;
+	&__list {
+		max-width: 435px;
+		margin: 0;
+		padding-left: 0;
 
-        list-style: none;
-    }
+		list-style: none;
+	}
 
-    &__item
-    {
-        position: relative;
-        z-index: 2;
+	&__item {
+		position: relative;
+		z-index: 2;
 
-        margin-bottom: 50px;
-        padding-left: 65px;
+		margin-bottom: 50px;
+		padding-left: 65px;
 
-        &::before
-        {
-            position: absolute;
-            top: -12px;
-            left: 0;
+		&::before {
+			position: absolute;
+			top: -12px;
+			left: 0;
 
-            width: 45px;
-            height: 45px;
-        }
+			width: 45px;
+			height: 45px;
+		}
 
-        &--painless
-        {
-            &::before
-            {
-                content: url('../img/icons/painless.svg');
-            }
-        }
+		&--painless {
+			&::before {
+				content: url("../img/icons/painless.svg");
+			}
+		}
 
-        &--security
-        {
-            &::before
-            {
-                content: url('../img/icons/security.svg');
-            }
-        }
+		&--security {
+			&::before {
+				content: url("../img/icons/security.svg");
+			}
+		}
 
-        &--available
-        {
-            &::before
-            {
-                content: url('../img/icons/available.svg');
-            }
-        }
-    }
+		&--available {
+			&::before {
+				content: url("../img/icons/available.svg");
+			}
+		}
+	}
 
-    &__button
-    {
-        width: 100%;
-        margin-top: 0;
-        padding-right: 65px;
-        padding-left: 65px;
+	&__button {
+		width: 100%;
+		margin-top: 0;
+		padding-right: 65px;
+		padding-left: 65px;
 
-        @media(min-width: 768px)
-        {
-            margin-top: 75px;
-        }
+		@media(min-width: 768px) {
+			margin-top: 75px;
+		}
 
 
-        &::after
-        {
-            content: '';
-        }
+		&::after {
+			content: "";
+		}
 
-        @media(min-width: 768px)
-        {
-            width: auto;
-            margin-left: calc(100% - 229px);
-        }
+		@media(min-width: 768px) {
+			width: auto;
+			margin-left: calc(100% - 229px);
+		}
 
-        @media(min-width: 1400px)
-        {
-            margin-top: -25px;
-        }
-    }
+		@media(min-width: 1400px) {
+			margin-top: -25px;
+		}
+	}
 
-    &__wave {
-    	position: absolute;
-    	z-index: 0;
-    	right: 0;
-    	top: 99%;
-    	width: 100%;
-    	height: auto;
+	&__wave {
+		position: absolute;
+		top: 99%;
+		right: 0;
+		z-index: 0;
 
-    	&-container {
-    		position: relative;
-    	}
-    }
+		width: 100%;
+		height: auto;
+
+		&-container {
+			position: relative;
+		}
+	}
 }

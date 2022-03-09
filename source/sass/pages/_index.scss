@@ -2,27 +2,31 @@
 	width: 100%;
 	max-width: 100%;
 	overflow-x: hidden;
+
 	font-family: "Mulish", sans-serif;
-	background: linear-gradient(#fcf1d3 0%, #f6e9c5 40%, #fff 60%);
+
+	background: linear-gradient(#fcf1d3 0%, #f6e9c5 40%, #ffffff 60%);
 
 	&__bg {
-			background: linear-gradient(#fcf1d3 0%, #f6e9c5 40%, #fff 60%);
-
+		background: linear-gradient(#fcf1d3 0%, #f6e9c5 40%, #ffffff 60%);
 	}
 }
 
 .header-promo {
 	position: relative;
+
 	background: #fcf1d3;
 }
 
 .reviews-contact-footer {
-	background: linear-gradient(179.81deg, #F5E9C3 5.03%, rgba(245, 233, 195, 0) 61.76%);
 	position: relative;
+
+	background: linear-gradient(179.81deg, #f5e9c3 5.03%, rgba(245, 233, 195, 0) 61.76%);
 
 	.wave {
 		position: absolute;
-		width: 100%;
 		bottom: 99%;
+
+		width: 100%;
 	}
 }

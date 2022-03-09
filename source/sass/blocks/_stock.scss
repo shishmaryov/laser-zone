@@ -4,17 +4,17 @@
 	padding-top: 50px;
 	padding-left: 35px;
 
-	border-radius: 20px;
 	background: #f6a5ab;
-	background-image: url('../img/content-images/stock-woman-rect.jpg');
+	background-image: url("../img/content-images/stock-woman-rect.jpg");
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	background-size: auto;
+	border-radius: 20px;
 
 
 
 	@media(min-width: 1024px) {
-		background: #fff;
+		background: #ffffff;
 	}
 
 
@@ -24,9 +24,7 @@
 		padding-left: 165px;
 
 		&::before {
-			font-size: 70px;
-			font-weight: 700;
-
+			content: "Акция!";
 			position: absolute;
 			top: 145px;
 			left: -50px;
@@ -34,24 +32,26 @@
 			width: 251px;
 			height: 81px;
 
-			content: 'Акция!';
-			transform: rotate(270deg);
-
-			opacity: .2;
+			font-weight: 700;
+			font-size: 70px;
 			color: #49b462;
+
+			transform: rotate(270deg);
+			opacity: 0.2;
 		}
 	}
 
 
 	&__title {
-		font-size: 14px;
-
 		position: relative;
 
 		width: 100px;
 		margin-top: 85px;
 
+		font-size: 14px;
+
 		&::after {
+			content: "";
 			position: absolute;
 			top: 0;
 			right: -20px;
@@ -59,20 +59,17 @@
 			width: 4px;
 			height: 18px;
 
-			content: '';
-
 			background-color: #49b462;
 		}
 	}
 
 	&__subtitle {
-		font-size: 18px;
-		font-weight: 600;
-
 		margin-top: 0;
 		margin-bottom: 40px;
 
-		color: #000;
+		font-weight: 600;
+		font-size: 18px;
+		color: #000000;
 	}
 
 	&__list {
@@ -86,18 +83,15 @@
 	&__item {
 		font-size: 16px;
 		line-height: 30px;
-
-		color: #000;
+		color: #000000;
 	}
 
 	&__price {
-		font-size: 30px;
-		font-weight: 600;
-
 		margin-bottom: 20px;
 
+		font-weight: 600;
+		font-size: 30px;
 		text-align: center;
-
 		color: #f91155;
 
 		@media(min-width: 1024px) {
@@ -107,23 +101,20 @@
 
 
 		&--old {
-			font-size: 14px;
-
 			margin-left: 10px;
 
+			font-size: 14px;
+			color: #000000;
 			text-decoration: line-through;
-
-			color: #000;
 		}
 	}
 
 	&__flex {
 		display: flex;
 		flex-direction: column-reverse;
+		order: reverse;
 
 		vertical-align: baseline;
-
-		order: reverse;
 
 		@media(min-width: 1024px) {
 			flex-direction: row;
@@ -150,9 +141,8 @@
 			right: 0;
 
 			display: block;
-
-			height: 100%;
 			width: auto;
+			height: 100%;
 
 			border-radius: 0 20px 20px 0;
 		}

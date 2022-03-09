@@ -1,235 +1,206 @@
-.price
-{
-    position: relative;
+.price {
+	position: relative;
 
-    &__number
-    {
-        right: 0;
-    }
+	&__number {
+		right: 0;
+	}
 
-    &__title
-    {
-        font-size: 20px;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 30px;
+	&__title {
+		margin-top: 60px;
 
-        margin-top: 60px;
-    }
+		font-weight: 700;
+		font-size: 20px;
+		font-size: 20px;
+		line-height: 30px;
+	}
 
 
 
-    &__table
-    {
-        display: none;
+	&__table {
+		display: none;
+		width: 100%;
 
-        width: 100%;
+		text-align: center;
 
-        text-align: center;
+		border-radius: 20px;
 
-        border-radius: 20px;
+		&--active {
+			display: block;
+		}
+	}
 
-        &--active
-        {
-            display: block;
-        }
-    }
+	&__unvisible {
+		font-size: 0;
+		color: transparent;
 
-    &__unvisible
-    {
-        font-size: 0;
+		@media(min-width:768px) {
+			font-size: 18px;
+		}
+	}
 
-        color: transparent;
+	.table {
+		&__title {
+			position: relative;
 
-        @media(min-width:768px)
-        {
-            font-size: 18px;
-        }
-    }
+			margin-top: 32px;
+			margin-bottom: 30px;
 
-    .table
-    {
-        &__title
-        {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 34px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 34px;
+			color: #183119;
+			letter-spacing: -1.5px;
 
-            position: relative;
+			cursor: pointer;
+		}
 
-            margin-top: 32px;
-            margin-bottom: 30px;
+		&__arrow {
+			position: absolute;
+			top: 0;
+			right: 0;
 
-            cursor: pointer;
-            letter-spacing: -1.5px;
+			transition: 0.3s;
 
-            color: #183119;
-        }
+			&--green {
+				transform: rotate(180deg);
 
-        &__arrow
-        {
-            position: absolute;
-            top: 0;
-            right: 0;
+				path {
+					fill: #49b462;
+				}
+			}
+		}
 
-            transition: .3s;
+		&__header {
+			font-weight: 700;
+			font-size: 8px;
+			text-align: center;
 
-            &--green
-            {
-                transform: rotate(180deg);
+			@media(min-width: 768px) {
+				font-size: 12px;
+			}
+		}
 
-                path
-                {
-                    fill: #49b462;
-                }
-            }
-        }
+		&__head {
+			padding: 10px 0;
 
-        &__header
-        {
-            font-size: 8px;
-            font-weight: 700;
+			font-size: 16px;
+			line-height: 22.4px;
 
-            text-align: center;
+			&--1 {
+				width: 33%;
 
-            @media(min-width: 768px)
-            {
-                font-size: 12px;
-            }
-        }
+				border-radius: 20px 0 0 0;
+			}
 
-        &__head
-        {
-            font-size: 16px;
-            line-height: 22.4px;
+			&--2 {
+				width: 33%;
+			}
 
-            padding: 10px 0;
+			&--3 {
+				width: 33%;
 
-            &--1
-            {
-                width: 33%;
+				border-radius: 0 20px 0 0;
+			}
+		}
 
-                border-radius: 20px 0 0 0;
-            }
+		&__content {
+			padding: 20px;
 
-            &--2
-            {
-                width: 33%;
-            }
+			font-weight: 400;
+			font-size: 8px;
 
-            &--3
-            {
-                width: 33%;
+			@media(min-width: 768px) {
+				font-size: 18px;
+			}
+		}
 
-                border-radius: 0 20px 0 0;
-            }
-        }
+		&__space {
+			height: 18px;
+		}
 
-        &__content
-        {
-            font-size: 8px;
-            font-weight: 400;
+		&__part {
+			&--new {
+				position: relative;
 
-            padding: 20px;
+				&::after {
+					content: "New";
+					position: absolute;
+					top: 20px;
+					right: 0;
+					left: 60px;
 
-            @media(min-width: 768px)
-            {
-                font-size: 18px;
-            }
-        }
+					width: 20px;
+					height: 10px;
 
-        &__space
-        {
-            height: 18px;
-        }
+					font-weight: 700;
+					font-size: 8px;
+					color: #49b462;
+					letter-spacing: -1.5px;
 
-        &__part
-        {
-            &--new
-            {
-                position: relative;
+					@media(min-width: 768px) {
+						top: 22px;
+						left: 110px;
 
-                &::after
-                {
-                    font-size: 8px;
-    font-weight: 700;
-    position: absolute;
-    top: 20px;
-    right: 0;
-    left: 60px;
-    width: 20px;
-    height: 10px;
-    content: 'New';
-    letter-spacing: -1.5px;
-    color: #49b462;
+						width: 30px;
+						height: 20px;
 
-    @media(min-width: 768px) {
-    	font-size: 16px;
-    	width: 30px;
-    	height: 20px;
-    	left: 110px;
-    	top: 22px;
-    }
-                }
-            }
-            &--white
-            {
-                background: #fff;
-            }
-            &--blue
-            {
-                background: #f6fbf7;
-            }
-            &--brown
-            {
-                background-color: #fcf2d7;
+						font-size: 16px;
+					}
+				}
+			}
 
-                &-light
-                {
-                    background-color: #fdfaf3;
-                }
-            }
+			&--white {
+				background: #ffffff;
+			}
 
-            &--b-l
-            {
-                border-radius: 0 0 0 20px;
-            }
+			&--blue {
+				background: #f6fbf7;
+			}
+
+			&--brown {
+				background-color: #fcf2d7;
+
+				&-light {
+					background-color: #fdfaf3;
+				}
+			}
+
+			&--b-l {
+				border-radius: 0 0 0 20px;
+			}
 
 
 
-            &--b-r
-            {
-                border-radius: 0 0 20px 0;
-            }
-        }
+			&--b-r {
+				border-radius: 0 0 20px 0;
+			}
+		}
 
-        &__left
-        {
-            text-align: left;
-        }
-    }
+		&__left {
+			text-align: left;
+		}
+	}
 
-    &__button
-    {
-    	z-index: 1;
-        margin-top: 65px;
+	&__button {
+		z-index: 1;
 
-        @media(min-width: 768px)
-        {
-            margin-top: 150px;
-        }
-    }
+		margin-top: 65px;
 
-    &__button {
-    	padding-left: 65px;
-    	padding-right: 65px;
+		@media(min-width: 768px) {
+			margin-top: 150px;
+		}
+	}
 
-    	&::after {
-    		content: '';
-    	}
+	&__button {
+		padding-right: 65px;
+		padding-left: 65px;
 
-    	@media(min-width: 768px) {
-    		margin-left: calc(100% - 235px);
-    	}
-    }
+		&::after {
+			content: "";
+		}
+
+		@media(min-width: 768px) {
+			margin-left: calc(100% - 235px);
+		}
+	}
 }

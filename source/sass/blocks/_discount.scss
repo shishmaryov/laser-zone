@@ -1,258 +1,212 @@
-.discounts
-{
+.discounts {
 	position: relative;
 	z-index: 4;
 
-	background: #fff;
+	background: #ffffff;
 
 	.container {
 		position: relative;
 	}
 
-	&__title
-	{
+	&__title {
 		margin-top: 0;
 		padding-top: 50px;
 	}
 
-	&__number
-	{
+	&__number {
 		top: 50px;
 		right: 30px;
 	}
 
-
-
-
-
-	&__item
-	{
+	&__item {
 		display: flex;
 		flex-direction: column;
-
+		justify-content: space-between;
 		width: 223px;
 		height: 475px;
 
+		background: #ffffff;
 		border-radius: 10px;
-		background: #fff;
-		box-shadow: 0 0 14px rgba(0, 0, 0, .2);
-
-		justify-content: space-between;
+		box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
 	}
 
-	&__slider
-	{
-			@media(min-width: 1024px) {
-				margin-right: -70px;
-			}
+	&__slider {
 		overflow: visible;
 
-		.swiper-wrapper
-		{
-			display: flex;
-			overflow: visible;
+		@media(min-width: 1024px) {
+			margin-right: -70px;
+		}
 
+		.swiper-wrapper {
+			display: flex;
+			justify-content: space-between;
 			padding-top: 35px;
 			padding-bottom: 25px;
-
-			justify-content: space-between;
-
+			overflow: visible;
 		}
 	}
 
-	.swiper-slide
-	{
+	.swiper-slide {
 		margin-left: calc(50% - 129px);
 
 
-		@media(min-width: 768px)
-		{
+		@media(min-width: 768px) {
 			margin-left: 0;
 		}
 	}
 
-	&__swiper-pagination
-	{
+	&__swiper-pagination {
 		text-align: center;
 
-		@media(min-width: 1024px)
-		{
+		@media(min-width: 1024px) {
 			display: none;
 		}
 	}
 
-	.swiper-pagination-bullet
-	{
+	.swiper-pagination-bullet {
 		width: 10px;
 		height: 10px;
 		margin-right: 10px;
 		margin-left: 10px;
 
-		opacity: 1;
-		border-radius: 100%;
 		background: #e0e0e0;
+		border-radius: 100%;
+		opacity: 1;
 
-		&-active
-		{
+		&-active {
 			background: $darkgreen;
 		}
 	}
-	&__button
-	{
+
+	&__button {
 		margin-top: 45px;
 		padding-right: 30px;
 		padding-left: 30px;
 
 		text-decoration: none;
+
 		@media(min-width: 768px) {
 			margin-left: calc(100% - 262px);
 		}
 
-		&::after
-		{
-			content: '';
+		&::after {
+			content: "";
 		}
 	}
 }
 
-.discount
-{
+.discount {
 	padding: 16px;
 
-	&__img
-	{
-		overflow: hidden;
-
+	&__img {
 		width: 223px;
 		height: 181px;
+		overflow: hidden;
 
 		text-align: center;
 
 		border-radius: 10px;
 	}
 
-	&__title
-	{
+	&__title {
 		margin-top: 16px;
 		margin-bottom: 16px;
 
 		@include DesktopBody1Bold;
 	}
 
-	&__list
-	{
+	&__list {
 		margin: 0;
 		padding-left: 26px;
 
 		list-style: none;
 	}
 
-	&__item
-	{
+	&__item {
 		position: relative;
 
 		margin-bottom: 12px;
 
 		@include DesktopBody2Light;
 
-		&::before
-		{
+		&::before {
+			content: url("../img/icons/heart.svg");
 			position: absolute;
 			top: 3px;
 			left: -26px;
 
 			width: 16px;
 			height: 16px;
-
-			content: url('../img/icons/heart.svg');
 		}
 	}
 
-	&__prices
-	{
+	&__prices {
 		display: flex;
-
+		align-items: center;
 		margin-top: auto;
 		margin-left: 33px;
-
-		align-items: center;
 	}
 
-	&__price
-	{
+	&__price {
 		position: relative;
 
 		margin: 0;
 
-		&--disable
-		{
-			font-size: 16px;
+		&--disable {
 			font-weight: 400;
+			font-size: 16px;
 			line-height: 140%;
-
 			color: $green;
 
-			&::after
-			{
+			&::after {
+				content: url("../img/icons/price-disable.svg");
 				position: absolute;
 				top: -8px;
 				left: 7px;
 
 				width: 30px;
 				height: 30px;
-
-				content: url('../img/icons/price-disable.svg');
 			}
 		}
 
-		&--active
-		{
-			font-size: 20px;
-			font-weight: 700;
-			line-height: 26px;
-
+		&--active {
 			margin-left: 35px;
 
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 26px;
 			color: $darkgreen;
 
-			&::after
-			{
+			&::after {
+				content: url("../img/icons/price-active.svg");
 				position: absolute;
 				top: -18px;
 				left: -19px;
 
 				width: 30px;
 				height: 30px;
-
-				content: url('../img/icons/price-active.svg');
 			}
 
-			@media(min-width: 768px)
-			{
-			}
+			@media(min-width: 768px) {}
 
-			@media(min-width: 1024px)
-			{
-			}
+			@media(min-width: 1024px) {}
 		}
 	}
 
-	&__link
-	{
-		font-size: 16px;
-		font-weight: 700;
-		line-height: 25px;
-
+	&__link {
 		margin-top: 30px;
 		margin-left: calc(50% - 46.35px);
 		padding: 0;
 
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 25px;
 		text-align: center;
+		color: $darkgreen;
 		text-decoration: none;
 
-		color: $darkgreen;
-		border: none;
 		background: transparent;
+		border: none;
 
 		@include DesktopBody2Bold;
 	}

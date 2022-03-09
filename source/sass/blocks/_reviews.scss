@@ -7,7 +7,8 @@
 
 	&__number {
 		right: 20px;
-		color: #fff;
+
+		color: #ffffff;
 	}
 
 	&__subtitle {
@@ -29,9 +30,9 @@
 		&__item {
 			width: auto;
 
+			background: #ffffff;
 			border-radius: 20px;
-			background: #fff;
-			box-shadow: 0 0 40px rgba(0, 0, 0, .1);
+			box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
 
 			@media(min-width: 1024px) {
 				width: 380px;
@@ -46,23 +47,19 @@
 	.slide {
 		&__author {
 			display: flex;
-
+			align-items: center;
 			margin-bottom: 25px;
 			padding-top: 35px;
 			padding-left: 35px;
-
-			align-items: center;
 		}
 
 		&__mark {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-between;
-
+			align-items: center;
 			margin-bottom: 40px;
 			margin-left: 35px;
-
-			flex-wrap: wrap;
-			align-items: center;
 
 			&--right {
 				display: flex;
@@ -70,29 +67,28 @@
 		}
 
 		&__text {
-			font-size: 14px;
-			font-weight: 400;
-
 			max-width: 275px;
 			margin-top: 0;
 			margin-bottom: 35px;
 			margin-left: 35px;
+
+			font-weight: 400;
+			font-size: 14px;
 		}
 
 		&__copyright {
-			font-size: 14px;
-			font-weight: 400;
-
 			margin: 0;
 			margin-left: 35px;
 			padding-bottom: 50px;
+
+			font-weight: 400;
+			font-size: 14px;
 		}
 
 		&__link {
-			font-size: 14px;
 			font-weight: 400;
+			font-size: 14px;
 			color: $green;
-
 			text-decoration: none;
 		}
 	}
@@ -103,24 +99,24 @@
 			height: 18px;
 			padding: 15px;
 
+			background: #f6e7c1;
 			border-radius: 100%;
-			background: #F6E7C1;
 		}
 
 		&__name {
-			font-size: 16px;
-			font-weight: 700;
-
 			margin: 0 0 0 18px;
+
+			font-weight: 700;
+			font-size: 16px;
 		}
 	}
 
 	.mark {
 		&__ball {
-			font-size: 16px;
-			font-weight: 700;
-
 			margin: 0 20px 0 0;
+
+			font-weight: 700;
+			font-size: 16px;
 		}
 
 		&__stars {
@@ -133,11 +129,12 @@
 		}
 
 		&__word {
-			font-size: 14px;
-			font-weight: 400;
 			margin-top: 0;
-			margin-bottom: 0;
 			margin-right: 20px;
+			margin-bottom: 0;
+
+			font-weight: 400;
+			font-size: 14px;
 
 			&--best {
 				color: #49b462;
@@ -157,9 +154,8 @@
 		bottom: 0;
 		left: 0;
 
-		padding-bottom: 3px;
-
 		align-items: center;
+		padding-bottom: 3px;
 
 		&-bullet {
 			width: 8px;

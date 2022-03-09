@@ -1,8 +1,10 @@
 .visually-hidden {
 	position: absolute;
+
 	width: 1px;
 	height: 1px;
 	margin: -1px;
+
 	clip: rect(0 0 0 0);
 }
 
@@ -18,38 +20,44 @@ img {
 }
 
 .button {
-	padding-top: 17px;
-	padding-bottom: 17px;
-	padding-right: 70px;
-	padding-left: 30px;
-	width: 100%;
-	@include DesktopHeadline5;
 	position: relative;
-	border-radius: 4px;
+
 	flex-wrap: nowrap;
+	width: 100%;
+	padding-top: 17px;
+	padding-right: 70px;
+	padding-bottom: 17px;
+	padding-left: 30px;
+
 	line-height: 1;
+
+	border-radius: 4px;
 	border-radius: 10px;
+
+	@include DesktopHeadline5;
 
 	&::after {
 		position: absolute;
+		top: 14.3px;
+
 		width: 24px;
 		height: 24px;
-		top: 14.3px;
 	}
 
 	@media(min-width: 768px) {
 		width: auto;
 
 		&::after {
-		right: 30px;
-	}
+			right: 30px;
+		}
 	}
 
 	&--sign {
-		background: $yellow;
 		color: #183119;
-		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+
+		background: $yellow;
 		border: none;
+		box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 
 		&::after {
 			right: calc(50% - 71px);
@@ -57,33 +65,36 @@ img {
 
 
 		&::hover {
-			background: linear-gradient(0deg, rgba(222, 177, 128, 0.25), rgba(222, 177, 128, 0.25)), linear-gradient(0deg, #F8DB3D, #F8DB3D);
+			background: linear-gradient(0deg, rgba(222, 177, 128, 0.25), rgba(222, 177, 128, 0.25)), linear-gradient(0deg, #f8db3d, #f8db3d);
+
 			transition: 0.3s;
 		}
 
 		&::after {
-			content: url('../img/icons/sign.svg');
+			content: url("../img/icons/sign.svg");
 		}
 	}
 
 	&--whatsapp {
+		color: $darkgreen;
+
 		background: none;
 		border: 1px solid $darkgreen;
-		color: $darkgreen;
 
 		&::after {
 			right: calc(50% - 121px);
 		}
 
 		&::hover {
-			color: #377C4E;
-			border-color: #377C4E;
-			transition: 0.3s;
+			color: #377c4e;
 
+			border-color: #377c4e;
+
+			transition: 0.3s;
 		}
 
 		&::after {
-			content: url('../img/icons/whatsapp.svg');
+			content: url("../img/icons/whatsapp.svg");
 		}
 	}
 
@@ -98,19 +109,22 @@ img {
 	&:hover {
 		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 		opacity: 0.9;
+
 		transition: 0.5s;
 	}
 
 	&:active {
 		box-shadow: 0 0 0 0 transparent;
+
 		transition: 0.3s;
 	}
 }
 
 .phone-link {
+	margin-top: 5px;
+
 	color: #49b462;
 	text-decoration: none;
-	margin-top: 5px;
 }
 
 .undecorated-link {
@@ -118,11 +132,11 @@ img {
 }
 
 .production-logo {
+	display: flex;
 	width: 65px;
 	height: auto;
-	display: flex;
 	height: auto;
-	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 50px;
+	margin-left: auto;
 }

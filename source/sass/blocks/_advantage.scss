@@ -1,10 +1,10 @@
 .advantage {
 	&__title {
-		font-size: 16px;
-		font-weight: 700;
-
 		margin-top: 0;
 		margin-bottom: 18px;
+
+		font-weight: 700;
+		font-size: 16px;
 
 		@media(min-width: 768px) {
 			font-size: 18px;
@@ -12,11 +12,11 @@
 	}
 
 	&__text {
-		font-size: 14px;
-		font-weight: 400;
-
-		margin: 0;
 		max-width: 215px;
+		margin: 0;
+
+		font-weight: 400;
+		font-size: 14px;
 
 		@media(min-width: 650px) {
 			max-width: 100%;

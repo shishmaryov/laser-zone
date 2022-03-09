@@ -1,15 +1,12 @@
 .header {
 	display: flex;
-
-	padding-top: 35px;
-
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	padding-top: 35px;
 
 	@media(min-width: 1024px) {
 		flex-direction: row;
-
 		flex-wrap: nowrap;
 	}
 
@@ -19,21 +16,19 @@
 
 	&__mobile {
 		position: absolute;
-		z-index: 3;
 		top: 0;
 		right: 0;
+		z-index: 3;
 
 		display: none;
 		flex-direction: column;
-
+		align-items: center;
 		width: 100%;
 		padding: 50px 30px;
 
+		background: #ffffff;
 		border-radius: 20px;
-		background: #fff;
-		box-shadow: 0 0 100px 1px rgba(0, 0, 0, .1);
-
-		align-items: center;
+		box-shadow: 0 0 100px 1px rgba(0, 0, 0, 0.1);
 
 		&--active {
 			position: relative;
@@ -47,8 +42,8 @@
 				top: 30px;
 				right: 30px;
 
-				border: none;
 				background: transparent;
+				border: none;
 			}
 
 			&__nav {
@@ -67,11 +62,9 @@
 
 	&__right {
 		display: flex;
-
-		margin-top: -25px;
-
 		justify-content: space-between;
 		align-items: center;
+		margin-top: -25px;
 
 		@media(min-width: 1024px) {
 			display: none;
@@ -105,39 +98,34 @@
 	}
 
 	&__adress {
-		font-family: Mulish;
-font-size: 12px;
-font-weight: 700;
-line-height: 16px;
-
-
 		position: relative;
 
 		display: none;
-
 		margin-top: 0;
 		margin-bottom: 0;
 		margin-bottom: 30px;
 		padding-left: 30px;
 
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		font-family: Mulish;
 		color: #183119;
 
 		@media(min-width: 1024px) {
 			display: block;
-
-			margin-bottom: 0;
 			margin-right: 50px;
+			margin-bottom: 0;
 		}
 
 		&::before {
+			content: url("../img/icons/geo.svg");
 			position: absolute;
 			top: 5px;
 			left: 0;
 
 			width: 24px;
 			height: 24px;
-
-			content: url('../img/icons/geo.svg');
 		}
 	}
 
@@ -145,7 +133,6 @@ line-height: 16px;
 		position: relative;
 
 		display: none;
-
 		padding-left: 37px;
 
 		@media(min-width: 1024px) {
@@ -153,47 +140,47 @@ line-height: 16px;
 		}
 
 		&::before {
+			content: url("../img/icons/call.svg");
 			position: absolute;
 			top: 10px;
 			left: 0;
 
 			width: 24px;
 			height: 24px;
-
-			content: url('../img/icons/call.svg');
 		}
 	}
 
 	&__number {
-		font-size: 18px;
-		font-weight: 700;
-
 		margin-top: 0;
 		margin-bottom: 5px;
 
+		font-weight: 700;
+		font-size: 18px;
 		color: #49b462;
 	}
 
 	&__clock {
-		font-size: 12px;
-		font-weight: 600;
-
 		margin-top: 0;
 		margin-bottom: 0;
+
+		font-weight: 600;
+		font-size: 12px;
 	}
 
 	&__burger {
 		position: relative;
+
+		margin: 0;
+
 		background: transparent;
 		border: none;
-		margin: 0;
 
 		@media(min-width: 1024px) {
 			display: none;
-
 			padding-right: 0;
 		}
 	}
+
 	&__tel {
 		margin-right: 20px;
 	}
