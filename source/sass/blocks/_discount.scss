@@ -13,6 +13,10 @@
 		padding-top: 50px;
 	}
 
+	&__description {
+		max-width: 570px;
+	}
+
 	&__number {
 		top: 50px;
 		right: 30px;
@@ -97,6 +101,30 @@
 
 .discount {
 	padding: 16px;
+
+	&:hover {
+		background: $green;
+		color: #fff;
+		transition: .3s;
+
+		.discount__item::before {
+			content: url('../img/icons/heart-active.svg');
+		}
+
+		.discount__price--disable,
+		.discount__price--active {
+			color: #F8DB3D;
+		}
+
+		.discount__price--disable::after {
+			content: url('../img/icons/price-disable-active.svg');
+		}
+
+		.discount__link {
+			text-decoration: underline;
+			color: #fff;
+		}
+	}
 
 	&__img {
 		width: 223px;

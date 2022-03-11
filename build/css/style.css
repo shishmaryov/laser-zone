@@ -1330,20 +1330,9 @@ img {
   .section__title {
     margin-top: 90px;
     margin-bottom: 40px;
+    font-size: 20px;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 22px; }
-    @media (min-width: 768px) {
-      .section__title {
-        margin-top: 150px;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 29px; } }
-    @media (min-width: 1024px) {
-      .section__title {
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 38px; } }
+    line-height: 30px; }
   .section__subtitle {
     margin-top: 0;
     margin-bottom: 20px;
@@ -1564,8 +1553,10 @@ img {
   color: #183119;
   text-transform: uppercase;
   text-decoration: none; }
+  .nav__link:hover {
+    color: #49B462; }
   .nav__link--active {
-    color: #49b462; }
+    color: #49B462; }
 
 .promo {
   position: relative; }
@@ -1721,6 +1712,8 @@ img {
   .discounts__title {
     margin-top: 0;
     padding-top: 50px; }
+  .discounts__description {
+    max-width: 570px; }
   .discounts__number {
     top: 50px;
     right: 30px; }
@@ -1789,6 +1782,21 @@ img {
 
 .discount {
   padding: 16px; }
+  .discount:hover {
+    background: #49B462;
+    color: #fff;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    .discount:hover .discount__item::before {
+      content: url("../img/icons/heart-active.svg"); }
+    .discount:hover .discount__price--disable,
+    .discount:hover .discount__price--active {
+      color: #F8DB3D; }
+    .discount:hover .discount__price--disable::after {
+      content: url("../img/icons/price-disable-active.svg"); }
+    .discount:hover .discount__link {
+      text-decoration: underline;
+      color: #fff; }
   .discount__img {
     width: 223px;
     height: 181px;
@@ -2315,9 +2323,6 @@ img {
 .versus__subtitle {
   margin-top: 50px;
   margin-bottom: 32px; }
-  @media (min-width: 768px) {
-    .versus__subtitle {
-      margin-top: 150px; } }
 
 .versus__list {
   display: grid;
@@ -2484,12 +2489,15 @@ img {
   .reviews__subtitle {
     max-width: 260px;
     margin-bottom: 20px; }
+  .reviews__description {
+    max-width: 635px;
+    margin-bottom: 0; }
   .reviews__slider {
     z-index: 0;
-    padding: 50px 5px; }
-    @media (min-width: 768px) {
-      .reviews__slider {
-        padding: 50px 30px; } }
+    padding-left: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px; }
   .reviews .slider__item {
     width: auto;
     background: #ffffff;
@@ -2508,9 +2516,9 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 25px;
-    padding-top: 35px;
-    padding-left: 35px; }
+    margin-bottom: 24px;
+    padding-top: 20px;
+    padding-left: 20px; }
   .reviews .slide__mark {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2523,8 +2531,8 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 40px;
-    margin-left: 35px; }
+    margin-bottom: 24px;
+    margin-left: 20px; }
     .reviews .slide__mark--right {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2532,14 +2540,14 @@ img {
   .reviews .slide__text {
     max-width: 275px;
     margin-top: 0;
-    margin-bottom: 35px;
-    margin-left: 35px;
+    margin-bottom: 24px;
+    margin-left: 20px;
     font-weight: 400;
     font-size: 14px; }
   .reviews .slide__copyright {
     margin: 0;
-    margin-left: 35px;
-    padding-bottom: 50px;
+    margin-left: 24px;
+    padding-bottom: 20px;
     font-weight: 400;
     font-size: 14px; }
   .reviews .slide__link {
@@ -2701,7 +2709,12 @@ img {
         display: flex; } }
   .contact__frame--mobile {
     width: 100%;
-    height: 350px; }
+    height: 350px;
+    border: none;
+    border-radius: 10px; }
+  .contact__frame--desktop {
+    border: none;
+    border-radius: 10px; }
   .contact .phone__title,
   .contact .adress__title {
     margin-top: 0;
@@ -2849,7 +2862,9 @@ img {
   .modal-map__frame {
     z-index: 21;
     width: 320px;
-    height: 500px; }
+    height: 500px;
+    border: none;
+    border-radius: 10px; }
     @media (min-width: 768px) {
       .modal-map__frame {
         width: 625px;
