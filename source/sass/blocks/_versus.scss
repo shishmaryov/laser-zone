@@ -1,46 +1,55 @@
-.versus {
-	&__subtitle {
-		margin-top: 50px;
-		margin-bottom: 32px;
-	}
+.versus
+{
+    &__subtitle
+    {
+        margin-top: 50px;
+        margin-bottom: 32px;
+    }
 
-	&__list {
-		display: grid;
-		margin-top: 0;
-		margin-bottom: 40px;
-		padding-left: 0;
+    &__list
+    {
+        display: grid;
 
-		list-style: none;
+        margin-top: 0;
+        margin-bottom: 40px;
+        padding-left: 0;
 
-		gap: 30px;
-		grid-template-columns: 100%;
+        list-style: none;
 
-		@media(min-width: 768px) {
-			margin-bottom: 75px;
+        gap: 30px;
+        grid-template-columns: 100%;
 
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: 1fr 1fr;
-		}
-	}
+        @media(min-width: 768px)
+        {
+            margin-bottom: 75px;
 
-	&__item {
-		padding-top: 28px;
-		padding-bottom: 28px;
-		padding-left: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
 
-		background: #ffffff;
-		border-radius: 10px;
-		filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.1));
+    &__item
+    {
+        padding-top: 28px;
+        padding-bottom: 28px;
+        padding-left: 20px;
 
-		@media(min-width: 768px) {
-			max-width: 380px;
-			max-height: 136px;
-		}
-	}
+        border-radius: 10px;
+        background: #fff;
 
-	&__text {
-		margin: 0;
+        filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, .1));
 
-		@include DesktopBody2Regular;
-	}
+        @media(min-width: 768px)
+        {
+            max-width: 380px;
+            max-height: 136px;
+        }
+    }
+
+    &__text
+    {
+        margin: 0;
+
+        @include DesktopBody2Regular;
+    }
 }

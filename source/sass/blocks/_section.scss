@@ -1,71 +1,85 @@
-.section {
-	position: relative;
+.section
+{
+    position: relative;
 
-	&__number {
-		position: absolute;
-		top: 0;
-		right: 0;
+    &__number
+    {
+        font-size: 12px;
+        font-weight: 400;
 
-		display: flex;
-		margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
 
-		font-weight: 400;
-		font-size: 12px;
-		color: #e5e5e5;
+        display: flex;
 
-		@media(min-width: 768px) {
-			font-size: 20px;
-		}
+        margin: 0;
 
-		&--big {
-			margin-top: 0;
-			margin-right: 5px;
-			margin-bottom: 0;
+        color: #e5e5e5;
 
-			font-weight: 700;
-			font-size: 18px;
+        @media(min-width: 768px)
+        {
+            font-size: 20px;
+        }
 
-			@media(min-width: 768px) {
-				font-size: 36px;
-			}
-		}
-	}
+        &--big
+        {
+            font-size: 18px;
+            font-weight: 700;
 
-	&__title {
-		margin-top: 90px;
-		margin-bottom: 40px;
-font-size: 20px;
-font-weight: 700;
-line-height: 30px;
+            margin-top: 0;
+            margin-right: 5px;
+            margin-bottom: 0;
 
-	}
+            @media(min-width: 768px)
+            {
+                font-size: 36px;
+            }
+        }
+    }
 
-	&__subtitle {
-		margin-top: 0;
-		margin-bottom: 20px;
+    &__title
+    {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
 
-		color: #49b462;
+        margin-top: 90px;
+        margin-bottom: 40px;
+    }
 
-		@include MobileHeadline2;
+    &__subtitle
+    {
+        margin-top: 0;
+        margin-bottom: 20px;
 
-		@media(min-width: 768px) {
-			@include TabletHeadline2;
-		}
+        color: #49b462;
 
-		@media(min-width: 1024px) {
-			@include DesktopHeadline2;
-		}
-	}
+        @include MobileHeadline2;
 
-	&__description {
-		@include MobileBody1Regular;
+        @media(min-width: 768px)
+        {
+            @include TabletHeadline2;
+        }
 
-		@media(min-width: 768px) {
-			@include TabletBody1Regular;
-		}
+        @media(min-width: 1024px)
+        {
+            @include DesktopHeadline2;
+        }
+    }
 
-		@media(min-width: 1024px) {
-			@include DesktopBody1Regular;
-		}
-	}
+    &__description
+    {
+        @include MobileBody1Regular;
+
+        @media(min-width: 768px)
+        {
+            @include TabletBody1Regular;
+        }
+
+        @media(min-width: 1024px)
+        {
+            @include DesktopBody1Regular;
+        }
+    }
 }
