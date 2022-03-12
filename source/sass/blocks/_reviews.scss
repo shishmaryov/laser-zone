@@ -1,219 +1,223 @@
 .reviews
 {
-    position: relative;
+	position: relative;
 
-    .container
-    {
-        position: relative;
-    }
+	.container
+	{
+		position: relative;
+	}
 
-    &__number
-    {
-        right: 20px;
+	&__number
+	{
+		right: 20px;
 
-        color: #fff;
-    }
+		color: #fff;
+	}
 
-    &__subtitle
-    {
-        max-width: 260px;
-        margin-bottom: 20px;
-    }
+	&__subtitle
+	{
+		max-width: 260px;
+		margin-bottom: 20px;
+	}
 
-    &__description
-    {
-        max-width: 635px;
-        margin-bottom: 0;
-    }
+	&__description
+	{
+		max-width: 635px;
+		margin-bottom: 0;
+	}
 
-    &__slider
-    {
-        z-index: 0;
+	&__slider
+	{
+		z-index: 0;
 
-        padding-top: 20px;
-        padding-bottom: 50px;
-        padding-left: 30px;
-        padding-left: 30px;
-    }
+		padding-top: 20px;
+		padding-bottom: 50px;
+		padding-left: 30px;
+		padding-left: 30px;
+	}
 
-    .slider
-    {
-        &__item
-        {
-            width: auto;
+	.slider
+	{
+		&__item
+		{
+			width: auto;
 
-            border-radius: 20px;
-            background: #fff;
-            box-shadow: 0 0 40px rgba(0, 0, 0, .1);
+			border-radius: 20px;
+			background: #fff;
+			box-shadow: 0 0 40px rgba(0, 0, 0, .1);
+			min-height: 285px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 
-            @media(min-width: 1024px)
-            {
-                width: 380px;
-            }
-        }
-    }
+			@media(min-width: 1024px)
+			{
+				width: 380px;
+			}
+		}
+	}
 
-    .swiper-slide
-    {
-        width: auto;
-    }
+	.swiper-slide
+	{
+		width: auto;
+	}
 
-    .slide
-    {
-        &__author
-        {
-            display: flex;
+	.slide
+	{
+		&__author
+		{
+			display: flex;
 
-            margin-bottom: 24px;
-            padding-top: 20px;
-            padding-left: 20px;
+			margin-bottom: 24px;
+			padding-top: 20px;
+			padding-left: 20px;
 
-            align-items: center;
-        }
+			align-items: center;
+		}
 
-        &__mark
-        {
-            display: flex;
+		&__mark
+		{
+			display: flex;
 
-            margin-bottom: 24px;
-            margin-left: 20px;
+			margin-bottom: 24px;
+			margin-left: 20px;
 
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
 
-            &--right
-            {
-                display: flex;
-            }
-        }
+			&--right
+			{
+				display: flex;
+			}
+		}
 
-        &__text
-        {
-            font-size: 14px;
-            font-weight: 400;
+		&__text
+		{
+			font-size: 14px;
+			font-weight: 400;
 
-            max-width: 275px;
-            margin-top: 0;
-            margin-bottom: 24px;
-            margin-left: 20px;
-        }
+			max-width: 275px;
+			margin-top: 0;
+			margin-bottom: 24px;
+			margin-left: 20px;
+		}
 
-        &__copyright
-        {
-            font-size: 14px;
-            font-weight: 400;
+		&__copyright
+		{
+			font-size: 14px;
+			font-weight: 400;
 
-            margin: 0;
-            margin-left: 24px;
-            padding-bottom: 20px;
-        }
+			margin: 0;
+			margin-left: 24px;
+			padding-bottom: 20px;
+		}
 
-        &__link
-        {
-            font-size: 14px;
-            font-weight: 400;
+		&__link
+		{
+			font-size: 14px;
+			font-weight: 400;
 
-            text-decoration: none;
+			text-decoration: none;
 
-            color: $green;
-        }
-    }
+			color: $green;
+		}
+	}
 
-    .author
-    {
-        &__icon
-        {
-            width: 18px;
-            height: 18px;
-            padding: 15px;
+	.author
+	{
+		&__icon
+		{
+			width: 18px;
+			height: 18px;
+			padding: 15px;
 
-            border-radius: 100%;
-            background: #f6e7c1;
-        }
+			border-radius: 100%;
+			background: #f6e7c1;
+		}
 
-        &__name
-        {
-            font-size: 16px;
-            font-weight: 700;
+		&__name
+		{
+			font-size: 16px;
+			font-weight: 700;
 
-            margin: 0 0 0 18px;
-        }
-    }
+			margin: 0 0 0 18px;
+		}
+	}
 
-    .mark
-    {
-        &__ball
-        {
-            font-size: 16px;
-            font-weight: 700;
+	.mark
+	{
+		&__ball
+		{
+			font-size: 16px;
+			font-weight: 700;
 
-            margin: 0 20px 0 0;
-        }
+			margin: 0 20px 0 0;
+		}
 
-        &__stars
-        {
-            margin-right: 20px;
-        }
+		&__stars
+		{
+			margin-right: 20px;
+		}
 
-        &__star
-        {
-            width: 12px;
-            height: 12px;
-        }
+		&__star
+		{
+			width: 12px;
+			height: 12px;
+		}
 
-        &__word
-        {
-            font-size: 14px;
-            font-weight: 400;
+		&__word
+		{
+			font-size: 14px;
+			font-weight: 400;
 
-            margin-top: 0;
-            margin-right: 20px;
-            margin-bottom: 0;
+			margin-top: 0;
+			margin-right: 20px;
+			margin-bottom: 0;
 
-            &--best
-            {
-                color: #49b462;
-            }
+			&--best
+			{
+				color: #49b462;
+			}
 
-            &--good
-            {
-                color: #ffc107;
-            }
+			&--good
+			{
+				color: #ffc107;
+			}
 
-            &--ok
-            {
-                color: #de994e;
-            }
-        }
-    }
+			&--ok
+			{
+				color: #de994e;
+			}
+		}
+	}
 
-    .swiper-pagination
-    {
-        bottom: 0;
-        left: 0;
+	.swiper-pagination
+	{
+		bottom: 0;
+		left: 0;
 
-        padding-bottom: 3px;
+		padding-bottom: 3px;
 
-        align-items: center;
+		align-items: center;
 
-        &-bullet
-        {
-            width: 8px;
-            height: 8px;
-            margin: 0 8px;
+		&-bullet
+		{
+			width: 8px;
+			height: 8px;
+			margin: 0 8px;
 
-            background-color: #e5e5e5;
+			background-color: #e5e5e5;
 
-            &-active
-            {
-                width: 16px;
-                height: 16px;
-                margin: 0 4px -5px 4px;
-                margin-bottom: -5px;
+			&-active
+			{
+				width: 16px;
+				height: 16px;
+				margin: 0 4px -5px 4px;
+				margin-bottom: -5px;
 
-                background-color: #3bd45f;
-            }
-        }
-    }
+				background-color: #3bd45f;
+			}
+		}
+	}
 }
