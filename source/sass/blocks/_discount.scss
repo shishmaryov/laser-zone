@@ -1,296 +1,298 @@
 .discounts
 {
-    position: relative;
-    z-index: 4;
+	position: relative;
+	z-index: 4;
 
-    background: #fff;
+	background: #fff;
 
-    .container
-    {
-        position: relative;
-    }
+	.container
+	{
+		position: relative;
+	}
 
-    &__title
-    {
-        margin-top: 0;
-        padding-top: 50px;
-    }
+	&__title
+	{
+		margin-top: 0;
+		padding-top: 50px;
+	}
 
-    &__description
-    {
-        max-width: 570px;
-    }
+	&__description
+	{
+		max-width: 570px;
+	}
 
-    &__number
-    {
-        top: 50px;
-        right: 30px;
-    }
+	&__number
+	{
+		top: 50px;
+		right: 30px;
+	}
 
-    &__item
-    {
-        display: flex;
-        flex-direction: column;
+	&__item
+	{
+		display: flex;
+		flex-direction: column;
 
-        width: 223px;
-        height: 475px;
+		width: 223px;
+		height: 475px;
 
-        border-radius: 10px;
-        background: #fff;
-        box-shadow: 0 0 14px rgba(0, 0, 0, .2);
+		border-radius: 10px;
+		background: #fff;
+		box-shadow: 0 0 14px rgba(0, 0, 0, .2);
 
-        justify-content: space-between;
-    }
+		justify-content: space-between;
+		margin-left: calc(50% - 127.5px);
 
-    &__slider
-    {
-        overflow: visible;
+		@media(min-width: 768px) {
+			margin-left: 0;
+		}
+	}
 
-        @media(min-width: 1024px)
-        {
-            margin-right: -70px;
-        }
+	&__slider
+	{
+		overflow: visible;
 
-        .swiper-wrapper
-        {
-            display: flex;
-            overflow: visible;
+		@media(min-width: 1024px)
+		{
+			margin-right: -70px;
+		}
 
-            padding-top: 35px;
-            padding-bottom: 25px;
+		.swiper-wrapper
+		{
+			display: flex;
+			overflow: visible;
 
-            justify-content: space-between;
-        }
-    }
+			padding-top: 35px;
+			padding-bottom: 25px;
 
-    .swiper-slide
-    {
-        margin-left: calc(50% - 129px);
+			justify-content: space-between;
+		}
+	}
 
+	.swiper-slide
+	{
+		@media(max-width: 768px) {
+			margin-right: 16px;
+		}
 
-        @media(min-width: 768px)
-        {
-            margin-left: 0;
-        }
-    }
+	}
 
-    &__swiper-pagination
-    {
-        text-align: center;
+	&__swiper-pagination
+	{
+		text-align: center;
 
-        @media(min-width: 1024px)
-        {
-            display: none;
-        }
-    }
+		@media(min-width: 1024px)
+		{
+			display: none;
+		}
+	}
 
-    .swiper-pagination-bullet
-    {
-        width: 10px;
-        height: 10px;
-        margin-right: 10px;
-        margin-left: 10px;
+	.swiper-pagination-bullet
+	{
+		width: 10px;
+		height: 10px;
+		margin-right: 10px;
+		margin-left: 10px;
 
-        opacity: 1;
-        border-radius: 100%;
-        background: #e0e0e0;
+		opacity: 1;
+		border-radius: 100%;
+		background: #e0e0e0;
 
-        &-active
-        {
-            background: $darkgreen;
-        }
-    }
+		&-active
+		{
+			background: $darkgreen;
+		}
+	}
 
-    &__button
-    {
-        margin-top: 45px;
-        padding-right: 30px;
-        padding-left: 30px;
+	&__button
+	{
+		margin-top: 45px;
+		padding-right: 30px;
+		padding-left: 30px;
 
-        text-decoration: none;
+		text-decoration: none;
 
-        @media(min-width: 768px)
-        {
-            margin-left: calc(100% - 262px);
-        }
+		@media(min-width: 768px)
+		{
+			margin-left: calc(100% - 262px);
+		}
 
-        &::after
-        {
-            content: '';
-        }
-    }
+		&::after
+		{
+			content: '';
+		}
+	}
 }
 
 .discount
 {
-    padding: 16px;
+	padding: 16px;
 
-    &:hover
-    {
-        transition: .3s;
+	&:hover
+	{
+		transition: .3s;
 
-        color: #fff;
-        background: $green;
+		color: #fff;
+		background: $green;
 
-        .discount__item::before
-        {
-            content: url('../img/icons/heart-active.svg');
-        }
+		.discount__item::before
+		{
+			content: url('../img/icons/heart-active.svg');
+		}
 
-        .discount__price--disable,
-        .discount__price--active
-        {
-            color: #f8db3d;
-        }
+		.discount__price--disable,
+		.discount__price--active
+		{
+			color: #f8db3d;
+		}
 
-        .discount__price--disable::after
-        {
-            content: url('../img/icons/price-disable-active.svg');
-        }
+		.discount__price--disable::after
+		{
+			content: url('../img/icons/price-disable-active.svg');
+		}
 
-        .discount__link
-        {
-            text-decoration: underline;
+		.discount__link
+		{
+			text-decoration: underline;
 
-            color: #fff;
-        }
-    }
+			color: #fff;
+		}
+	}
 
-    &__img
-    {
-        overflow: hidden;
+	&__img
+	{
+		overflow: hidden;
 
-        width: 223px;
-        height: 181px;
+		width: 223px;
+		height: 181px;
 
-        text-align: center;
+		text-align: center;
 
-        border-radius: 10px;
-    }
+		border-radius: 10px;
+	}
 
-    &__title
-    {
-        margin-top: 16px;
-        margin-bottom: 16px;
+	&__title
+	{
+		margin-top: 16px;
+		margin-bottom: 16px;
 
-        @include DesktopBody1Bold;
-    }
+		@include DesktopBody1Bold;
+	}
 
-    &__list
-    {
-        margin: 0;
-        padding-left: 26px;
+	&__list
+	{
+		margin: 0;
+		padding-left: 26px;
 
-        list-style: none;
-    }
+		list-style: none;
+	}
 
-    &__item
-    {
-        position: relative;
+	&__item
+	{
+		position: relative;
 
-        margin-bottom: 12px;
+		margin-bottom: 12px;
 
-        @include DesktopBody2Light;
+		@include DesktopBody2Light;
 
-        &::before
-        {
-            position: absolute;
-            top: 3px;
-            left: -26px;
+		&::before
+		{
+			position: absolute;
+			top: 3px;
+			left: -26px;
 
-            width: 16px;
-            height: 16px;
+			width: 16px;
+			height: 16px;
 
-            content: url('../img/icons/heart.svg');
-        }
-    }
+			content: url('../img/icons/heart.svg');
+		}
+	}
 
-    &__prices
-    {
-        display: flex;
+	&__prices
+	{
+		display: flex;
 
-        margin-top: auto;
-        margin-left: 33px;
+		margin-top: auto;
+		margin-left: 33px;
 
-        align-items: center;
-    }
+		align-items: center;
+	}
 
-    &__price
-    {
-        position: relative;
+	&__price
+	{
+		position: relative;
 
-        margin: 0;
+		margin: 0;
 
-        &--disable
-        {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 140%;
+		&--disable
+		{
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 140%;
 
-            color: $green;
+			color: $green;
 
-            &::after
-            {
-                position: absolute;
-                top: -8px;
-                left: 7px;
+			&::after
+			{
+				position: absolute;
+				top: -8px;
+				left: 7px;
 
-                width: 30px;
-                height: 30px;
+				width: 30px;
+				height: 30px;
 
-                content: url('../img/icons/price-disable.svg');
-            }
-        }
+				content: url('../img/icons/price-disable.svg');
+			}
+		}
 
-        &--active
-        {
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 26px;
+		&--active
+		{
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 26px;
 
-            margin-left: 35px;
+			margin-left: 35px;
 
-            color: $darkgreen;
+			color: $darkgreen;
 
-            &::after
-            {
-                position: absolute;
-                top: -18px;
-                left: -19px;
+			&::after
+			{
+				position: absolute;
+				top: -18px;
+				left: -19px;
 
-                width: 30px;
-                height: 30px;
+				width: 30px;
+				height: 30px;
 
-                content: url('../img/icons/price-active.svg');
-            }
+				content: url('../img/icons/price-active.svg');
+			}
 
-            @media(min-width: 768px)
-            {
-            }
+			@media(min-width: 768px)
+			{
+			}
 
-            @media(min-width: 1024px)
-            {
-            }
-        }
-    }
+			@media(min-width: 1024px)
+			{
+			}
+		}
+	}
 
-    &__link
-    {
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 25px;
+	&__link
+	{
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 25px;
 
-        margin-top: 30px;
-        margin-left: calc(50% - 46.35px);
-        padding: 0;
+		margin-top: 30px;
+		margin-left: calc(50% - 46.35px);
+		padding: 0;
 
-        text-align: center;
-        text-decoration: none;
+		text-align: center;
+		text-decoration: none;
 
-        color: $darkgreen;
-        border: none;
-        background: transparent;
+		color: $darkgreen;
+		border: none;
+		background: transparent;
 
-        @include DesktopBody2Bold;
-    }
+		@include DesktopBody2Bold;
+	}
 }

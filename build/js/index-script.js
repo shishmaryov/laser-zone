@@ -65,13 +65,13 @@ new Swiper('.discounts__slider', {
 		clickable: true,
 		el: '.discounts__swiper-pagination',
 	},
-	slidesPerView: 'auto',
-	centerSlides: true,
+	centerSlides: false,
 	slidesPerView: 1,
-	spaceBetween: 0,
+	spaceBetween: 16,
 	breakpoints: {
 		768: {
-			slidesPerView: 2
+			slidesPerView: 2,
+			spaceBetween: 30
 		},
 		1024: {
 			slidesPerView: 3

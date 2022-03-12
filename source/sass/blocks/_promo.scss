@@ -60,6 +60,10 @@
 			top: 90px;
 		}
 
+		@media(min-width: 350px) {
+			right: -30%;
+		}
+
 		@media(min-width: 420px) {
 			right: -20%;
 		}
