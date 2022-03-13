@@ -67,15 +67,15 @@ new Swiper('.discounts__slider', {
 	},
 	centerSlides: false,
 	slidesPerView: 1,
-	spaceBetween: 30,
+	spaceBetween: 0,
 	breakpoints: {
 		768: {
-			slidesPerView: 3
+			slidesPerView: 2
 		},
 		1024: {
-			slidesPerView: 4
+			slidesPerView: 3
 		},
-		1170: {
+		1240: {
 			slidesPerView: 4
 		}
 	}

@@ -1,312 +1,326 @@
 .discounts
 {
-	position: relative;
-	z-index: 4;
+    position: relative;
+    z-index: 4;
 
-	background: #fff;
+    background: #fff;
 
-	.container
-	{
-		position: relative;
-	}
+    .container
+    {
+        position: relative;
+    }
 
-	&__title
-	{
-		margin-top: 0;
-		padding-top: 50px;
-	}
+    &__title
+    {
+        margin-top: 0;
+        padding-top: 50px;
+    }
 
-	&__description
-	{
-		max-width: 570px;
-	}
+    &__description
+    {
+        max-width: 570px;
+    }
 
-	&__number
-	{
-		top: 50px;
-		right: 30px;
-	}
+    &__number
+    {
+        top: 50px;
+        right: 30px;
+    }
 
-	&__item
-	{
-		display: flex;
-		flex-direction: column;
+    &__item
+    {
+        display: flex;
+        flex-direction: column;
 
-		width: 223px;
-		height: 475px;
+        width: 223px;
+        height: 475px;
+        margin-left: calc(50% - 127.5px);
+        padding-top: 16px;
+        padding-right: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
 
-		border-radius: 10px;
-		background: #fff;
-		box-shadow: 0 0 14px rgba(0, 0, 0, .2);
-		padding-top: 16px;
-		padding-right: 16px;
-		padding-bottom: 16px;
-		padding-left: 16px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 0 14px rgba(0, 0, 0, .2);
 
-		justify-content: space-between;
-		margin-left: calc(50% - 127.5px);
+        justify-content: space-between;
 
-		@media(min-width: 768px) {
-			margin-left: 0;
-		}
+        @media(min-width: 768px)
+        {
+            margin-left: 0;
+        }
 
-		@media(min-width: 1170px) {
-			padding-left: calc(50% - 124px);
-			padding-right: calc(50% - 124px);
+        @media(min-width: 1250px)
+        {
+            width: auto;
+        }
 
-		}
+        @media(min-width: 1440px)
+        {
+            width: 275px;
+        }
+    }
 
-		@media(min-width: 1440px) {
-			padding-left: calc(50% - 112.5px);
-			padding-right: calc(50% - 112.5px);
-		}
-	}
+    &__slider
+    {
+        overflow: visible;
 
-	&__slider
-	{
-		overflow: visible;
+        @media(min-width: 1024px)
+        {
+            margin-right: -70px;
+        }
 
-		@media(min-width: 1024px)
-		{
-			margin-right: -70px;
-		}
+        .swiper-wrapper
+        {
+            display: flex;
+            overflow: visible;
 
-		.swiper-wrapper
-		{
-			display: flex;
-			overflow: visible;
+            padding-top: 35px;
+            padding-bottom: 25px;
 
-			padding-top: 35px;
-			padding-bottom: 25px;
+            justify-content: space-between;
+        }
+    }
 
-			justify-content: space-between;
-		}
-	}
 
-	.swiper-slide
-	{
-		@media(max-width: 768px) {
-			margin-right: 16px;
-		}
 
-	}
+    &__swiper-pagination
+    {
+        text-align: center;
 
-	&__swiper-pagination
-	{
-		text-align: center;
+        @media(min-width: 1240px)
+        {
+            display: none;
+        }
+    }
 
-		@media(min-width: 1024px)
-		{
-			display: none;
-		}
-	}
+    .swiper-pagination-bullet
+    {
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
 
-	.swiper-pagination-bullet
-	{
-		width: 10px;
-		height: 10px;
-		margin-right: 10px;
-		margin-left: 10px;
+        opacity: 1;
+        border-radius: 100%;
+        background: #e0e0e0;
 
-		opacity: 1;
-		border-radius: 100%;
-		background: #e0e0e0;
+        &-active
+        {
+            background: $darkgreen;
+        }
+    }
 
-		&-active
-		{
-			background: $darkgreen;
-		}
-	}
+    &__button
+    {
+        margin-top: 45px;
+        padding-right: 30px;
+        padding-left: 30px;
 
-	&__button
-	{
-		margin-top: 45px;
-		padding-right: 30px;
-		padding-left: 30px;
+        text-decoration: none;
 
-		text-decoration: none;
+        @media(min-width: 768px)
+        {
+            margin-left: calc(100% - 262px);
+        }
 
-		@media(min-width: 768px)
-		{
-			margin-left: calc(100% - 262px);
-		}
-
-		&::after
-		{
-			content: '';
-		}
-	}
+        &::after
+        {
+            content: '';
+        }
+    }
 }
 
 .discount
 {
+    &:hover
+    {
+        transition: .3s;
 
-	&:hover
-	{
-		transition: .3s;
+        color: #fff;
+        background: $green;
 
-		color: #fff;
-		background: $green;
+        .discount__item::before
+        {
+            content: url('../img/icons/heart-active.svg');
+        }
 
-		.discount__item::before
-		{
-			content: url('../img/icons/heart-active.svg');
-		}
+        .discount__price--disable,
+        .discount__price--active
+        {
+            color: #f8db3d;
+        }
 
-		.discount__price--disable,
-		.discount__price--active
-		{
-			color: #f8db3d;
-		}
+        .discount__price--disable::after
+        {
+            content: url('../img/icons/price-disable-active.svg');
+        }
 
-		.discount__price--disable::after
-		{
-			content: url('../img/icons/price-disable-active.svg');
-		}
+        .discount__link
+        {
+            text-decoration: underline;
 
-		.discount__link
-		{
-			text-decoration: underline;
+            color: #fff;
+        }
+    }
 
-			color: #fff;
-		}
-	}
+    @media(min-width: 1250px)
+    {
+        margin-right: 30px;
+    }
 
-	&__img
-	{
-		overflow: hidden;
+    &__top
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
 
-		width: 223px;
-		height: 181px;
+    &__bottom
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
 
-		text-align: center;
+    &__title
+    {
+        max-width: 223px;
+    }
 
-		border-radius: 10px;
-	}
+    &__img
+    {
+        overflow: hidden;
 
-	&__title
-	{
-		margin-top: 16px;
-		margin-bottom: 16px;
+        width: 223px;
+        height: 181px;
 
-		@include DesktopBody1Bold;
-	}
+        text-align: center;
 
-	&__list
-	{
-		margin: 0;
-		padding-left: 26px;
+        border-radius: 10px;
+    }
 
-		list-style: none;
-	}
+    &__title
+    {
+        margin-top: 16px;
+        margin-bottom: 16px;
 
-	&__item
-	{
-		position: relative;
+        @include DesktopBody1Bold;
+    }
 
-		margin-bottom: 12px;
+    &__list
+    {
+        margin: 0;
+        padding-left: 26px;
 
-		@include DesktopBody2Light;
+        list-style: none;
+    }
 
-		&::before
-		{
-			position: absolute;
-			top: 3px;
-			left: -26px;
+    &__item
+    {
+        position: relative;
 
-			width: 16px;
-			height: 16px;
+        margin-bottom: 12px;
 
-			content: url('../img/icons/heart.svg');
-		}
-	}
+        @include DesktopBody2Light;
 
-	&__prices
-	{
-		display: flex;
+        &::before
+        {
+            position: absolute;
+            top: 3px;
+            left: -26px;
 
-		margin-top: auto;
-		margin-left: 33px;
+            width: 16px;
+            height: 16px;
 
-		align-items: center;
-	}
+            content: url('../img/icons/heart.svg');
+        }
+    }
 
-	&__price
-	{
-		position: relative;
+    &__prices
+    {
+        display: flex;
 
-		margin: 0;
+        margin-top: auto;
 
-		&--disable
-		{
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 140%;
+        align-items: center;
+    }
 
-			color: $green;
+    &__price
+    {
+        position: relative;
 
-			&::after
-			{
-				position: absolute;
-				top: -8px;
-				left: 7px;
+        margin: 0;
 
-				width: 30px;
-				height: 30px;
+        &--disable
+        {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
 
-				content: url('../img/icons/price-disable.svg');
-			}
-		}
+            color: $green;
 
-		&--active
-		{
-			font-size: 20px;
-			font-weight: 700;
-			line-height: 26px;
+            &::after
+            {
+                position: absolute;
+                top: -8px;
+                left: 7px;
 
-			margin-left: 35px;
+                width: 30px;
+                height: 30px;
 
-			color: $darkgreen;
+                content: url('../img/icons/price-disable.svg');
+            }
+        }
 
-			&::after
-			{
-				position: absolute;
-				top: -18px;
-				left: -19px;
+        &--active
+        {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 26px;
 
-				width: 30px;
-				height: 30px;
+            margin-left: 35px;
 
-				content: url('../img/icons/price-active.svg');
-			}
+            color: $darkgreen;
 
-			@media(min-width: 768px)
-			{
-			}
+            &::after
+            {
+                position: absolute;
+                top: -18px;
+                left: -19px;
 
-			@media(min-width: 1024px)
-			{
-			}
-		}
-	}
+                width: 30px;
+                height: 30px;
 
-	&__link
-	{
-		font-size: 16px;
-		font-weight: 700;
-		line-height: 25px;
+                content: url('../img/icons/price-active.svg');
+            }
 
-		margin-top: 30px;
-		margin-left: calc(50% - 46.35px);
-		padding: 0;
+            @media(min-width: 768px)
+            {
+            }
 
-		text-align: center;
-		text-decoration: none;
+            @media(min-width: 1024px)
+            {
+            }
+        }
+    }
 
-		color: $darkgreen;
-		border: none;
-		background: transparent;
+    &__link
+    {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25px;
 
-		@include DesktopBody2Bold;
-	}
+        margin-top: 30px;
+        margin-left: calc(50% - 46.35px);
+        padding: 0;
+
+        text-align: center;
+        text-decoration: none;
+
+        color: $darkgreen;
+        border: none;
+        background: transparent;
+
+        @include DesktopBody2Bold;
+    }
 }

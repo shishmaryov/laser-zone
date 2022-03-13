@@ -1730,29 +1730,27 @@ img {
             flex-direction: column;
     width: 223px;
     height: 475px;
-    border-radius: 10px;
-    background: #fff;
-    -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+    margin-left: calc(50% - 127.5px);
     padding-top: 16px;
     padding-right: 16px;
     padding-bottom: 16px;
     padding-left: 16px;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: calc(50% - 127.5px); }
+            justify-content: space-between; }
     @media (min-width: 768px) {
       .discounts__item {
         margin-left: 0; } }
-    @media (min-width: 1170px) {
+    @media (min-width: 1250px) {
       .discounts__item {
-        padding-left: calc(50% - 124px);
-        padding-right: calc(50% - 124px); } }
+        width: auto; } }
     @media (min-width: 1440px) {
       .discounts__item {
-        padding-left: calc(50% - 112.5px);
-        padding-right: calc(50% - 112.5px); } }
+        width: 275px; } }
   .discounts__slider {
     overflow: visible; }
     @media (min-width: 1024px) {
@@ -1768,12 +1766,9 @@ img {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-  @media (max-width: 768px) {
-    .discounts .swiper-slide {
-      margin-right: 16px; } }
   .discounts__swiper-pagination {
     text-align: center; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1240px) {
       .discounts__swiper-pagination {
         display: none; } }
   .discounts .swiper-pagination-bullet {
@@ -1813,6 +1808,21 @@ img {
     text-decoration: underline;
     color: #fff; }
 
+@media (min-width: 1250px) {
+  .discount {
+    margin-right: 30px; } }
+
+.discount__top {
+  margin-right: auto;
+  margin-left: auto; }
+
+.discount__bottom {
+  margin-right: auto;
+  margin-left: auto; }
+
+.discount__title {
+  max-width: 223px; }
+
 .discount__img {
   overflow: hidden;
   width: 223px;
@@ -1851,7 +1861,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-top: auto;
-  margin-left: 33px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
