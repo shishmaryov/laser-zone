@@ -51,8 +51,14 @@
 		}
 
 		@media(min-width: 1170px) {
+			padding-left: calc(50% - 124px);
+			padding-right: calc(50% - 124px);
+
+		}
+
+		@media(min-width: 1440px) {
 			padding-left: calc(50% - 112.5px);
-			width: auto;
+			padding-right: calc(50% - 112.5px);
 		}
 	}
 

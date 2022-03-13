@@ -72,6 +72,9 @@ new Swiper('.discounts__slider', {
 		768: {
 			slidesPerView: 3
 		},
+		1024: {
+			slidesPerView: 4
+		},
 		1170: {
 			slidesPerView: 4
 		}

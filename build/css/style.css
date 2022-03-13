@@ -1747,8 +1747,12 @@ img {
         margin-left: 0; } }
     @media (min-width: 1170px) {
       .discounts__item {
+        padding-left: calc(50% - 124px);
+        padding-right: calc(50% - 124px); } }
+    @media (min-width: 1440px) {
+      .discounts__item {
         padding-left: calc(50% - 112.5px);
-        width: auto; } }
+        padding-right: calc(50% - 112.5px); } }
   .discounts__slider {
     overflow: visible; }
     @media (min-width: 1024px) {
