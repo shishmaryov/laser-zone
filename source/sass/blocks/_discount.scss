@@ -38,12 +38,21 @@
 		border-radius: 10px;
 		background: #fff;
 		box-shadow: 0 0 14px rgba(0, 0, 0, .2);
+		padding-top: 16px;
+		padding-right: 16px;
+		padding-bottom: 16px;
+		padding-left: 16px;
 
 		justify-content: space-between;
 		margin-left: calc(50% - 127.5px);
 
 		@media(min-width: 768px) {
 			margin-left: 0;
+		}
+
+		@media(min-width: 1170px) {
+			padding-left: calc(50% - 112.5px);
+			width: auto;
 		}
 	}
 
@@ -125,7 +134,6 @@
 
 .discount
 {
-	padding: 16px;
 
 	&:hover
 	{
