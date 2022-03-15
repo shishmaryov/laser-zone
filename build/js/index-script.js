@@ -81,8 +81,6 @@ new Swiper('.discounts__slider', {
 	}
 });
 
-
-
 new Swiper('.reviews__slider', {
 	pagination: {
 		el: '.swiper-pagination',
