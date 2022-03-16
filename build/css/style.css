@@ -1730,6 +1730,7 @@ img {
             flex-direction: column;
     width: 230px;
     height: 475px;
+    margin-left: calc(50% - 131px);
     padding-top: 16px;
     padding-right: 16px;
     padding-bottom: 16px;
@@ -1741,6 +1742,9 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media (min-width: 768px) {
+      .discounts__item {
+        margin-left: 0; } }
   .discounts__slider {
     overflow: visible; }
     @media (min-width: 1024px) {
