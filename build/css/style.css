@@ -1631,7 +1631,8 @@ img {
         top: 100px;
         display: block;
         width: auto;
-        height: auto; } }
+        height: auto;
+        margin-top: -75px; } }
   .promo__buttons--1 {
     display: none; }
   @media (min-width: 768px) {
@@ -1718,7 +1719,7 @@ img {
   .discounts__description {
     max-width: 570px; }
   .discounts__number {
-    top: 50px;
+    top: 45px;
     right: 30px; }
   .discounts__item {
     display: -webkit-box;
