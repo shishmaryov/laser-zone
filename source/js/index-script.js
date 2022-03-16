@@ -88,7 +88,7 @@ new Swiper('.reviews__slider', {
 	},
 	slidesPerView: 'auto',
 	spaceBetween: 30,
-	centerSlides: trueg
+	centerSlides: true
 });
 
 document.querySelector('.table__title--1').addEventListener('click', function () {
