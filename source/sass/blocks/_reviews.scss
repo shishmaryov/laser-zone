@@ -44,8 +44,8 @@
 
 			border-radius: 20px;
 			background: #fff;
-			box-shadow: 0 0 40px rgba(0, 0, 0, .1);
-			min-height: 285px;
+			box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+			min-height: 290px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -101,6 +101,16 @@
 			margin-top: 0;
 			margin-bottom: 24px;
 			margin-left: 20px;
+
+			&--hidden {
+				display: none;
+			}
+		}
+		&__button {
+			border: none;
+			color: $green;
+			margin-top: 15px;
+			border-radius: 5px;
 		}
 
 		&__copyright

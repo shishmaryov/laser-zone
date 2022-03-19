@@ -116,11 +116,47 @@ document.querySelector('.table__title--5').addEventListener('click', function ()
 	document.querySelector('.table__arrow--5').classList.toggle('table__arrow--green');
 });
 
+let showText = function(button, text) {
+	button.addEventListener('click', function(){
+		text.style.display = 'block';
+		button.style.display = 'none';
+	});
+}
+
+let rewiewsSlide1 = document.querySelector('.reviews__slide--1 .slide__button');
+let reviewsButton1 = document.querySelector('.reviews__slide--1 .slide__text--hidden');
+showText(rewiewsSlide1, reviewsButton1);
+
+let rewiewsSlide3 = document.querySelector('.reviews__slide--3 .slide__button');
+let reviewsButton3 = document.querySelector('.reviews__slide--3 .slide__text--hidden');
+showText(rewiewsSlide3, reviewsButton3);
+
+let rewiewsSlide5 = document.querySelector('.reviews__slide--5 .slide__button');
+let reviewsButton5 = document.querySelector('.reviews__slide--5 .slide__text--hidden');
+showText(rewiewsSlide5, reviewsButton5);
+
+let rewiewsSlide6 = document.querySelector('.reviews__slide--6 .slide__button');
+let reviewsButton6 = document.querySelector('.reviews__slide--6 .slide__text--hidden');
+showText(rewiewsSlide6, reviewsButton6);
+
+let rewiewsSlide7 = document.querySelector('.reviews__slide--7 .slide__button');
+let reviewsButton7 = document.querySelector('.reviews__slide--7 .slide__text--hidden');
+showText(rewiewsSlide7, reviewsButton7);
+
+let rewiewsSlide8 = document.querySelector('.reviews__slide--8 .slide__button');
+let reviewsButton8 = document.querySelector('.reviews__slide--8 .slide__text--hidden');
+showText(rewiewsSlide8, reviewsButton8);
+
+let rewiewsSlide9 = document.querySelector('.reviews__slide--9 .slide__button');
+let reviewsButton9 = document.querySelector('.reviews__slide--9 .slide__text--hidden');
+showText(rewiewsSlide9, reviewsButton9);
+
 let s = document.createElement("script"),
 pageBody = document.querySelector('body');
 s.type="text/javascript";
 s.charset="UTF-8";
 s.src = "https://w122053.yclients.com/widgetJS";
 pageBody.append(s);
+});
 
-  });
+
