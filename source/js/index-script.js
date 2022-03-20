@@ -116,40 +116,55 @@ document.querySelector('.table__title--5').addEventListener('click', function ()
 	document.querySelector('.table__arrow--5').classList.toggle('table__arrow--green');
 });
 
-let showText = function(button, text) {
-	button.addEventListener('click', function(){
-		text.style.display = 'block';
-		button.style.display = 'none';
-	});
-}
+    let showText = function(buttonShow, buttonHide, text) {
+        buttonShow.addEventListener('click', function() {
+            text.style.display = 'block';
+            buttonShow.style.display = 'none';
+            buttonHide.style.display = 'block';
+        });
+        buttonHide.addEventListener('click', function() {
+        		text.style.display = 'none';
+        		buttonShow.style.display = 'block';
+            buttonHide.style.display = 'none';
+        });
+    }
 
-let rewiewsSlide1 = document.querySelector('.reviews__slide--1 .slide__button');
-let reviewsButton1 = document.querySelector('.reviews__slide--1 .slide__text--hidden');
-showText(rewiewsSlide1, reviewsButton1);
+let reviewsButton1S = document.querySelector('.reviews__slide--1 .slide__button--show');
+let reviewsButton1H = document.querySelector('.reviews__slide--1 .slide__button--hide');
+let reviewsText1 = document.querySelector('.reviews__slide--1 .slide__text--hidden');
+showText(reviewsButton1S, reviewsButton1H, reviewsText1);
 
-let rewiewsSlide3 = document.querySelector('.reviews__slide--3 .slide__button');
-let reviewsButton3 = document.querySelector('.reviews__slide--3 .slide__text--hidden');
-showText(rewiewsSlide3, reviewsButton3);
+let reviewsButton3S = document.querySelector('.reviews__slide--3 .slide__button--show');
+let reviewsButton3H = document.querySelector('.reviews__slide--3 .slide__button--hide');
+let reviewsText3 = document.querySelector('.reviews__slide--3 .slide__text--hidden');
+showText(reviewsButton3S, reviewsButton3H, reviewsText3);
 
-let rewiewsSlide5 = document.querySelector('.reviews__slide--5 .slide__button');
-let reviewsButton5 = document.querySelector('.reviews__slide--5 .slide__text--hidden');
-showText(rewiewsSlide5, reviewsButton5);
+let reviewsButton5S = document.querySelector('.reviews__slide--5 .slide__button--show');
+let reviewsButton5H = document.querySelector('.reviews__slide--5 .slide__button--hide');
+let reviewsText5 = document.querySelector('.reviews__slide--5 .slide__text--hidden');
+showText(reviewsButton5S, reviewsButton5H, reviewsText5);
 
-let rewiewsSlide6 = document.querySelector('.reviews__slide--6 .slide__button');
-let reviewsButton6 = document.querySelector('.reviews__slide--6 .slide__text--hidden');
-showText(rewiewsSlide6, reviewsButton6);
+let reviewsButton6S = document.querySelector('.reviews__slide--6 .slide__button--show');
+let reviewsButton6H = document.querySelector('.reviews__slide--6 .slide__button--hide');
+let reviewsText6 = document.querySelector('.reviews__slide--6 .slide__text--hidden');
+showText(reviewsButton6S, reviewsButton6H, reviewsText6);
 
-let rewiewsSlide7 = document.querySelector('.reviews__slide--7 .slide__button');
-let reviewsButton7 = document.querySelector('.reviews__slide--7 .slide__text--hidden');
-showText(rewiewsSlide7, reviewsButton7);
+let reviewsButton7S = document.querySelector('.reviews__slide--7 .slide__button--show');
+let reviewsButton7H = document.querySelector('.reviews__slide--7 .slide__button--hide');
+let reviewsText7 = document.querySelector('.reviews__slide--7 .slide__text--hidden');
+showText(reviewsButton7S, reviewsButton7H, reviewsText7);
 
-let rewiewsSlide8 = document.querySelector('.reviews__slide--8 .slide__button');
-let reviewsButton8 = document.querySelector('.reviews__slide--8 .slide__text--hidden');
-showText(rewiewsSlide8, reviewsButton8);
+let reviewsButton8S = document.querySelector('.reviews__slide--8 .slide__button--show');
+let reviewsButton8H = document.querySelector('.reviews__slide--8 .slide__button--hide');
+let reviewsText8 = document.querySelector('.reviews__slide--8 .slide__text--hidden');
+showText(reviewsButton8S, reviewsButton8H, reviewsText8);
 
-let rewiewsSlide9 = document.querySelector('.reviews__slide--9 .slide__button');
-let reviewsButton9 = document.querySelector('.reviews__slide--9 .slide__text--hidden');
-showText(rewiewsSlide9, reviewsButton9);
+let reviewsButton9S = document.querySelector('.reviews__slide--9 .slide__button--show');
+let reviewsButton9H = document.querySelector('.reviews__slide--9 .slide__button--hide');
+let reviewsText9 = document.querySelector('.reviews__slide--9 .slide__text--hidden');
+showText(reviewsButton9S, reviewsButton9H, reviewsText9);
+
+
 
 let s = document.createElement("script"),
 pageBody = document.querySelector('body');

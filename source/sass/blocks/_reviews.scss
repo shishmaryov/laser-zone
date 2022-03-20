@@ -110,8 +110,20 @@
 		&__button {
 			border: none;
 			color: $green;
-			margin-top: 15px;
-			border-radius: 5px;
+			padding: 0;
+			background: none;
+
+			&:hover {
+				color: $darkgreen;
+			}
+
+			&--show {
+				margin-top: 15px;
+			}
+
+			&--hide {
+				display: none;
+			}
 		}
 
 		&__copyright
