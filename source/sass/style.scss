@@ -11,14 +11,12 @@
 @import "common/fonts";
 @import "common/global";
 
-// Pages
-@import "pages/index";
-@import "pages/benefits";
 
-// Blocks
+// Index
+@import "pages/index";
+
 @import "blocks/container.scss";
 @import "blocks/section";
-
 @import "blocks/header";
 @import "blocks/nav";
 @import "blocks/promo";
@@ -31,12 +29,12 @@
 @import "blocks/versus";
 @import "blocks/price";
 @import "blocks/reviews";
-
 @import "blocks/contact";
 @import "blocks/info";
 @import "blocks/footer";
 @import "blocks/modal";
-
 @import "blocks/offer";
 
+// Benefits
+@import "pages/benefits";
 @import "blocks/profits.scss";
