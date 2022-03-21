@@ -3031,7 +3031,9 @@ img {
   color: #49B462; }
 
 .profits__item {
-  background: #fff; }
+  background-color: #fff; }
+  .profits__item:hover {
+    background-color: #49B462; }
 
 .profit {
   height: 290px;
@@ -3051,17 +3053,28 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .profit:hover {
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #fff; }
+    .profit:hover .discount__item::before {
+      content: url("../img/icons/heart-active.svg"); }
+    .profit:hover .discount__price--disable,
+    .profit:hover .discount__price--active {
+      color: #f8db3d; }
+    .profit:hover .discount__price--disable::after {
+      content: url("../img/icons/price-disable-active.svg"); }
   @media (min-width: 768px) {
     .profit {
       height: 465px; } }
   .profit--1 {
-    background-image: url("../img/content-images/benefit-1.jpg"); }
+    background-image: url("../img/content-images/benefit-1.png"); }
   .profit--2 {
-    background-image: url("../img/content-images/benefit-2.jpg"); }
+    background-image: url("../img/content-images/benefit-2.png"); }
   .profit--3 {
-    background-image: url("../img/content-images/benefit-3.jpg"); }
+    background-image: url("../img/content-images/benefit-3.png"); }
   .profit--4 {
-    background-image: url("../img/content-images/benefit-4.jpg"); }
+    background-image: url("../img/content-images/benefit-4.png"); }
   .profit--right {
     padding-left: 150px;
     padding-right: 10px;

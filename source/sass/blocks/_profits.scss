@@ -1,5 +1,9 @@
 .profits__item {
-	background: #fff;
+	background-color: #fff;
+
+	&:hover {
+		background-color: $green;
+	}
 }
 
 .profit {
@@ -13,25 +17,48 @@
 	flex-direction: column;
 	justify-content: space-between;
 
+	&:hover
+	{
+		transition: .3s;
+
+		color: #fff;
+
+		.discount__item::before
+		{
+			content: url('../img/icons/heart-active.svg');
+		}
+
+		.discount__price--disable,
+		.discount__price--active
+		{
+			color: #f8db3d;
+		}
+
+		.discount__price--disable::after
+		{
+			content: url('../img/icons/price-disable-active.svg');
+		}
+	}
+
 	@media(min-width: 768px) {
 		height: 465px;
 	}
 
 
 	&--1 {
-		background-image: url('../img/content-images/benefit-1.jpg');
+		background-image: url('../img/content-images/benefit-1.png');
 	}
 
 	&--2 {
-		background-image: url('../img/content-images/benefit-2.jpg');
+		background-image: url('../img/content-images/benefit-2.png');
 	}
 
 	&--3 {
-		background-image: url('../img/content-images/benefit-3.jpg');
+		background-image: url('../img/content-images/benefit-3.png');
 	}
 
 	&--4 {
-		background-image: url('../img/content-images/benefit-4.jpg');
+		background-image: url('../img/content-images/benefit-4.png');
 	}
 
 	&--right {
