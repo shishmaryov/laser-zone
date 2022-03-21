@@ -52,4 +52,11 @@ mapClose.addEventListener('click', function () {
 	mapOverlay.classList.add('modal-map__overlay');
 	mapOverlay.classList.remove('modal-map__overlay--active');
 });
+
+let s = document.createElement("script"),
+pageBody = document.querySelector('body');
+s.type="text/javascript";
+s.charset="UTF-8";
+s.src = "https://w122053.yclients.com/widgetJS";
+pageBody.append(s);
 });

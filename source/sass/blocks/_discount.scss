@@ -289,12 +289,8 @@
 				content: url('../img/icons/price-active.svg');
 			}
 
-			@media(min-width: 768px)
-			{
-			}
-
-			@media(min-width: 1024px)
-			{
+			&-small {
+				&::After {left: -30px;}
 			}
 		}
 	}

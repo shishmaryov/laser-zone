@@ -1,0 +1,74 @@
+.profits__item {
+	background: #fff;
+}
+
+.profit {
+	height: 465px;
+	box-shadow: 0px 4px 4px 0px #00000040;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+
+	&--1 {
+		background-image: url('../img/content-images/benefit-1.jpg');
+	}
+
+	&--2 {
+		background-image: url('../img/content-images/benefit-2.jpg');
+	}
+
+	&--3 {
+		background-image: url('../img/content-images/benefit-3.jpg');
+	}
+
+	&--4 {
+		background-image: url('../img/content-images/benefit-4.jpg');
+	}
+
+	&--right {
+		padding-left: 275px;
+		padding-right: 30px;
+		background-position: 0 0;
+	}
+
+	&--left {
+		padding-right: 275px;
+		background-position: 100% 100%;
+		padding-left: 30px;
+
+		.profit__img {
+			right: 0;
+		}
+	}
+
+	&__title {
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+max-width: none;
+
+	}
+
+	.discount {
+		&__title {
+		margin-top: 30px;
+		}
+		&__button {
+			margin-bottom: 30px;
+		}
+		&__prices {
+			margin-left: calc(50% - 100px);
+		}
+		&__price {
+			&--active {
+				margin-left: 56px;
+			}
+		}
+
+}
+}
