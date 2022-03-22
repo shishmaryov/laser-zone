@@ -2972,15 +2972,14 @@ img {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin-top: 100px; }
     @media (min-width: 768px) {
       .benefits__links {
-        margin-top: 40px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
-                flex-direction: row;
-        margin-top: 55px; } }
+                flex-direction: row; } }
   @media (min-width: 768px) {
     .benefits__follow {
       width: 50%; } }
@@ -3133,6 +3132,9 @@ img {
     width: 80%;
     padding-top: 10px;
     padding-bottom: 10px; }
+    @media (min-width: 375px) {
+      .profit .discount__button {
+        margin-top: 25px; } }
     @media (min-width: 768px) {
       .profit .discount__button {
         margin-bottom: 30px;
