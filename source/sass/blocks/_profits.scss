@@ -142,15 +142,13 @@ line-height: 21px;
 			margin-top: 15px;
 			margin-bottom: 16px;
 			width: 80%;
+			padding-top: 10px;
+			padding-bottom: 10px;
 
 			@media(min-width: 768px) {
 				margin-bottom: 30px;
 				margin-left: 0;
-				// width: 235px;
-				// padding-left: 65px;
-				// padding-right: 65px;
 				width: 100%;
-				// margin-left: calc(50% - 117.5px);
 			}
 		}
 		&__prices {

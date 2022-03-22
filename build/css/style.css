@@ -3130,7 +3130,9 @@ img {
   .profit .discount__button {
     margin-top: 15px;
     margin-bottom: 16px;
-    width: 80%; }
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px; }
     @media (min-width: 768px) {
       .profit .discount__button {
         margin-bottom: 30px;
