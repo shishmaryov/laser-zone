@@ -1,0 +1,144 @@
+.news {
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+		position: relative;
+		padding-bottom: 50px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 5%;
+			width: 90%;
+			height: 1px;
+			background-color: $green;
+
+		}
+	}
+
+	&__text-content {
+		max-width: 520px;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+	}
+
+	&__paragraph {
+		margin-top: 0;
+		margin-bottom: 0;
+
+		&--small-mb {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__li {
+		padding-left: 15px;
+		position: relative;
+		margin-bottom: 10px;
+
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 5px;
+			width: 10px;
+			height: 10px;
+			background: #D9D9D9;
+			content: '';
+		}
+	}
+
+	&__upper-case {
+		text-transform: upper-case;
+	}
+
+	&__date {
+font-size: 18px;
+line-height: 25px;
+	color: #BDBDBD;
+	margin-bottom: 0;
+	}
+
+	&__link {
+		color: $green;
+	}
+
+	&__pagination {
+		display: flex;
+		width: 530px;
+		justify-content: space-between;
+		align-items: center;
+}
+&__button {
+	background: transparent;
+	border: none;
+font-size: 18px;
+height: 18px;
+
+
+}
+&__button--prev {
+	padding-left: 30px;
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: url('../img/icons/news-prev.svg');
+		width: 20px;
+		height: 20px;
+		top: 0px;
+		left: 0;
+	}
+}
+&__button--disable {
+	color: #828282;
+}
+&__pages {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 275px;
+	margin: 0;
+}
+&__page {
+	padding: 5px 10px;
+	a {
+		color: #000;
+	}
+
+
+}
+&__page--active {
+	background: $green;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+	align-self: center;
+
+	a {
+		color: #fff;
+	}
+}
+&__button--next {
+	position: relative;
+	padding-right: 30px;
+
+	&::before {
+		position: absolute;
+		content: url('../img/icons/news-next.svg');
+		width: 20px;
+		height: 20px;
+		top: 0px;
+		right: 0;
+	}
+}
+
+}
