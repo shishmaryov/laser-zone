@@ -59,9 +59,10 @@
 		<script src="https://vk.com/js/api/openapi.js?159" type="text/javascript"></script>
 	</head>
 	<body class="index-page">
-		<div class="header-promo"><svg class="promo__wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-		<path fill="#fff" fill-opacity="1" d="M0,224L1440,128L1440,320L0,320Z"></path>
-	</svg>
+		<div class="header-promo">
+			<svg class="promo__wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#fff" fill-opacity="1" d="M0,160L120,133.3C240,107,480,53,720,69.3C960,85,1200,171,1320,213.3L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+</svg>
 	<div class="container">
 		<header class="header animate__animated animate__fadeInDown"><a href="./index.html" class="logo-link">
 			<picture>
@@ -69,7 +70,7 @@
 		</a>
 		<nav class="nav header__nav">
 			<ul class="nav__list">
-				<li class="nav__item"><a href="#price" class="nav__link">Стоимость услуг</a></li>
+				<li class="nav__item"><a href="#price" class="nav__link nav__link--active">Стоимость услуг</a></li>
 				<li class="nav__item"><a href="./benefits.html" class="nav__link">Акции</a></li>
 				<li class="nav__item"><a href="./news.html" class="nav__link">Новости</a></li>
 			</ul>
@@ -90,7 +91,7 @@
 		</svg></button>
 		<nav class="nav header__nav">
 			<ul class="nav__list">
-				<li class="nav__item"><a href="#price" class="nav__link">Стоимость услуг</a></li>
+				<li class="nav__item"><a href="#price" class="nav__link nav__link--active">Стоимость услуг</a></li>
 				<li class="nav__item"><a href="./benefits.html" class="nav__link">Акции</a></li>
 				<li class="nav__item"><a href="./news.html" class="nav__link">Новости</a></li>
 			</ul>
@@ -115,15 +116,15 @@
 	<div class="promo__numbers">
 		<ul class="promo__list">
 			<li class="promo__item">
-				<p class="promo__number">3000+</p>
+				<p class="promo__number">1500+</p>
 				<h2 class="promo__description">Довольных клиентов</h2>
 			</li>
 			<li class="promo__item">
-				<p class="promo__number">4</p>
+				<p class="promo__number">3</p>
 				<h2 class="promo__description">Года качественного сервиса</h2>
 			</li>
 			<li class="promo__item">
-				<p class="promo__number">7</p>
+				<p class="promo__number">8</p>
 				<h2 class="promo__description">Сертифицированных специалистов</h2>
 			</li>
 		</ul>
@@ -134,9 +135,33 @@
 </section>
 </div>
 </div>
+<section class="about">
+<div class="container">
+<h6 class="section__number about__number wow animate__animated animate__fadeInRight"><span class="section__number--big">01</span> /06</h6>
+<div class="about__content">
+<h2 class="section__title about__title wow animate__animated animate__fadeInLeft">О нас</h2>
+<h3 class="section__subtitle about__subtitle wow animate__animated animate__fadeInLeft">Laser Zone</h3>
+<p class="section__description about__description">Для максимального удаления волос в среднем необходим курс из 6-10 процедур с интервалом в месяц. Эффект наступает уже после ПЕРВОЙ процедуры - исчезает около 30% волос, остальные замедляют свой рост и становятся тонкими и мягкими.</p>
+<ul class="about__list">
+<li class="about__item advantage about__item--painless">
+<h4 class="advantage__title">Безболезненно</h4>
+<p class="advantage__text">Благодаря эффективной системе охлаждения вы не почувствуете ничего, кроме легкого покалывания.</p>
+</li>
+<li class="about__item advantage about__item--security">
+<h4 class="advantage__title">Безопасно</h4>
+<p class="advantage__text">Вспышка лазерного луча воздействует локально на фолликул волоса, не затрагивая ткани, лимфоузлы и органы.</p>
+</li>
+<li class="about__item advantage about__item--available">
+<h4 class="advantage__title">Доступно</h4>
+<p class="advantage__text">Лазерная эпиляция сэкономит вам 80% денег, которые вы потратили бы на другие способы удаления волос.</p>
+</li>
+</ul>
+</div><button type="button" class="button button--sign about__button wow animate__animated animate__fadeInRight ms_booking">Записаться</button>
+</div>
+</section>
 <section class="discounts">
 <div class="container">
-<h6 class="section__number discounts__number wow animate__animated animate__fadeInRight"><span class="section__number--big">01</span> /06</h6>
+<h6 class="section__number discounts__number wow animate__animated animate__fadeInRight"><span class="section__number--big">02</span> /06</h6>
 <h2 class="section__title discounts__title wow animate__animated animate__fadeInLeft">Акции</h2>
 <h3 class="section__subtitle discounts__subtitle wow animate__animated animate__fadeInLeft">Начни эпиляцию в Laser Zone выгодно</h3>
 <p class="section__description discounts__description">Выбирай свою акцию на первую процедуру лазерной эпиляции и влюбись в свою новую гладкую кожу!</p>
@@ -225,74 +250,239 @@
 <div class="about__wave-container"><svg class="about__wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 <path fill="#fff" fill-opacity="1" d="M0,96L120,112C240,128,480,160,720,149.3C960,139,1200,85,1320,58.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
 </svg>
-<section class="about">
-<div class="container">
-<h6 class="section__number about__number wow animate__animated animate__fadeInRight"><span class="section__number--big">02</span> /06</h6>
-<div class="about__content">
-<h2 class="section__title about__title wow animate__animated animate__fadeInLeft">О нас</h2>
-<h3 class="section__subtitle about__subtitle wow animate__animated animate__fadeInLeft">Laser Zone</h3>
-<p class="section__description about__description">Для максимального удаления волос в среднем необходим курс из 6-10 процедур с интервалом в месяц. Эффект наступает уже после ПЕРВОЙ процедуры - исчезает около 30% волос, остальные замедляют свой рост и становятся тонкими и мягкими.</p>
-<ul class="about__list">
-<li class="about__item advantage about__item--painless">
-<h4 class="advantage__title">Безболезненно</h4>
-<p class="advantage__text">Благодаря эффективной системе охлаждения вы не почувствуете ничего, кроме легкого покалывания.</p>
-</li>
-<li class="about__item advantage about__item--security">
-<h4 class="advantage__title">Безопасно</h4>
-<p class="advantage__text">Вспышка лазерного луча воздействует локально на фолликул волоса, не затрагивая ткани, лимфоузлы и органы.</p>
-</li>
-<li class="about__item advantage about__item--available">
-<h4 class="advantage__title">Доступно</h4>
-<p class="advantage__text">Лазерная эпиляция сэкономит вам 80% денег, которые вы потратили бы на другие способы удаления волос.</p>
-</li>
-</ul>
-</div><button type="button" class="button button--sign about__button wow animate__animated animate__fadeInRight ms_booking">Записаться</button>
 </div>
-</section>
-</div>
+
 <div class="useful__bg">
+	<section class="reviews">
 <div class="container">
-<section class="useful">
-<h6 class="section__number useful__number wow animate__animated animate__fadeInRight"><span class="section__number--big">03</span> /06</h6>
-<h2 class="section__title useful__title wow animate__animated animate__fadeInLeft">Полезно знать</h2>
-<h3 class="section__subtitle useful__subtitle wow animate__animated animate__fadeInLeft">Подготовьтесь к процедуре</h3>
-<p class="section__description useful__description">Для того, чтобы процедура удаления волос была максимально эффективна для Вас, необходимо следующее:</p>
-<ul class="useful__list">
-<li class="useful__item prepare useful__item--1">
-<h4 class="prepare__title">1-2 мм - рекомендуемая длина волоса</h4>
-<p class="useful__text">За сутки до процедуры волосы на обрабатываемой зоне необходимо сбрить.</p>
-</li>
-<li class="useful__item prepare useful__item--2">
-<h4 class="prepare__title">Не загорайте до процедуры</h4>
-<p class="useful__text">За 3 дня до и после процедуры откажитесь от посещения солярия.</p>
-</li>
-<li class="useful__item prepare">
-<h4 class="prepare__title">Не проводите процедуры, нарушающие кожный покров</h4>
-<p class="useful__text">За 2 недели откажитесь от процедур травмирующих кожный покров (шугаринг, воск, эл.депилятор, пилинги, скрабировария и пр.)</p>
-</li>
-</ul>
-<h3 class="section__subtitle versus__subtitle">Противопоказания</h3>
-<ul class="versus__list">
-<li class="versus__item versus">
-<p class="versus__text">Беременность и период грудного вскармливания</p>
-</li>
-<li class="versus__item">
-<p class="versus__text">Любые гормональные отклонения</p>
-</li>
-<li class="versus__item">
-<p class="versus__text">Заболевания кожи в острой форме</p>
-</li>
-<li class="versus__item">
-<p class="versus__text">Онкологические заболевания</p>
-</li>
-<li class="versus__item">
-<p class="versus__text">Декомпенсированный сахарный диабет</p>
-</li>
-<li class="versus__item">
-<p class="versus__text">Эпилепсия</p>
-</li>
-</ul><button type="button" class="button button--sign useful__button wow animate__animated animate__fadeInRight ms_booking">Записаться</button>
+<h6 class="section__number reviews__number wow animate__animated animate__fadeInRight"><span class="section__number--big">03</span> /06</h6>
+<h2 class="section__title reviews__title wow animate__animated animate__fadeInLeft">Отзывы</h2>
+<h3 class="section__subtitle reviews__subtitle wow animate__animated animate__fadeInLeft">Нам важно ваше мнение</h3>
+<p class="section__description reviews__description">Каждый день мы совершенствуемся, чтобы радовать Вас и Ваше тело нашим высоким профессионализмом.</p>
+</div><!-- Slider main container -->
+<div class="swiper-container reviews__slider slider">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+<!-- Slides -->
+<div class="swiper-slide reviews__slide--1">
+<div class="slider__item slide">
+<div class="slide__top">
+<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
+<p class="author__name">Ольга</p>
+</div>
+<div class="slide__mark mark">
+<div class="slide__mark--right">
+<p class="mark__ball">5,0</p>
+<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
+</div>
+<p class="mark__word mark__word--best">Превосходно</p>
+</div>
+<p class="slide__text">Студия чистая и светлая. Персонал приветливый и очень эмпатичный.
+<span class="slide__text--hidden">
+Перед первой процедурой волновалась, но мастер подробно разъяснил все нюансы и этапы работы. Сама процедура прошла в комфортной обстановке и дружелюбной атмосфере.
+После первого сеанса эффект отличный, «ушла» большая часть волос. Отдельно хочу отметить удобную схемы оплаты абонемента - в 3 платежа. Рекомендую :)
+</span>
+<br>
+<button class="slide__button slide__button--show">Читать дальше</button>
+<button class="slide__button slide__button--hide">Cкрыть</button>
+</p>
+</div>
+<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="slider__item slide">
+<div class="slide__top">
+<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
+<p class="author__name">Юлиана</p>
+</div>
+<div class="slide__mark mark">
+<div class="slide__mark--right">
+<p class="mark__ball">5,0</p>
+<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
+</div>
+<p class="mark__word mark__word--best">Превосходно</p>
+</div>
+<p class="slide__text">Как всегда - на высоте! Счастлива, что так долго искала салон и нашла такой идеальный. И результатом довольна, и подходом персонала. Всё чудесно. Благодарю!</p>
+</div>
+<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
+</div>
+</div>
+<div class="swiper-slide reviews__slide--3">
+<div class="slider__item slide">
+<div class="slide__top">
+<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
+<p class="author__name">Александра</p>
+</div>
+<div class="slide__mark mark">
+<div class="slide__mark--right">
+<p class="mark__ball">5,0</p>
+<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
+</div>
+<p class="mark__word mark__word--best">Превосходно</p>
+</div>
+<p class="slide__text">Все прошло очень хорошо. Была на процедуре две недели назад.
+<span class="slide__text--hidden">
+И могу сказать, что результат с первого раза очень хороший.	Я аж нарадоваться не могу. Советую. А до этого посещала другую лазерную студию, эффект был почти не заметен. Спасибо большое!
+</span>
+<br>
+<button class="slide__button slide__button--show">Читать дальше</button>
+<button class="slide__button slide__button--hide">Cкрыть</button>
+</p>
+</div>
+<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
+</div>
+</div>
+<div class="swiper-slide reviews__slide--5">
+<div class="slider__item slide">
+<div class="slide__top">
+<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
+<p class="author__name">Маргарита</p>
+</div>
+<div class="slide__mark mark">
+<div class="slide__mark--right">
+<p class="mark__ball">5,0</p>
+<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
+</div>
+<p class="mark__word mark__word--best">Превосходно</p>
+</div>
+<p class="slide__text">Хочу передать огромную радость за помощь в войне с ненавистными волосами!
+<span class="slide__text--hidden">
+Война, которая длилась лет 15 точно((( и которая теперь точно заканчивается в мою пользу после 2 сеанса Лазерной эпиляции. Я в Восторге! Я теперь постоянный клиент!
+</span>
+<br>
+<button class="slide__button slide__button--show">Читать дальше</button>
+<button class="slide__button slide__button--hide">Cкрыть</button>
+</p>
+</div>
+<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
+</div>
+</div>
+<div class="swiper-slide reviews__slide--6">
+<div class="slider__item slide">
+<div class="slide__top">
+<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
+<p class="author__name">Ирина</p>
+</div>
+<div class="slide__mark mark">
+<div class="slide__mark--right">
+<p class="mark__ball">5,0</p>
+<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
+</div>
+<p class="mark__word mark__word--best">Превосходно</p>
+</div>
+<p class="slide__text">Отличный салон, замечательные девушки-сотрудницы, очень внимательные, заботливые,
+<span class="slide__text--hidden">
+профессионалы своего дела. Процедуры имеют положительный результат. Всем советую!
+</span>
+<br>
+<button class="slide__button slide__button--show">Читать дальше</button>
+<button class="slide__button slide__button--hide">Cкрыть</button>
+</p>
+</div>
+<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
+</div>
+</div>
+<div class="swiper-slide reviews__slide--7">
+<div class="slider__item slide">
+<div class="slide__top">
+<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
+<p class="author__name">Яна</p>
+</div>
+<div class="slide__mark mark">
+<div class="slide__mark--right">
+<p class="mark__ball">5,0</p>
+<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
+</div>
+<p class="mark__word mark__word--best">Превосходно</p>
+</div>
+<p class="slide__text">Спасибо вам за процедуру. Очень довольна. Это была уже четвертая и ни разу не пожалела,
+<span class="slide__text--hidden">
+результат с первого раза. Бритвой пользуюсь только перед процедурой и то так на всякий случай. Девочки приветливые, милые, чуткие.
+</span>
+<br>
+<button class="slide__button slide__button--show">Читать дальше</button>
+<button class="slide__button slide__button--hide">Cкрыть</button>
+</p>
+</div>
+<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
+</div>
+</div>
+<div class="swiper-slide reviews__slide--8">
+<div class="slider__item slide">
+<div class="slide__top">
+<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
+<p class="author__name">Ольга</p>
+</div>
+<div class="slide__mark mark">
+<div class="slide__mark--right">
+<p class="mark__ball">5,0</p>
+<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
+</div>
+<p class="mark__word mark__word--best">Превосходно</p>
+</div>
+<p class="slide__text">Всё понравилось: комфортно, быстро, доступно объясняют, не больно :) Жду результатов,
+<span class="slide__text--hidden">
+так как ходила только второй раз.
+</span>
+<br>
+<button class="slide__button slide__button--show">Читать дальше</button>
+<button class="slide__button slide__button--hide">Cкрыть</button>
+</p>
+</div>
+<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
+</div>
+</div>
+<div class="swiper-slide reviews__slide--9">
+<div class="slider__item slide">
+<div class="slide__top">
+<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
+<p class="author__name">Ксения</p>
+</div>
+<div class="slide__mark mark">
+<div class="slide__mark--right">
+<p class="mark__ball">5,0</p>
+<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
+</div>
+<p class="mark__word mark__word--best">Превосходно</p>
+</div>
+<p class="slide__text">После первой процедуры через 2 недели уже был виден ощутимый эффект.
+<span class="slide__text--hidden">
+Волосы стали расти медленнее и всего 30% от прежднего числа.
+</span>
+<br>
+<button class="slide__button slide__button--show">Читать дальше</button>
+<button class="slide__button slide__button--hide">Cкрыть</button>
+</p>
+</div>
+<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="slider__item slide">
+<div class="slide__top">
+<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
+<p class="author__name">Дарья</p>
+</div>
+<div class="slide__mark mark">
+<div class="slide__mark--right">
+<p class="mark__ball">5,0</p>
+<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
+</div>
+<p class="mark__word mark__word--best">Превосходно</p>
+</div>
+<p class="slide__text">Давольно-таки неплохо. Была только на одном посещении. Изменю отзыв после прохождения курса.</p>
+</div>
+<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
+</div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+<div class="swiper-pagination"></div>
+<div class="swiper-pagination"></div>
+</div>
 </section>
+<div class="container">
 </div>
 </div>
 <div class="container">
@@ -595,236 +785,48 @@
 <div class="reviews-contact-footer"><svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 <path fill="#F5E9C3" fill-opacity="1" d="M0,224L120,202.7C240,181,480,139,720,144C960,149,1200,203,1320,229.3L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
 </svg>
-<section class="reviews">
 <div class="container">
-<h6 class="section__number reviews__number wow animate__animated animate__fadeInRight"><span class="section__number--big">05</span> /06</h6>
-<h2 class="section__title reviews__title wow animate__animated animate__fadeInLeft">Отзывы</h2>
-<h3 class="section__subtitle reviews__subtitle wow animate__animated animate__fadeInLeft">Нам важно ваше мнение</h3>
-<p class="section__description reviews__description">Каждый день мы совершенствуемся, чтобы радовать Вас и Ваше тело нашим высоким профессионализмом.</p>
-</div><!-- Slider main container -->
-<div class="swiper-container reviews__slider slider">
-<!-- Additional required wrapper -->
-<div class="swiper-wrapper">
-<!-- Slides -->
-<div class="swiper-slide reviews__slide--1">
-<div class="slider__item slide">
-<div class="slide__top">
-<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
-<p class="author__name">Ольга</p>
-</div>
-<div class="slide__mark mark">
-<div class="slide__mark--right">
-<p class="mark__ball">5,0</p>
-<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
-</div>
-<p class="mark__word mark__word--best">Превосходно</p>
-</div>
-<p class="slide__text">Студия чистая и светлая. Персонал приветливый и очень эмпатичный.
-<span class="slide__text--hidden">
-Перед первой процедурой волновалась, но мастер подробно разъяснил все нюансы и этапы работы. Сама процедура прошла в комфортной обстановке и дружелюбной атмосфере.
-После первого сеанса эффект отличный, «ушла» большая часть волос. Отдельно хочу отметить удобную схемы оплаты абонемента - в 3 платежа. Рекомендую :)
-</span>
-<br>
-<button class="slide__button slide__button--show">Читать дальше</button>
-<button class="slide__button slide__button--hide">Cкрыть</button>
-</p>
-</div>
-<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="slider__item slide">
-<div class="slide__top">
-<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
-<p class="author__name">Юлиана</p>
-</div>
-<div class="slide__mark mark">
-<div class="slide__mark--right">
-<p class="mark__ball">5,0</p>
-<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
-</div>
-<p class="mark__word mark__word--best">Превосходно</p>
-</div>
-<p class="slide__text">Как всегда - на высоте! Счастлива, что так долго искала салон и нашла такой идеальный. И результатом довольна, и подходом персонала. Всё чудесно. Благодарю!</p>
-</div>
-<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
-</div>
-</div>
-<div class="swiper-slide reviews__slide--3">
-<div class="slider__item slide">
-<div class="slide__top">
-<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
-<p class="author__name">Александра</p>
-</div>
-<div class="slide__mark mark">
-<div class="slide__mark--right">
-<p class="mark__ball">5,0</p>
-<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
-</div>
-<p class="mark__word mark__word--best">Превосходно</p>
-</div>
-<p class="slide__text">Все прошло очень хорошо. Была на процедуре две недели назад.
-<span class="slide__text--hidden">
-И могу сказать, что результат с первого раза очень хороший.	Я аж нарадоваться не могу. Советую. А до этого посещала другую лазерную студию, эффект был почти не заметен. Спасибо большое!
-</span>
-<br>
-<button class="slide__button slide__button--show">Читать дальше</button>
-<button class="slide__button slide__button--hide">Cкрыть</button>
-</p>
-</div>
-<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
-</div>
-</div>
-<div class="swiper-slide reviews__slide--5">
-<div class="slider__item slide">
-<div class="slide__top">
-<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
-<p class="author__name">Маргарита</p>
-</div>
-<div class="slide__mark mark">
-<div class="slide__mark--right">
-<p class="mark__ball">5,0</p>
-<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
-</div>
-<p class="mark__word mark__word--best">Превосходно</p>
-</div>
-<p class="slide__text">Хочу передать огромную радость за помощь в войне с ненавистными волосами!
-<span class="slide__text--hidden">
-Война, которая длилась лет 15 точно((( и которая теперь точно заканчивается в мою пользу после 2 сеанса Лазерной эпиляции. Я в Восторге! Я теперь постоянный клиент!
-</span>
-<br>
-<button class="slide__button slide__button--show">Читать дальше</button>
-<button class="slide__button slide__button--hide">Cкрыть</button>
-</p>
-</div>
-<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
-</div>
-</div>
-<div class="swiper-slide reviews__slide--6">
-<div class="slider__item slide">
-<div class="slide__top">
-<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
-<p class="author__name">Ирина</p>
-</div>
-<div class="slide__mark mark">
-<div class="slide__mark--right">
-<p class="mark__ball">5,0</p>
-<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
-</div>
-<p class="mark__word mark__word--best">Превосходно</p>
-</div>
-<p class="slide__text">Отличный салон, замечательные девушки-сотрудницы, очень внимательные, заботливые,
-<span class="slide__text--hidden">
-профессионалы своего дела. Процедуры имеют положительный результат. Всем советую!
-</span>
-<br>
-<button class="slide__button slide__button--show">Читать дальше</button>
-<button class="slide__button slide__button--hide">Cкрыть</button>
-</p>
-</div>
-<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
-</div>
-</div>
-<div class="swiper-slide reviews__slide--7">
-<div class="slider__item slide">
-<div class="slide__top">
-<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
-<p class="author__name">Яна</p>
-</div>
-<div class="slide__mark mark">
-<div class="slide__mark--right">
-<p class="mark__ball">5,0</p>
-<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
-</div>
-<p class="mark__word mark__word--best">Превосходно</p>
-</div>
-<p class="slide__text">Спасибо вам за процедуру. Очень довольна. Это была уже четвертая и ни разу не пожалела,
-<span class="slide__text--hidden">
-результат с первого раза. Бритвой пользуюсь только перед процедурой и то так на всякий случай. Девочки приветливые, милые, чуткие.
-</span>
-<br>
-<button class="slide__button slide__button--show">Читать дальше</button>
-<button class="slide__button slide__button--hide">Cкрыть</button>
-</p>
-</div>
-<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
-</div>
-</div>
-<div class="swiper-slide reviews__slide--8">
-<div class="slider__item slide">
-<div class="slide__top">
-<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
-<p class="author__name">Ольга</p>
-</div>
-<div class="slide__mark mark">
-<div class="slide__mark--right">
-<p class="mark__ball">5,0</p>
-<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
-</div>
-<p class="mark__word mark__word--best">Превосходно</p>
-</div>
-<p class="slide__text">Всё понравилось: комфортно, быстро, доступно объясняют, не больно :) Жду результатов,
-<span class="slide__text--hidden">
-так как ходила только второй раз.
-</span>
-<br>
-<button class="slide__button slide__button--show">Читать дальше</button>
-<button class="slide__button slide__button--hide">Cкрыть</button>
-</p>
-</div>
-<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
-</div>
-</div>
-<div class="swiper-slide reviews__slide--9">
-<div class="slider__item slide">
-<div class="slide__top">
-<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
-<p class="author__name">Ксения</p>
-</div>
-<div class="slide__mark mark">
-<div class="slide__mark--right">
-<p class="mark__ball">5,0</p>
-<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
-</div>
-<p class="mark__word mark__word--best">Превосходно</p>
-</div>
-<p class="slide__text">После первой процедуры через 2 недели уже был виден ощутимый эффект.
-<span class="slide__text--hidden">
-Волосы стали расти медленнее и всего 30% от прежднего числа.
-</span>
-<br>
-<button class="slide__button slide__button--show">Читать дальше</button>
-<button class="slide__button slide__button--hide">Cкрыть</button>
-</p>
-</div>
-<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="slider__item slide">
-<div class="slide__top">
-<div class="slide__author author"><img src="img/icons/in-love.svg" alt="Влюблённый смайлик" width="27" height="27" class="author__icon">
-<p class="author__name">Дарья</p>
-</div>
-<div class="slide__mark mark">
-<div class="slide__mark--right">
-<p class="mark__ball">5,0</p>
-<div class="mark__stars"><img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"> <img src="img/icons/star.svg" alt="Звезда" width="12" height="12" class="mark__star"></div>
-</div>
-<p class="mark__word mark__word--best">Превосходно</p>
-</div>
-<p class="slide__text">Давольно-таки неплохо. Была только на одном посещении. Изменю отзыв после прохождения курса.</p>
-</div>
-<p class="slide__copyright">Отзыв добавлен из <a href="https://www.yclients.com/?utm_source=yandex&utm_medium=cpc&utm_campaign=zapis_msk&utm_content=programma_dlya_salona_krasoty_otzyvy&utm_term=---autotargeting&roistat=direct7_search_6265809422_---autotargeting&roistat_referrer=none&roistat_pos=premium_1&yclid=2952322307638737090" target="_blank" class="slide__link">yclients</a></p>
-</div>
-</div>
-</div>
-<div class="swiper-pagination"></div>
-<div class="swiper-pagination"></div>
-<div class="swiper-pagination"></div>
-</div>
+<section class="useful">
+		<h6 class="section__number useful__number wow animate__animated animate__fadeInRight"><span class="section__number--big">05</span> /06</h6>
+<h2 class="section__title useful__title wow animate__animated animate__fadeInLeft">Полезно знать</h2>
+<h3 class="section__subtitle useful__subtitle wow animate__animated animate__fadeInLeft">Подготовьтесь к процедуре</h3>
+<p class="section__description useful__description">Для того, чтобы процедура удаления волос была максимально эффективна для Вас, необходимо следующее:</p>
+<ul class="useful__list">
+<li class="useful__item prepare useful__item--1">
+<h4 class="prepare__title">1-2 мм - рекомендуемая длина волоса</h4>
+<p class="useful__text">За сутки до процедуры волосы на обрабатываемой зоне необходимо сбрить.</p>
+</li>
+<li class="useful__item prepare useful__item--2">
+<h4 class="prepare__title">Не загорайте до процедуры</h4>
+<p class="useful__text">За 3 дня до и после процедуры откажитесь от посещения солярия.</p>
+</li>
+<li class="useful__item prepare">
+<h4 class="prepare__title">Не проводите процедуры, нарушающие кожный покров</h4>
+<p class="useful__text">За 2 недели откажитесь от процедур травмирующих кожный покров (шугаринг, воск, эл.депилятор, пилинги, скрабировария и пр.)</p>
+</li>
+</ul>
+<h3 class="section__subtitle versus__subtitle">Противопоказания</h3>
+<ul class="versus__list">
+<li class="versus__item versus">
+<p class="versus__text">Беременность и период грудного вскармливания</p>
+</li>
+<li class="versus__item">
+<p class="versus__text">Любые гормональные отклонения</p>
+</li>
+<li class="versus__item">
+<p class="versus__text">Заболевания кожи в острой форме</p>
+</li>
+<li class="versus__item">
+<p class="versus__text">Онкологические заболевания</p>
+</li>
+<li class="versus__item">
+<p class="versus__text">Декомпенсированный сахарный диабет</p>
+</li>
+<li class="versus__item">
+<p class="versus__text">Эпилепсия</p>
+</li>
+</ul><button type="button" class="button button--sign useful__button wow animate__animated animate__fadeInRight ms_booking">Записаться</button>
 </section>
-<div class="container">
 <section class="contact">
 <h6 class="section__number wow animate__animated animate__fadeInRight"><span class="section__number--big">06</span> /06</h6>
 <h2 class="section__title contact__title wow animate__animated animate__fadeInLeft">Контакты</h2>
@@ -861,7 +863,7 @@
 </a>
 <nav class="nav footer__nav">
 <ul class="nav__list">
-<li class="nav__item"><a href="#price" class="nav__link">Стоимость услуг</a></li>
+<li class="nav__item"><a href="#price" class="nav__link nav__link--active">Стоимость услуг</a></li>
 <li class="nav__item"><a href="./benefits.html" class="nav__link">Акции</a></li>
 <li class="nav__item"><a href="./news.html" class="nav__link">Новости</a></li>
 <li class="nav__item"><a href="#" class="nav__link">Франшиза</a></li>

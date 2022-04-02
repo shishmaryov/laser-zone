@@ -25,14 +25,17 @@ anchors.forEach(function (item) {
 
 var headerMobile = document.querySelector('.header__mobile');
 var burger = document.querySelector('.header__burger');
-var headerClose = document.querySelector('.header__close');
+var icon = document.querySelector('.header__burger img');
 
 burger.addEventListener('click', function () {
-	headerMobile.classList.add('header__mobile--active');
-});
+	if (headerMobile.classList.contains('header__mobile--active')) {
+		icon.src = 'img/icons/menu.svg';
+	} else {
+		icon.src = 'img/icons/close.svg';
+	}
 
-headerClose.addEventListener('click', function () {
-	headerMobile.classList.remove('header__mobile--active');
+	headerMobile.classList.toggle('header__mobile--active');
+	document.querySelector('.promo').classList.toggle('blur');
 });
 
 

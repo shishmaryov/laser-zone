@@ -8,6 +8,7 @@
 
 	@media(min-width: 1024px) {
 		margin-top: 150px;
+		padding-bottom: 100px;
 	}
 
 	&__left {
@@ -164,29 +165,35 @@
 		position: absolute;
 		bottom: 0;
 
-		height: 410px;
+		height: 245px;
 		overflow: hidden;
 
 		background: #fcf1d3;
 
 		@media(min-width: 338px) {
-			height: 350px;
+			height: 245px;
 		}
 
-		@media(min-width: 400px) {
-			height: 365px;
+		@media(min-width: 350px) {
+			height: 190px;
 		}
 
-		@media(min-width: 550px) {
-			height: 345px;
+		@media(min-width: 430px) {
+			height: 175px;
 		}
+
+		@media(min-width: 490px) {
+			display: none;
+		}
+
 
 		@media(min-width: 768px) {
+			display: block;
 			margin-bottom: -200px;
 		}
 
 		@media(min-width: 1024px) {
-			bottom: -100px;
+			bottom: -120px;
 			z-index: 2;
 
 			height: 400px;

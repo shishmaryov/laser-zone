@@ -4,6 +4,8 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 35px;
+	position: relative;
+	z-index: 3;
 
 	@media(min-width: 1024px) {
 		flex-direction: row;
@@ -16,14 +18,13 @@
 
 	&__mobile {
 		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: 3;
+		top: 90px;
+		left: 0;
 
 		display: none;
 		flex-direction: column;
 		align-items: center;
-		width: 100%;
+		width: calc(100% - 60px);
 		padding: 50px 30px;
 
 		background: #ffffff;
@@ -31,20 +32,10 @@
 		box-shadow: 0 0 100px 1px rgba(0, 0, 0, 0.1);
 
 		&--active {
-			position: relative;
-
 			display: flex;
 		}
 
 		.header {
-			&__close {
-				position: absolute;
-				top: 30px;
-				right: 30px;
-
-				background: transparent;
-				border: none;
-			}
 
 			&__nav {
 				display: flex;

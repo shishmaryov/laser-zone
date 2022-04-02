@@ -140,3 +140,11 @@ img {
 	margin-bottom: 50px;
 	margin-left: auto;
 }
+
+.blur {
+	filter: blur(2px);
+}
+
+.unblur {
+	filter: blur(0px);
+}

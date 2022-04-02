@@ -1255,6 +1255,14 @@ img {
   margin-bottom: 50px;
   margin-left: auto; }
 
+.blur {
+  -webkit-filter: blur(2px);
+          filter: blur(2px); }
+
+.unblur {
+  -webkit-filter: blur(0px);
+          filter: blur(0px); }
+
 .index-page {
   width: 100%;
   max-width: 100%;
@@ -1370,7 +1378,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 35px; }
+  padding-top: 35px;
+  position: relative;
+  z-index: 3; }
   @media (min-width: 1024px) {
     .header {
       -webkit-box-orient: horizontal;
@@ -1385,9 +1395,8 @@ img {
     display: flex; }
   .header__mobile {
     position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 3;
+    top: 90px;
+    left: 0;
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1396,23 +1405,16 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    width: calc(100% - 60px);
     padding: 50px 30px;
     background: #ffffff;
     border-radius: 20px;
     -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 100px 1px rgba(0, 0, 0, 0.1); }
     .header__mobile--active {
-      position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-    .header__mobile .header__close {
-      position: absolute;
-      top: 30px;
-      right: 30px;
-      background: transparent;
-      border: none; }
     .header__mobile .header__nav {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1563,7 +1565,8 @@ img {
               justify-content: space-between; } }
   @media (min-width: 1024px) {
     .promo {
-      margin-top: 150px; } }
+      margin-top: 150px;
+      padding-bottom: 100px; } }
   .promo__left {
     max-width: 445px; }
   .promo__title {
@@ -1677,24 +1680,28 @@ img {
   .promo__wave {
     position: absolute;
     bottom: 0;
-    height: 410px;
+    height: 245px;
     overflow: hidden;
     background: #fcf1d3; }
     @media (min-width: 338px) {
       .promo__wave {
-        height: 350px; } }
-    @media (min-width: 400px) {
+        height: 245px; } }
+    @media (min-width: 350px) {
       .promo__wave {
-        height: 365px; } }
-    @media (min-width: 550px) {
+        height: 190px; } }
+    @media (min-width: 430px) {
       .promo__wave {
-        height: 345px; } }
+        height: 175px; } }
+    @media (min-width: 490px) {
+      .promo__wave {
+        display: none; } }
     @media (min-width: 768px) {
       .promo__wave {
+        display: block;
         margin-bottom: -200px; } }
     @media (min-width: 1024px) {
       .promo__wave {
-        bottom: -100px;
+        bottom: -120px;
         z-index: 2;
         height: 400px;
         margin-bottom: -55px;
@@ -1703,12 +1710,13 @@ img {
 .discounts {
   position: relative;
   z-index: 4;
+  margin-top: -5px;
   background: #fff; }
   .discounts .container {
     position: relative; }
   .discounts__title {
     margin-top: 0;
-    padding-top: 50px; }
+    padding-top: 45px; }
   .discounts__description {
     max-width: 570px; }
   .discounts__number {
@@ -2006,13 +2014,21 @@ img {
   position: relative;
   z-index: 0;
   max-width: 1675px;
-  margin-top: -10px;
-  margin-bottom: 140px;
-  padding-top: 60px;
-  background: #ffffff; }
+  padding-top: 50px;
+  background: #ffffff;
+  z-index: 2;
+  padding-bottom: 10px; }
+  @media (min-width: 490px) {
+    .about {
+      padding-top: 175px;
+      margin-top: -125px; } }
   @media (min-width: 768px) {
     .about {
-      margin-bottom: 0; } }
+      padding-top: 50px;
+      margin-top: 0; } }
+  @media (min-width: 1024px) {
+    .about {
+      padding-top: 0; } }
   .about .container {
     position: relative; }
   .about::after {
@@ -2122,6 +2138,7 @@ img {
     top: 99%;
     right: 0;
     z-index: 0;
+    margin-top: -5px;
     width: 100%;
     height: auto; }
     .about__wave-container {
@@ -2408,6 +2425,8 @@ img {
   .reviews__number {
     right: 20px;
     color: #fff; }
+  .reviews__title {
+    margin-top: 120px; }
   .reviews__subtitle {
     max-width: 260px;
     margin-bottom: 20px; }
@@ -2544,7 +2563,7 @@ img {
       width: 8px;
       height: 8px;
       margin: 0 8px;
-      background-color: #e5e5e5; }
+      background-color: #E0E0E0; }
       .reviews .swiper-pagination-bullet-active {
         width: 16px;
         height: 16px;
