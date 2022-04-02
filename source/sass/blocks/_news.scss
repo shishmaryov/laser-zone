@@ -5,7 +5,12 @@
 		justify-content: space-between;
 		margin-bottom: 50px;
 		position: relative;
+		flex-direction: column;
 		padding-bottom: 50px;
+
+		@media(min-width: 1024px) {
+			flex-direction: row;
+		}
 
 		&::after {
 			content: '';
@@ -28,6 +33,20 @@ position: relative;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+margin-bottom: 50px;
+
+@media(min-width: 1024px) {
+	margin-bottom: 25px;
+	font-size: 18px;
+}
+	}
+
+	&__title {
+		margin-top: 32px;
+
+		@media(min-width: 1024px) {
+			margin-top: 80px;
+		}
 	}
 
 	&__paragraph {
@@ -72,10 +91,14 @@ line-height: 25px;
 
 	&__pagination {
 		display: flex;
-		width: 530px;
 		justify-content: space-between;
 		align-items: center;
+
+		@media(min-width: 768px) {
+			width: 530px;
+		}
 }
+
 &__button {
 	background: transparent;
 	border: none;
